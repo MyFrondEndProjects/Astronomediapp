@@ -9,29 +9,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: sans-serif;
-    background-color: powderblue;
+    background-color: #323232;
+    background-image: url("/İmg/backgp.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-/* Book */
-.book {
+#prev-button,
+img {
+    width: 3em;
+    height: 3em;
+}
+
+/* Magazin */
+.Magazin {
     position: relative;
-    width: 80%;
+    width: 95%;
     height: 90%;
     transition: transform 0.5s;
 }
 
 .paper {
     position: absolute;
-    width: 100%;
+    width: 101%;
     height: 100%;
     top: 0;
     left: 0;
     perspective: 1500px;
-
-
-
 }
 
 .front,
@@ -49,7 +55,7 @@ body {
 
 #p1,
 .front img {
-    width: 100%;
+    width: 100.5%;
     height: 100%;
     border-radius: 0.5em;
 }
@@ -77,7 +83,7 @@ body {
     transform: rotateY(180deg)
 }
 
-/* Paper flip effect */
+/* ! Sayfa değiştirme efekti (Flip effect) */
 .flipped .front,
 .flipped .back {
     transform: rotateY(-180deg);
@@ -85,30 +91,32 @@ body {
 
 button {
     border: none;
-    background-color: white;
+    background-color: transparent;
     border-radius: 100%;
     cursor: pointer;
     margin: 300px;
-    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.3em;
 }
+
 
 button:hover {
-    background-color: lightgreen;
-    cursor: pointer;
     border: none;
-    margin: 10px;
-    margin: 300px;
-}
-
-
-button:hover i {
     background-color: lightgreen;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0em;
+    height: 2.9em;
+
 }
 
-i {
-    font-size: 50px;
-    color: gray;
-}
+
 
 /* ! Yeni sayfa eklendiğinde güncellenecek alan*/
 #p1 {
