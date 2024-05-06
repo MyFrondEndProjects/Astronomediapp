@@ -130,6 +130,7 @@ button:hover {
 /* ! Yeni sayfa eklendiğinde güncellenecek alan*/
 #p1 {
     z-index: 4;
+
 }
 
 #p2 {
@@ -151,4 +152,87 @@ button:hover {
     right: 5%;
     top: 5%;
     opacity: 0.9;
+}
+
+
+::-webkit-scrollbar {
+    color: lightblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightblue;
+    border-radius: 0.2em;
+}
+
+#b1 {
+    background-color: #323232;
+}
+
+
+.b1i {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0%;
+
+}
+
+.b1p {
+    margin-top: 1em;
+}
+
+.b1pc {
+    color: goldenrod;
+    position: absolute;
+    right: 0%;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.b1pc h1 {
+    border: none;
+    border-bottom: 3px solid lightblue;
+
+}
+
+#f2 {
+    background-color: #323232;
+}
+
+#f2i {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    right: 2%;
+    top: 2%;
+    border: 10px solid black;
+}
+
+.f2title {
+    color: lightblue;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+
+    width: 10em;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid lightblue;
+    margin-right: 5em;
+}
+
+#f2textc {
+    position: absolute;
+    width: 100%;
+    height: 57%;
+    bottom: 0.5%;
+    color: goldenrod;
+    border: none;
+    border-bottom: 3px solid lightblue;
+    overflow-y: scroll;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
