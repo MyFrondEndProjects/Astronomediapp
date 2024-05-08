@@ -1,21 +1,21 @@
 
-var front = document.querySelector('.face-front');
-var back = document.querySelector('.face-back');
-var flip = document.querySelector('.book-content');
-var uno = document.querySelectorAll('.Magazin');
-var portada = document.querySelectorAll('#portada');
+const front = document.querySelector('.face-front');
+const back = document.querySelector('.face-back');
+const flip = document.querySelector('.book-content');
+const uno = document.querySelectorAll('.Magazin');
+const portada = document.querySelectorAll('#portada');
 
-var contZindex = 2;
-var customZindex = 1;
+const contZindex = 2;
+const customZindex = 1;
 
-for (var i = 0; i < uno.length; i++) {
+for (let i = 0; i < uno.length; i++) {
 	uno[i].style.zIndex = customZindex;
 	customZindex--;
 
 	uno[i].addEventListener('click', function (e) {
 
-		var tgt = e.target;
-		var unoThis = this;
+		let tgt = e.target;
+		let unoThis = this;
 
 		unoThis.style.zIndex = contZindex;
 		contZindex++;
