@@ -1,238 +1,201 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    background-color: #323232;
-    background-image: url("/İmg/backgp.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
+portada p {
+	margin-top: 10px;
+	font-size: 13px;
+	text-align: justify;
 }
 
-#prev-button,
-img {
-    width: 3em;
-    height: 3em;
+.container,
+.book-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* Magazin */
+.container {
+	width: 100%;
+	height: 100vh;
+	background: #2d6f75;
+}
+
+.book-content {
+	width: 700px;
+	height: 800px;
+	position: relative;
+	perspective: 1000px;
+	margin-left: 10em;
+	transition: 1s;
+	border-radius: 0.5em;
+}
+
 .Magazin {
-    position: relative;
-    width: 95%;
-    height: 90%;
-    transition: transform 0.5s;
-
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform-origin: left;
 }
 
-.paper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    perspective: 1500px;
-    justify-content: center;
-    align-items: center;
+.face-front,
+.face-back {
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 
-.front,
-.back {
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-    transition: transform 0.5s;
-    border-radius: 0.5em;
+.face-front {
+	box-shadow: inset 3px 0px 20px -7px black;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 
-.f1 {
-    background-color: transparent;
+.face-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateZ(-1px) rotateY(180deg);
+	box-shadow: inset -3px 1px 20px -7px black;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
-#p1,
-.front img {
-    width: 101%;
-    height: 100%;
-    margin-right: 0.2em;
-    border-radius: 0.5em;
-
+#portada {
+	background: url('../img/bookPortada.jpg');
 }
 
-.front {
-    z-index: 1;
-    backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+#portada-back {
+	background: url('../img/portadaBack.jpg');
 }
 
-.back {
-    z-index: 0;
-}
-
-.front-content,
-.back-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.back-content {
-    transform: rotateY(180deg)
-}
-
-/* ! Sayfa değiştirme efekti (Flip effect) */
-.flipped .front,
-.flipped .back {
-    transform: rotateY(-180deg);
-}
-
-button {
-    border: none;
-    background-color: transparent;
-    border-radius: 100%;
-    cursor: pointer;
-    margin: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 0.3em;
-}
-
-
-button:hover {
-    border: none;
-    background-color: lightgreen;
-    border-radius: 100%;
-    cursor: pointer;
-    margin: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 0em;
-    height: 2.9em;
-
+#portada,
+#portada-back {
+	background-size: 100% 100%;
 }
 
 
 
-/* ! Yeni sayfa eklendiğinde güncellenecek alan*/
-#p1 {
-    z-index: 4;
-
+.trnsf {
+	transform: translateX(80px);
 }
 
-#p2 {
-    z-index: 3;
+.trnsf-reset {
+	transform: translateX(0px);
 }
 
-#p2 {
-    z-index: 2;
+/* Responsive hale getirmek için*/
+
+@media screen and (max-width: 800px) {
+	p {
+		font-size: 12px;
+	}
 }
 
-#p4 {
-    z-index: 1;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
 }
 
-.Logo {
-    position: absolute;
-    width: 15%;
-    height: 15%;
-    right: 5%;
-    top: 5%;
-    opacity: 0.9;
+portada p {
+	margin-top: 10px;
+	font-size: 13px;
+	text-align: justify;
+}
+
+.container,
+.book-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background: #2d6f75;
+}
+
+.book-content {
+	width: 700px;
+	height: 800px;
+	position: relative;
+	perspective: 1000px;
+	margin-left: 10em;
+	transition: 1s;
+	border-radius: 0.5em;
+}
+
+.Magazin {
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform-origin: left;
+}
+
+.face-front,
+.face-back {
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.face-front {
+	box-shadow: inset 3px 0px 20px -7px black;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.face-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateZ(-1px) rotateY(180deg);
+	box-shadow: inset -3px 1px 20px -7px black;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#portada {
+	background: url('/İmg/background.jpg');
+}
+
+#portada-back {
+	background: url('/İmg/backgp.jpeg');
+}
+
+#portada,
+#portada-back {
+	background-size: 100% 100%;
 }
 
 
-::-webkit-scrollbar {
-    color: lightblue;
+
+.trnsf {
+	transform: translateX(80px);
 }
 
-::-webkit-scrollbar-thumb {
-    background: lightblue;
-    border-radius: 0.2em;
+.trnsf-reset {
+	transform: translateX(0px);
 }
 
-#b1 {
-    background-color: #323232;
-}
+/* Responsive hale getirmek için*/
 
-
-.b1i {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    left: 0%;
-
-}
-
-.b1p {
-    margin-top: 1em;
-}
-
-.b1pc {
-    color: goldenrod;
-    position: absolute;
-    right: 0%;
-    width: 60%;
-    height: 100%;
-    text-align: center;
-
-}
-
-.b1pc h1 {
-    border: none;
-    border-bottom: 3px solid lightblue;
-
-}
-
-#f2 {
-    background-color: #323232;
-}
-
-#f2i {
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    border-radius: 100%;
-    right: 2%;
-    top: 2%;
-    border: 10px solid black;
-}
-
-.f2title {
-    color: goldenrod;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-
-    width: 10em;
-    text-align: center;
-    border: none;
-    border-bottom: 3px solid lightblue;
-    margin-right: 5em;
-}
-
-#f2textc {
-    position: absolute;
-    width: 100%;
-    height: 57%;
-    bottom: 0.5%;
-    color: goldenrod;
-    border: none;
-    border-bottom: 3px solid lightblue;
-    overflow-y: scroll;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+@media screen and (max-width: 800px) {
+	p {
+		font-size: 12px;
+	}
 }
