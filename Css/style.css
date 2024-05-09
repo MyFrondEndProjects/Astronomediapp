@@ -50,12 +50,14 @@ portada p {
 	padding: 15px;
 	box-sizing: border-box;
 	overflow: hidden;
+	border-radius: 0.5em;
 }
 
 .face-front {
 	box-shadow: inset 3px 0px 20px -7px black;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
+	border-radius: 0.5em;
 }
 
 .face-back {
@@ -116,12 +118,15 @@ portada p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 0.5em;
+
 }
 
 .container {
 	width: 100%;
 	height: 100vh;
 	background: #2d6f75;
+	border-radius: 0.5em;
 }
 
 .book-content {
@@ -141,13 +146,14 @@ portada p {
 	transition: 1s;
 	transform-style: preserve-3d;
 	transform-origin: left;
+	border-radius: 0.5em;
 }
 
 .face-front,
 .face-back {
 	width: 100%;
 	height: 100%;
-	background: white;
+	background-color: black;
 	padding: 15px;
 	box-sizing: border-box;
 	overflow: hidden;
@@ -198,4 +204,78 @@ portada p {
 	p {
 		font-size: 12px;
 	}
+}
+
+.p1i {
+	position: absolute;
+	width: 52%;
+	height: 46%;
+	top: 2%;
+	left: 0%;
+	border-radius: 100%;
+}
+
+#trsf {
+	background-color: black;
+}
+
+.p1t1 {
+	margin-top: 1em;
+	position: absolute;
+	width: 46%;
+	right: 1.5%;
+	height: 50%;
+	color: goldenrod;
+	text-align: center;
+}
+
+.p1t2 {
+	position: absolute;
+	bottom: 12.5%;
+	right: 1%;
+	width: 98%;
+	height: 40%;
+	color: goldenrod;
+
+}
+
+.Previous {
+	position: absolute;
+	width: 10%;
+	height: 6%;
+	top: 0%;
+	left: 0%;
+	text-align: center;
+	background-color: white;
+	justify-content: center;
+	background-image: url("/İmg/Previousnew.png");
+	background-size: cover;
+}
+
+.p2i {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0%;
+	top: 0%;
+
+}
+
+
+
+.p2t1 {
+	position: absolute;
+	top: 55%;
+	left: 0%;
+	height: 50%;
+	width: 100%;
+	color: goldenrod;
+	text-align: center;
+}
+
+.p2pt {
+	position: absolute;
+	color: goldenrod;
+	top: 50%;
+	left: 11%;
 }
