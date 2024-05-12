@@ -167,6 +167,7 @@ portada p {
 	transform-style: preserve-3d;
 	transform-origin: left;
 	border-radius: 0.5em;
+	margin-top: 18em;
 }
 
 .face-front,
@@ -365,4 +366,19 @@ portada p {
 	background-color: lightgreen;
 	border-radius: 100%;
 
+}
+
+.İnfo {
+	background-color: black;
+	position: absolute;
+	top: 40%;
+	left: 34%;
+	width: 20em;
+	color: white;
+	text-align: center;
+	height: 3em;
+	padding-top: 2em;
+	opacity: 0.8;
+	border-radius: 0.2em;
+	box-shadow: 5px 5px 10px 10px lightgreen;
 }
