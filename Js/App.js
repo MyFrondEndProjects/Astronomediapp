@@ -23,7 +23,15 @@ const p2pt = document.querySelector(".p2pt");
 const p2t1 = document.querySelector(".p2t1");
 const p2bpt = document.querySelector(".p2bpt");
 const p2btitle = document.querySelector(".p2btitle");
-/*-------------------------*/
+const p3pt = document.querySelector(".p3pt");
+const p3t = document.querySelector(".p3t");
+const p3bt = document.querySelector(".p3bt");
+const p3bi = document.querySelector(".p3bi");
+const p3bp = document.querySelector(".p3bp");
+const p4ft = document.querySelector(".p4ft");
+const p4fimage = document.querySelector(".p4fimage");
+const p4fpt = document.querySelector(".p4fpt");
+/*------------------------------------------------------------------------------*/
 
 
 
@@ -142,11 +150,30 @@ const AstronomiHF = () => {
 		p2bpt.textContent += "Araştırmacılar, bu parlak galaksinin doğası hakkında daha fazla bilgi edinmek için yoğun bir şekilde çalışıyorlar. Hypernova patlamalarının evrende nasıl oluştuğu ve galaksi oluşumunu nasıl etkilediği gibi sorular, astronomi topluluğunda büyük bir ilgi uyandırıyor. Bu keşif, evrenin derinliklerindeki sırları anlamak için yapılan sonsuz bir arayışın sadece bir örneği olarak görülüyor ve gelecekte daha fazla benzeri olayın keşfedilmesine olanak sağlıyor. Gök bilimciler, uzayın sonsuz sırlarını çözmek ve evrenin gizemlerini açığa çıkarmak için çalışmalarını sürdürüyorlar.";
 
 
+		//Sayfa3 ön yüz 
+
+
+		p3pt.textContent = "Tabii, oyuk dünya teorisi, Dünya'nın iç kısmının boş olduğunu ve içinde büyük bir boşluk veya boş bir alanın bulunduğunu öne süren bir iddiadır. Bu teoriye göre, Dünya'nın içi, kabuğun altında geniş bir iç boşlukla doludur ve yaşamı destekleyen bir iç güneş veya iç ısı kaynağı bulunabilir. Oyuk dünya teorisini destekleyenler, bu iç boşluğun, Dünya'nın manyetik alanını açıklayabileceğini ve bazı doğal fenomenleri izah edebileceğini savunurlar. Ayrıca, bazı efsaneler ve mitolojik hikayelerde, iç dünya veya Agartha adı verilen gizemli bir yerden bahsedilir, bu da oyuk dünya teorisini destekleyenlerin argümanlarından biridir. Ancak, bilimsel kanıtlar ve gözlemler, Dünya'nın içinde geniş bir boşluğun bulunmadığını ve Dünya'nın yapısının standart bir şekilde kabul edilen modelde olduğunu göstermektedir. Jeolojik veriler ve Dünya'nın iç kısmını anlamak için yapılan derin sondajlar, Dünya'nın katı bir çekirdeğe ve mantoya sahip olduğunu doğrulamaktadır.";
+		p3pt.textContent += "Sonuç olarak, oyuk dünya teorisi genellikle bilimsel topluluk tarafından kabul görmeyen bir spekülasyon olarak görülür ve mevcut bilimsel kanıtlarla çelişmektedir.";
+		p3t.textContent = "Oyuk dünya teorisi";
+		p3pt.style.color = "#2d6f75";
+		p3t.style.color = "#2d6f75";
 
 
 
+		//Sayfa 3 Arka yüz 
+		p3bt.textContent = "Europa'da Potansiyel Bir Okyanusun İzleri Bulundu";
+		p3bi.src = "/İmg/Every\ Moon\ in\ Our\ Solar\ System\,\ Ranked.jpeg";
+		p3bp.textContent = "Jüpiter'in en büyük dört ayından biri olan Europa, uzun süredir bilim insanlarının dikkatini çeken bir hedef olmuştur.";
+		p3bp.textContent += "Europa'nın buz tabakalarının altında muhtemelen sıvı bir su okyanusu olabileceği düşünülmekteydi ve bu durum, gezegenin potansiyel olarak yaşam için uygun bir ortam sunabileceği fikrini doğurmuştu. Şimdi, son gözlemler ve analizler, Europa'nın yüzeyinde potansiyel bir okyanusun izlerini destekleyen güçlü kanıtlar bulunduğunu gösteriyor. Araştırmacılar, Galileo uzay aracı tarafından elde edilen verileri inceleyerek Europa'nın yüzeyini detaylı bir şekilde incelediler. Europa'nın yüzeyindeki buz kırıkları ve çatlakları, altında sıvı su bulunabileceğine dair güçlü kanıtlar sunmaktadır.";
+		p3bp.textContent += "Bu bulgular, Europa'nın potansiyel yaşam için uygun bir ortam sunabileceği fikrini daha da güçlendirmektedir. Sıvı suyun varlığı, organik bileşiklerin varlığı ve enerji kaynaklarının olası bulunması, Europa'nın derin okyanuslarında mikrobiyal yaşamın varlığına işaret edebilir. Bu keşif, gezegenimizin evrende yaşamın yaygınlığı konusundaki bakış açısını derinden etkileyebilir. Europa gibi uydular, uzay araştırmalarının odak noktaları haline gelmeye devam edecek ve gelecek keşifler, evrenimizde yaşamın potansiyel yayılımı hakkındaki anlayışımızı daha da genişletebilir. Ayrıca, yeni bulgular, Europa'nın yüzeyindeki buz tabakalarının altında sıvı su oluşumu için potansiyel olarak uygun koşulların bulunduğunu göstermektedir. Buz tabakalarının altındaki sıvı su, volkanik faaliyetler veya jeotermal ısı kaynakları gibi çeşitli mekanizmalarla oluşabilir. Bu durumda, Europa'nın derinliklerindeki okyanuslar, Dünya'nın okyanuslarında bulunan hidrotermal çatlak sistemlerine benzer ortamlara sahip olabilir. Araştırmacılar, Europa'nın potansiyel yaşam için uygun bir ortam sağlayıp sağlamadığını anlamak için gelecekte daha fazla gözlem ve keşif yapmayı planlıyorlar. Bu amaçla, Avrupa Uzay Ajansı (ESA) ve NASA gibi uzay ajansları, Europa'ya yönelik gelecek uzay misyonları için planlar yapmaktadır.";
 
 
+
+		//Sayfa 4 ön yüz 
+		p4fimage.src = "/İmg/How\ to\ Spot\ the\ North\ Star_\ 9\ Steps\ \(with\ Pictures\)\ -\ wikiHow.jpeg";
+		p4ft.textContent = "Gerçek Yıldızlar Gizleniyor mu?";
+		p4fpt.textContent = "Günümüzde, uzay keşiflerinin artmasıyla birlikte, uzaydaki gözlemlerden elde edilen fotoğraf ve veriler her zamankinden daha fazla ilgi çekiyor. Ancak, bazı komplo teorisyenleri, uzay ajanslarının bu görüntüleri manipüle ettiğini ve gerçek yıldızları gizlediğini iddia ediyorlar.Bu teoriye göre, uzay ajansları, gerçek uzay görüntülerini kamuoyundan saklayarak, uzaydaki gizli sırları ve varlıkları gizlemek için çalışıyorlar. Bazı komplo teorisyenlerine göre, bu manipülasyonların amacı, uzayda var olduğuna inanılan gizli teknolojileri veya hatta uzaylı varlıkları gizlemektir.Özellikle, Ay'ın çevresinde veya Mars'ın yüzeyinde çekilen fotoğrafların detaylı bir şekilde incelenmesi, bazıları tarafından düzenlemeler veya gerçekleri gizleme olarak yorumlanıyor. Bazı görüşlere göre, gerçek yıldızların resimlerden çıkarılması veya üzerinin kapatılmasıyla, uzayda bulunan gizli nesnelerin veya varlıkların daha kolay gizlenmesi sağlanıyor.Ancak, bilim insanları ve uzay ajansları, bu tür iddiaları kesin bir şekilde reddediyorlar ve uzaydaki görüntülerin doğruluğunu ve bütünlüğünü savunuyorlar. Uzay ajansları, uzaydaki gözlemlerin kamuoyuyla paylaşılmasının, bilimsel keşiflerin ve insanlığın evreni anlama çabalarının bir parçası olduğunu vurguluyorlar.Bu komplo teorisi, uzay hakkındaki bilgi ve algıları etkileyebilir ve kamuoyunda karışıklığa neden olabilir. Ancak, bilimsel kanıtlar ve güvenilir uzay ajansı kaynakları, uzaydaki gözlemlerin doğruluğunu ve şeffaflığını desteklemeye devam ediyor.";
 
 
 
@@ -258,10 +285,3 @@ const TF = () => {
 
 T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
-
-
-
-
-
-
-
