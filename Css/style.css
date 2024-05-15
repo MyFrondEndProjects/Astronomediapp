@@ -5,6 +5,15 @@
 
 }
 
+::-webkit-scrollbar {
+
+	background-color: #2d6f75;
+}
+
+html ::-webkit-scrollbar-track {
+	color: white;
+}
+
 body {
 	background-color: black;
 	opacity: 0.9;
@@ -141,14 +150,13 @@ portada p {
 	width: 95%;
 	height: 95%;
 	left: 2.5%;
+	overflow-x: scroll;
+	overflow-y: scroll;
 }
 
-::-webkit-scrollbar-button {
-	color: lightblue;
-}
 
-::-webkit-scrollbar {
-	background-color: black;
+::-webkit-scrollbar-thumb {
+	color: white;
 }
 
 .book-content {
@@ -297,25 +305,10 @@ portada p {
 }
 
 
-.footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 6%;
-	background-color: black;
-	color: lightgreen;
-	text-align: center;
-	display: flex;
-	font-size: 1.5em;
-	padding-top: 1em;
-
-}
-
-
 .bar {
 	position: absolute;
 	left: 14%;
-	top: 0%;
+	top: 5%;
 	width: 85em;
 	height: 5em;
 	border-radius: 0.5em;
@@ -337,58 +330,43 @@ portada p {
 
 .bar ul li a {
 	text-decoration: none;
-	color: lightgreen;
+	color: lightblue;
 }
 
 .prevbtn {
 	position: absolute;
-	left: 10%;
+	left: 0.5%;
 	padding: 1em;
-	top: 13%;
-	background-color: lightgreen;
-	border-radius: 100%;
+	top: 0.5%;
+	background-color: white;
+	color: #2d6f75;
+	box-shadow: 5px 5px 5px 5px black;
 
 
 }
-
-.İnfo {
-	background-color: black;
-	position: absolute;
-	top: 40%;
-	left: 34%;
-	width: 20em;
-	color: white;
-	text-align: center;
-	height: 3em;
-	padding-top: 2em;
-	opacity: 0.8;
-	border-radius: 0.2em;
-	box-shadow: 5px 5px 10px 10px lightgreen;
-}
-
 
 .Home {
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	width: 80%;
-	height: 80%;
+	height: 50%;
 	left: 10%;
 	border: 10px solid black;
 	box-shadow: 30px 30px 10px 5px black;
 	border-radius: 0.5em;
-	background-image: url(/İmg/_\ \(4\).jpeg);
-
+	background-image: url(/İmg/newbjpeg2.jpg);
 }
 
 .raf1 {
 	position: absolute;
 	width: 15em;
-	height: 17em;
+	height: 23em;
 	background-color: black;
-	left: 16.5%;
+	left: 5%;
 	border-radius: 0.5em;
-	top: 2%;
+	top: 1%;
 	cursor: pointer;
+
 }
 
 .raf2 {
@@ -456,7 +434,6 @@ portada p {
 	top: 10%;
 	width: 56%;
 	height: 78%;
-	border: 5px solid #2d6f75;
 }
 
 .p3bi {
@@ -490,7 +467,6 @@ portada p {
 	height: 30%;
 	position: absolute;
 	top: 0%;
-	background-color: yellow;
 
 }
 
@@ -500,4 +476,111 @@ portada p {
 
 .p4fpt {
 	color: goldenrod;
+}
+
+.icon {
+	position: absolute;
+	left: 1%;
+	width: 3em;
+	height: 3em;
+}
+
+.infocontainer {
+	width: 5em;
+	height: 29.5em;
+	position: absolute;
+	top: 15%;
+	right: 4%;
+	background-color: white;
+	text-align: center;
+	color: lightblue;
+	opacity: 0.8;
+	border-radius: 0.5em;
+	border: 5px solid black;
+	box-shadow: 10px 20px 10px 2px black;
+}
+
+
+
+footer {
+	position: fixed;
+	bottom: 2%;
+	left: 2.5%;
+	width: 95%;
+	height: 2.7em;
+	border: none;
+	border-bottom-left-radius: 0.2em;
+	border-bottom-right-radius: 0.2em;
+	background-color: white;
+	text-align: center;
+	padding-top: 1em;
+}
+
+footer span {
+	margin-left: 3em;
+	font-size: 1.5em;
+
+}
+
+footer span a {
+
+
+	padding: 0.2em;
+	text-decoration: none;
+	color: #2d6f75;
+	box-shadow: 25px 8px 20px 2px #2d6f75;
+	border-radius: 0.2em;
+}
+
+.haberalani1 {
+	position: absolute;
+	width: 50%;
+	left: 2%;
+	height: 15em;
+	top: 100%;
+	background-color: white;
+	border-radius: 0.5em;
+	box-shadow: 25px 8px 20px 2px black;
+	background-image: url(/İmg/_\ \(1\).jpeg);
+	background-size: cover;
+	text-align: center;
+	text-align: start;
+	color: white;
+
+}
+
+.haberalani2 {
+	position: absolute;
+	width: 50%;
+	right: 2%;
+	height: 15em;
+	top: 130%;
+	background-color: white;
+	border-radius: 0.5em;
+	box-shadow: 25px 8px 20px 2px black;
+	background-image: url(/İmg/_\ \(1\).jpeg);
+	background-size: cover;
+	text-align: center;
+	text-align: start;
+	color: white;
+
+}
+
+.haberalani1 p,
+.haberalani2 p {
+	margin-top: 1em;
+	font-size: 1.4em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#Hb1,
+#Hb2 {
+	padding: 1em;
+	position: absolute;
+	bottom: 3%;
+	right: 1%;
+	background-color: #2d6f75;
+	color: white;
+	border-radius: 0.5em;
+
 }
