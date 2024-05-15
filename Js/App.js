@@ -1,4 +1,5 @@
-/*Elementleri tanımlıyorum*/
+
+//Elementleri tanımlıyorum
 const container = document.querySelector("#container");
 const body = document.getElementsByTagName("body");
 const bookcontent = document.querySelector(".book-content");
@@ -8,7 +9,6 @@ const bar = document.querySelector(".bar");
 const AstronomiH = document.querySelector("#AstronomiH");
 const T = document.querySelector("#T");
 const Home = document.querySelector(".Home");
-const prevbtn = document.querySelector(".prevbtn");
 let front = document.querySelector('.face-front');
 let back = document.querySelector('.face-back');
 let flip = document.querySelector('.book-content');
@@ -30,16 +30,26 @@ const p3bp = document.querySelector(".p3bp");
 const p4ft = document.querySelector(".p4ft");
 const p4fimage = document.querySelector(".p4fimage");
 const p4fpt = document.querySelector(".p4fpt");
+const infocontainer = document.querySelector(".infocontainer");
+const Homebutton = document.querySelector("#Homebutton");
+const Appfooter = document.querySelector("#Appfooter");
+const haberalani = document.querySelector(".haberalani");
 /*------------------------------------------------------------------------------*/
 
 
-
+const HomeBF = () => {
+	container.innerHTML = "";
+	container.appendChild(Home);
+	container.appendChild(bar);
+	container.appendChild(infocontainer);
+	container.appendChild(haberalani);
+	container.appendChild(Appfooter);
+}
 
 
 
 
 bookcontent.remove(); //Book content silindi
-prevbtn.remove(); //prevbuton silindi
 
 
 
@@ -62,7 +72,7 @@ let rafs = [raf1, raf2, raf3, raf4];
 
 
 
-
+container.appendChild(infocontainer);
 
 
 //Astronomihaberleri 
@@ -76,6 +86,7 @@ const AstronomiHF = () => {
 
 	/*Raflar ekleniyor ekleniyor.*/
 	Home.appendChild(raf1);
+
 	/*---------------------------------*/
 
 
@@ -84,6 +95,7 @@ const AstronomiHF = () => {
 	raf1.style.backgroundImage = "url('/İmg/Ekran\ Görüntüsü\ -\ 2024-05-10\ 11-27-21.png')";
 	raf1.style.backgroundSize = "cover";
 	raf1.style.backgroundPositionY = "center";
+	raf1.style.backgroundPositionX = "0";
 	/*---------------------------------------------------------------------------------------*/
 
 
@@ -94,6 +106,12 @@ const AstronomiHF = () => {
 
 	//Raf1 deki dergi açıldı
 	const raf1o = () => {
+
+
+		//İnfocontainer silindi
+		infocontainer.remove();
+		/*------------------------------*/
+
 
 
 
@@ -173,7 +191,6 @@ const AstronomiHF = () => {
 
 		/*Eklenen elementler*/
 		container.appendChild(bookcontent);
-		container.appendChild(prevbtn);
 		/*-----------------------------------*/
 
 
@@ -260,9 +277,12 @@ const TF = () => {
 
 
 	/*Raflara içerik ekleniyor*/
-	raf1.style.backgroundImage = "url('/İmg/backgp.jpeg')";;
+	raf1.style.backgroundImage = "url('/İmg/backimg.jpg')";;
 	raf1.style.backgroundSize = "cover";
-	raf1.style.backgroundPositionY = "center";
+	raf1.style.backgroundPositionX = "center";
+	raf1.style.backgroundRepeat = "no-repeat";
+	raf1.style.backgroundPositionX = "-5em";
+
 	/*---------------------------------------------------------------------------------------*/
 
 
@@ -275,12 +295,21 @@ const TF = () => {
 	const raf1o = () => {
 
 
+		//İnfocontainer silindi
+		infocontainer.remove();
+		/*------------------------------*/
+
+
+
 
 
 		/*Raf 1 deki derginin içerikleri ekleniyor*/
 
 		//Sayfa 1 ön yüz (Kapak)
-		portada.style.backgroundImage = "url('/İmg/backgp.jpeg')";
+		portada.style.backgroundImage = "url('/İmg/backimg.jpg')";
+
+
+
 
 
 		//Sayfa1 arka yüz
@@ -347,7 +376,6 @@ const TF = () => {
 
 		/*Eklenen elementler*/
 		container.appendChild(bookcontent);
-		container.appendChild(prevbtn);
 		/*-----------------------------------*/
 
 
@@ -400,28 +428,18 @@ const TF = () => {
 
 	}
 
-
-
+	Homebutton.addEventListener("click", HomeBF);
 	raf1.addEventListener("click", raf1o);
 
 	/*------------------------------------------------------------------*/
 }
 
 
-/*Home a dönüş butonunun fonksiyonu*/
-const prevF = () => {
-	function sayfaYenile() {
-		location.reload();
-	}
-	container.appendChild(bar);
-	container.appendChild(Home);
-	sayfaYenile();
-
-}
-
-
-prevbtn.addEventListener("click", prevF);
+Homebutton.addEventListener("click", HomeBF);
 T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
+
+
+
 
 
