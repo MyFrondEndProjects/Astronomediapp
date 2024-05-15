@@ -39,6 +39,7 @@ const haberalani = document.querySelector(".haberalani");
 
 const HomeBF = () => {
 	container.innerHTML = "";
+
 	container.appendChild(Home);
 	container.appendChild(bar);
 	container.appendChild(infocontainer);
@@ -110,6 +111,7 @@ const AstronomiHF = () => {
 
 		//İnfocontainer silindi
 		infocontainer.remove();
+		haberalani.remove();
 		/*------------------------------*/
 
 
@@ -297,6 +299,7 @@ const TF = () => {
 
 		//İnfocontainer silindi
 		infocontainer.remove();
+		haberalani.remove();
 		/*------------------------------*/
 
 
@@ -438,8 +441,5 @@ const TF = () => {
 Homebutton.addEventListener("click", HomeBF);
 T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
-
-
-
 
 
