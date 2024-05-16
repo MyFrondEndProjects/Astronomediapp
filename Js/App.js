@@ -1,4 +1,3 @@
-
 //Elementleri tanımlıyorum
 const container = document.querySelector("#container");
 const body = document.getElementsByTagName("body");
@@ -34,16 +33,20 @@ const infocontainer = document.querySelector(".infocontainer");
 const Homebutton = document.querySelector("#Homebutton");
 const Appfooter = document.querySelector("#Appfooter");
 const haberalani = document.querySelector(".haberalani");
+const Livecontentcontainer = document.querySelector(".Livecontentcontainer");
 /*------------------------------------------------------------------------------*/
+
+
+
 
 
 const HomeBF = () => {
 	container.innerHTML = "";
-
 	container.appendChild(Home);
 	container.appendChild(bar);
 	container.appendChild(infocontainer);
 	container.appendChild(haberalani);
+	container.appendChild(Livecontentcontainer);
 	container.appendChild(Appfooter);
 }
 
@@ -153,8 +156,6 @@ const AstronomiHF = () => {
 
 
 		//Sayfa3 ön yüz 
-
-
 		p3pt.textContent = "Tabii, oyuk dünya teorisi, Dünya'nın iç kısmının boş olduğunu ve içinde büyük bir boşluk veya boş bir alanın bulunduğunu öne süren bir iddiadır. Bu teoriye göre, Dünya'nın içi, kabuğun altında geniş bir iç boşlukla doludur ve yaşamı destekleyen bir iç güneş veya iç ısı kaynağı bulunabilir. Oyuk dünya teorisini destekleyenler, bu iç boşluğun, Dünya'nın manyetik alanını açıklayabileceğini ve bazı doğal fenomenleri izah edebileceğini savunurlar. Ayrıca, bazı efsaneler ve mitolojik hikayelerde, iç dünya veya Agartha adı verilen gizemli bir yerden bahsedilir, bu da oyuk dünya teorisini destekleyenlerin argümanlarından biridir. Ancak, bilimsel kanıtlar ve gözlemler, Dünya'nın içinde geniş bir boşluğun bulunmadığını ve Dünya'nın yapısının standart bir şekilde kabul edilen modelde olduğunu göstermektedir. Jeolojik veriler ve Dünya'nın iç kısmını anlamak için yapılan derin sondajlar, Dünya'nın katı bir çekirdeğe ve mantoya sahip olduğunu doğrulamaktadır.";
 		p3pt.textContent += "Sonuç olarak, oyuk dünya teorisi genellikle bilimsel topluluk tarafından kabul görmeyen bir spekülasyon olarak görülür ve mevcut bilimsel kanıtlarla çelişmektedir.";
 		p3t.textContent = "Oyuk dünya teorisi";
@@ -316,7 +317,6 @@ const TF = () => {
 
 
 		//Sayfa1 arka yüz
-
 		Pagetitle1.textContent = "3 Cisim problemi";
 		p1p.textContent = "Bugün Netflix dizisyle birlikte tekrar gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz. 3 cisim problemi çok geniş kapsamda içinde gerçek bilimsel hala çözülememiş verileri de taşısa komplo teorilerine de konu olmuştur. 3 cisim problemi içinde";
 		p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde, her bir cismin hareketini hesaplamayı amaçlar.";
@@ -343,8 +343,6 @@ const TF = () => {
 
 
 		//Sayfa3 ön yüz 
-
-
 		p3pt.textContent = "Tabii, oyuk dünya teorisi, Dünya'nın iç kısmının boş olduğunu ve içinde büyük bir boşluk veya boş bir alanın bulunduğunu öne süren bir iddiadır. Bu teoriye göre, Dünya'nın içi, kabuğun altında geniş bir iç boşlukla doludur ve yaşamı destekleyen bir iç güneş veya iç ısı kaynağı bulunabilir. Oyuk dünya teorisini destekleyenler, bu iç boşluğun, Dünya'nın manyetik alanını açıklayabileceğini ve bazı doğal fenomenleri izah edebileceğini savunurlar. Ayrıca, bazı efsaneler ve mitolojik hikayelerde, iç dünya veya Agartha adı verilen gizemli bir yerden bahsedilir, bu da oyuk dünya teorisini destekleyenlerin argümanlarından biridir. Ancak, bilimsel kanıtlar ve gözlemler, Dünya'nın içinde geniş bir boşluğun bulunmadığını ve Dünya'nın yapısının standart bir şekilde kabul edilen modelde olduğunu göstermektedir. Jeolojik veriler ve Dünya'nın iç kısmını anlamak için yapılan derin sondajlar, Dünya'nın katı bir çekirdeğe ve mantoya sahip olduğunu doğrulamaktadır.";
 		p3pt.textContent += "Sonuç olarak, oyuk dünya teorisi genellikle bilimsel topluluk tarafından kabul görmeyen bir spekülasyon olarak görülür ve mevcut bilimsel kanıtlarla çelişmektedir.";
 		p3t.textContent = "Oyuk dünya teorisi";
@@ -438,8 +436,11 @@ const TF = () => {
 }
 
 
+/*Slider Ekleme alanı */
+
+/*--------------------------------------------------------------------------------*/
+
+
 Homebutton.addEventListener("click", HomeBF);
 T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
-
-
