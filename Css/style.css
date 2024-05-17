@@ -6,13 +6,7 @@
 }
 
 ::-webkit-scrollbar {
-
-	background-color: #2d6f75;
-	border-radius: 0.2em;
-}
-
-html ::-webkit-scrollbar-track {
-	color: white;
+	background-color: white;
 }
 
 body {
@@ -507,9 +501,9 @@ portada p {
 
 footer {
 	position: fixed;
-	bottom: 2%;
+	bottom: 1.7%;
 	left: 2.5%;
-	width: 95%;
+	width: 94.2%;
 	height: 2.7em;
 	border: none;
 	border-bottom-left-radius: 0.2em;
@@ -517,6 +511,7 @@ footer {
 	background-color: white;
 	text-align: center;
 	padding-top: 1em;
+
 }
 
 footer span {
@@ -617,6 +612,7 @@ footer span a {
 .Livecontent iframe {
 	width: 100%;
 	height: 100%;
+
 }
 
 .Livecontenttitle {
@@ -624,8 +620,8 @@ footer span a {
 	position: absolute;
 	top: -12%;
 	left: 0%;
-	width: 39em;
-	height: 2em;
+	width: 40em;
+	height: 3em;
 	background-color: black;
 	box-shadow: 30px 30px 10px 5px black;
 	border-radius: 0.2em;
@@ -642,4 +638,106 @@ footer span a {
 	height: 2em;
 	color: #2d6f75;
 	opacity: 0.8;
+	margin-left: 1em;
+}
+
+.videocontent {
+	position: absolute;
+	top: 0em;
+	left: 3em;
+	border-radius: 0.2em;
+	width: 50em;
+	height: 45em;
+
+
+}
+
+.videotitle {
+	margin-left: 0.6em;
+	color: #2d6f75;
+}
+
+.videolist {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	width: 30%;
+	height: 90%;
+	overflow-y: scroll;
+
+
+}
+
+.videocontenttitle {
+	position: absolute;
+	color: #2d6f75;
+	margin-left: 7em;
+	margin-top: 1em;
+
+}
+
+.videolist ul {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+}
+
+.videolist ul a {
+	text-decoration: none;
+
+}
+
+.videolist ul a li {
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 20%;
+	margin-top: 1.5em;
+
+
+}
+
+.videolist ul a img {
+	width: 8em;
+	margin-bottom: 100%;
+	height: 100%;
+}
+
+.Astronomediatv {
+	position: absolute;
+	left: 2%;
+	top: 7.9%;
+	width: 90%;
+	height: 80%;
+	border-radius: 0.2em;
+
+}
+
+.theme {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	width: 9em;
+	height: 4em;
+	background-color: black;
+	border-radius: 0.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	box-shadow: 5px 5px 20px 5px black;
+}
+
+.darkthemebutton {
+	padding: 0.8em;
+	border-radius: 0.5em;
+	background-color: white;
+	color: black;
+}
+
+.lightthemebutton {
+	padding: 0.8em;
+	border-radius: 0.5em;
+	background-color: white;
+	color: goldenrod;
 }
