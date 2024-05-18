@@ -6,7 +6,8 @@
 }
 
 ::-webkit-scrollbar {
-	background-color: white;
+	background-color: transparent;
+	border-radius: 0.5em;
 }
 
 body {
@@ -501,9 +502,9 @@ portada p {
 
 footer {
 	position: fixed;
-	bottom: 1.7%;
+	bottom: 0%;
 	left: 2.5%;
-	width: 94.2%;
+	width: 95%;
 	height: 2.7em;
 	border: none;
 	border-bottom-left-radius: 0.2em;
@@ -589,155 +590,104 @@ footer span a {
 	top: 16%;
 }
 
-.Livecontentcontainer {
-	position: absolute;
-	top: 200%;
-	width: 70%;
-	height: 45em;
-	background-color: black;
-	box-shadow: 30px 30px 10px 5px black;
-	border-radius: 0.5em;
-	left: 15%;
-}
-
-.Livecontent {
-	margin-top: 0.5em;
-	margin-left: 1.3em;
-	width: 95%;
-	height: 95%;
-	border: 10px solid #2d6f75;
-	overflow: hidden;
-}
-
-.Livecontent iframe {
-	width: 100%;
-	height: 100%;
-
-}
-
-.Livecontenttitle {
-
-	position: absolute;
-	top: -12%;
-	left: 0%;
-	width: 40em;
-	height: 3em;
-	background-color: black;
-	box-shadow: 30px 30px 10px 5px black;
-	border-radius: 0.2em;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #2d6f75;
-
-}
-
-.Livecontenttitle img {
-	width: 2em;
-	height: 2em;
-	color: #2d6f75;
-	opacity: 0.8;
-	margin-left: 1em;
-}
-
-.videocontent {
-	position: absolute;
-	top: 0em;
-	left: 3em;
-	border-radius: 0.2em;
-	width: 50em;
-	height: 45em;
-
-
-}
-
-.videotitle {
-	margin-left: 0.6em;
-	color: #2d6f75;
-}
-
-.videolist {
-	position: absolute;
-	right: 0%;
-	top: 0%;
-	width: 30%;
-	height: 90%;
-	overflow-y: scroll;
-
-
-}
-
-.videocontenttitle {
-	position: absolute;
-	color: #2d6f75;
-	margin-left: 7em;
-	margin-top: 1em;
-
-}
-
-.videolist ul {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-
-}
-
-.videolist ul a {
-	text-decoration: none;
-
-}
-
-.videolist ul a li {
-	flex-wrap: nowrap;
-	width: 100%;
-	height: 20%;
-	margin-top: 1.5em;
-
-
-}
-
-.videolist ul a img {
-	width: 8em;
-	margin-bottom: 100%;
-	height: 100%;
-}
-
-.Astronomediatv {
-	position: absolute;
-	left: 2%;
-	top: 7.9%;
-	width: 90%;
-	height: 80%;
-	border-radius: 0.2em;
-
-}
-
 .theme {
 	position: absolute;
 	top: 5%;
 	right: 5%;
 	width: 9em;
 	height: 4em;
-	background-color: black;
 	border-radius: 0.5em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: white;
-	box-shadow: 5px 5px 20px 5px black;
+
 }
 
 .darkthemebutton {
 	padding: 0.8em;
 	border-radius: 0.5em;
-	background-color: white;
-	color: black;
+	background-color: black;
+	color: white;
+	box-shadow: 5px 5px 20px 5px black;
 }
 
 .lightthemebutton {
 	padding: 0.8em;
 	border-radius: 0.5em;
 	background-color: white;
+	border: 5px solid goldenrod;
 	color: goldenrod;
+	box-shadow: 5px 5px 20px 5px goldenrod;
+}
+
+.Astronomediatvvideocontainer {
+
+	top: 9%;
+	left: 0%;
+	width: 110em;
+	height: 50em;
+	background-color: #2d6f75;
+	display: flex;
+	flex-wrap: wrap;
+	overflow-y: scroll;
+	border-radius: 0.5em;
+	overflow-x: hidden;
+
+}
+
+.lists {
+	flex-wrap: wrap;
+	display: inline-flex;
+	overflow: scroll;
+	background-color: red;
+}
+
+.list {
+	text-decoration: none;
+	color: white;
+}
+
+.list li {
+	width: 20em;
+	height: 15em;
+	background-color: #28282B;
+	border-radius: 0.5em;
+	margin-left: 1em;
+	list-style: none;
+	margin-top: 2em;
+}
+
+.list li img {
+	border-radius: 0.5em;
+	width: 20em;
+	height: 10em;
+	margin-bottom: 0.5em;
+}
+
+.videocrean {
+	position: absolute;
+	top: 12%;
+	left: 5%;
+	width: 90%;
+	height: 80%;
+	border-radius: 0.5em;
+	box-shadow: 30px 30px 10px 5px #28282B;
+	background-color: #28282B;
+}
+
+.screan {
+	position: absolute;
+	top: 2%;
+	left: 1%;
+	width: 98%;
+	height: 89%;
+	background-color: red;
+}
+
+.videotitle {
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+	color: white;
 }
