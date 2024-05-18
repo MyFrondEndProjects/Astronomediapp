@@ -34,7 +34,6 @@ const infocontainer = document.querySelector(".infocontainer");
 const Homebutton = document.querySelector("#Homebutton");
 const Appfooter = document.querySelector("#Appfooter");
 const haberalani = document.querySelector(".haberalani");
-const Livecontentcontainer = document.querySelector(".Livecontentcontainer");
 const darkthemebutton = document.querySelector(".darkthemebutton");
 const theme = document.querySelector(".theme");
 const lightthemebutton = document.querySelector(".lightthemebutton");
@@ -43,28 +42,37 @@ const Dunya2 = document.querySelector(".Dunya2");
 const galaksi = document.querySelector(".Galaksi");
 const animasyonvideosu = document.querySelector(".Animasyon");
 const Meteor = document.querySelector(".Meteor");
-const Astronomediatv = document.querySelector(".Astronomediatv");
+const Astronomediatvbutton = document.querySelector("#Astronomediatvbutton");
+const Astronomediatvvideocontent = document.querySelector(".Astronomediatvvideocontent");
+const Astronomediatvvideocontainer = document.querySelector(".Astronomediatvvideocontainer");
+const videobox = document.querySelector(".videobox");
+const videoclick = document.querySelector(".videoclick");
+const videolar = document.querySelector(".videolar");
+const ull = document.querySelector(".ull");
+const list = document.querySelector(".lists");
 /*------------------------------------------------------------------------------*/
 
 
+let videos = list.getElementsByTagName("a");
 
 
 
 const HomeBF = () => {
 	container.innerHTML = "";
+	Astronomediatvvideocontent.remove();
 	container.appendChild(Home);
 	container.appendChild(bar);
 	container.appendChild(infocontainer);
 	container.appendChild(haberalani);
-	container.appendChild(Livecontentcontainer);
-	container.appendChild(Appfooter);
+
+
 }
 
 
 
 
 bookcontent.remove(); //Book content silindi
-
+Astronomediatvvideocontent.remove(); // AstronomediaTV sayfası gitti
 
 
 /*Raflar tanımlandı*/
@@ -125,7 +133,6 @@ const AstronomiHF = () => {
 		//İnfocontainer silindi
 		infocontainer.remove();
 		haberalani.remove();
-		Livecontentcontainer.remove();
 		/*------------------------------*/
 
 
@@ -312,7 +319,6 @@ const TF = () => {
 		//İnfocontainer silindi
 		infocontainer.remove();
 		haberalani.remove();
-		Livecontentcontainer.remove();
 		/*------------------------------*/
 
 
@@ -453,7 +459,8 @@ lightthemebutton.remove();
 const karanlıktema = () => {
 	container.style.backgroundColor = "#28282B";
 	Appfooter.style.backgroundColor = "#28282B";
-	container.style.backgroundImage = "url('İmg/sky.png)";
+	Astronomediatvvideocontainer.style.backgroundColor = "#28282B";
+
 	darkthemebutton.remove();
 	theme.appendChild(lightthemebutton);
 
@@ -463,45 +470,28 @@ const Aydınlıktema = () => {
 	lightthemebutton.remove();
 	theme.appendChild(darkthemebutton);
 	container.style.backgroundColor = "#2d6f75";
-	Appfooter.style.backgroundColor = "White";
-	container.style.backgroundImage = "";
-}
 
+	Appfooter.style.backgroundColor = "White";
+	Astronomediatvvideocontainer.style.backgroundColor = "#2d6f75";
+	container.style.backgroundImage = "";
+
+}
 /*-------------------------------------------------------*/
 
 
 
 
+
+
+
+
 /*Astronomedia TV içerik günceleme alanı */
-let astronomediatvvideos = [Dunya1, Dunya2, galaksi, animasyonvideosu, Meteor];
 
-for (let i = 0; i < astronomediatvvideos.length; i++) {
+const AstronomediatvbuttonF = () => {
+	container.innerHTML = "";
+	infocontainer.remove();
+	container.appendChild(Astronomediatvvideocontent);
 
-
-	const Videoadd = () => {
-		if (astronomediatvvideos[i] == Dunya1) {
-			Astronomediatv.src = "Video/Dunya1.mp4";
-			document.querySelector(".videotitle").textContent = "Dunya videosu 1";
-		}
-		if (astronomediatvvideos[i] == Dunya2) {
-			Astronomediatv.src = "Video/Dunya2.mp4";
-			document.querySelector(".videotitle").textContent = "Dunya videosu 2";
-		}
-		if (astronomediatvvideos[i] == Meteor) {
-			Astronomediatv.src = "Video/Meteor.mp4";
-			document.querySelector(".videotitle").textContent = "Meteor";
-		}
-		if (astronomediatvvideos[i] == animasyonvideosu) {
-			Astronomediatv.src = "Video/Animasyon.mp4";
-			document.querySelector(".videotitle").textContent = "Animasyon";
-		}
-		if (astronomediatvvideos[i] == galaksi) {
-			Astronomediatv.src = "Video/Galaksi.mp4";
-			document.querySelector(".videotitle").textContent = "Galaksi";
-		}
-	}
-
-	astronomediatvvideos[i].addEventListener("click", Videoadd);
 }
 /*--------------------------------------------------------------------------------------------*/
 
@@ -510,16 +500,13 @@ for (let i = 0; i < astronomediatvvideos.length; i++) {
 
 
 
-
-
-
-
-
+Astronomediatvbutton.addEventListener("click", AstronomediatvbuttonF);
 darkthemebutton.addEventListener("click", karanlıktema);
 lightthemebutton.addEventListener("click", Aydınlıktema);
 Homebutton.addEventListener("click", HomeBF);
 T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
+
 
 
 
