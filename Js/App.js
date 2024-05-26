@@ -1,50 +1,86 @@
+
+//Elementleri tanımlıyorum
+const container = document.querySelector("#container");
+const body = document.getElementsByTagName("body");
+const bookcontent = document.querySelector(".book-content");
+const portada = document.querySelector(".face-front");
+const Ul = document.querySelector(".Ul");
+const bar = document.querySelector(".bar");
+const AstronomiH = document.querySelector("#AstronomiH");
+const T = document.querySelector("#T");
+const Home = document.querySelector(".Home");
+let front = document.querySelector('.face-front');
+let back = document.querySelector('.face-back');
+let flip = document.querySelector('.book-content');
+let uno = document.querySelectorAll('.Magazin');
+const Pagetitle1 = document.querySelector(".Pagetitle1");
+const p1p = document.querySelector(".p1p");
+const p1p2 = document.querySelector(".p1p2");
+const p1i = document.querySelector(".p1i")
+const p2i = document.querySelector(".p2i");
+const p2pt = document.querySelector(".p2pt");
+const p2t1 = document.querySelector(".p2t1");
+const p2bpt = document.querySelector(".p2bpt");
+const p2btitle = document.querySelector(".p2btitle");
+const p3pt = document.querySelector(".p3pt");
+const p3t = document.querySelector(".p3t");
+const p3bt = document.querySelector(".p3bt");
+const p3bi = document.querySelector(".p3bi");
 const p3bp = document.querySelector(".p3bp");
 const p4ft = document.querySelector(".p4ft");
 const p4fimage = document.querySelector(".p4fimage");
 const p4fpt = document.querySelector(".p4fpt");
-const infocontainer = document.querySelector(".infocontainer");
 const Homebutton = document.querySelector("#Homebutton");
 const Appfooter = document.querySelector("#Appfooter");
 const haberalani = document.querySelector(".haberalani");
 const darkthemebutton = document.querySelector(".darkthemebutton");
 const theme = document.querySelector(".theme");
 const lightthemebutton = document.querySelector(".lightthemebutton");
-const Dunya1 = document.querySelector(".Dunya1");
-const Dunya2 = document.querySelector(".Dunya2");
-const galaksi = document.querySelector(".Galaksi");
-const animasyonvideosu = document.querySelector(".Animasyon");
-const Meteor = document.querySelector(".Meteor");
-const Astronomediatvbutton = document.querySelector("#Astronomediatvbutton");
-const Astronomediatvvideocontent = document.querySelector(".Astronomediatvvideocontent");
-const Astronomediatvvideocontainer = document.querySelector(".Astronomediatvvideocontainer");
-const videobox = document.querySelector(".videobox");
-const videoclick = document.querySelector(".videoclick");
-const videolar = document.querySelector(".videolar");
-const ull = document.querySelector(".ull");
-const list = document.querySelector(".lists");
+const Habera1p=document.querySelector(".Habera1p");
+const haberalani1=document.querySelector(".haberalani1");
+const haberalani2=document.querySelector(".haberalani2");
+const Habera2p=document.querySelector(".Habera2p");
+const gundempanelclistli=document.querySelectorAll(".gundempanelclistli");
+const newslist = document.querySelectorAll('.gundempanelclistli');
+const gundempanelcimg=document.querySelector(".gundempanelcimg");
 /*------------------------------------------------------------------------------*/
 
 
-let videos = list.getElementsByTagName("a");
+
+
+
+
+// Haber alanları icerik güncelleme alanı 
+
+//Haberalanı1 
+haberalani1.style.backgroundImage="url('/İmg/sun-11582_640.jpg')";
+Habera1p.textContent="Bilim insanlarının Güneş'te şaşırtıcı bir gelişme gözlemlediği belirtildi: Güneş'in büyük bir parçası yüzeyinden koparak Kuzey Kutbu çevresinde kasırga benzeri bir girdap oluşturdu. Geçen hafta gözlemlenen bu olayın Dünya üzerindeki olası etkisi araştırılıyor.";
+
+
+
+
+//Haberalanı2
+haberalani2.style.backgroundImage="url('/İmg/planet-earth-3686253_640.jpg')";
+Habera2p.textContent="Güneş Sistemi'nde Mars ile Jüpiter arasındaki asteroit kuşağında daha önce eşine rastlanmamış, birbirlerinin yörüngesinde dönen iki gök cismi keşfedildi. Almanya'daki Max Planck Enstitüsünden bilim adamlarının Hubble Uzay Teleskobu yardımıyla yaptığı keşifle ilgili ayrıntılar Nature dergisinde yayımlandı.";
+//------------------------------------------------------//
+
 
 
 
 const HomeBF = () => {
 	container.innerHTML = "";
-	Astronomediatvvideocontent.remove();
 	container.appendChild(Home);
 	container.appendChild(bar);
-	container.appendChild(infocontainer);
 	container.appendChild(haberalani);
-
-
+	container.appendChild(Appfooter);
+	container.appendChild(theme);
 }
 
 
 
 
 bookcontent.remove(); //Book content silindi
-Astronomediatvvideocontent.remove(); // AstronomediaTV sayfası gitti
+
 
 
 /*Raflar tanımlandı*/
@@ -66,7 +102,6 @@ let rafs = [raf1, raf2, raf3, raf4];
 
 
 
-container.appendChild(infocontainer);
 
 
 //Astronomihaberleri 
@@ -103,7 +138,6 @@ const AstronomiHF = () => {
 
 
 		//İnfocontainer silindi
-		infocontainer.remove();
 		haberalani.remove();
 		/*------------------------------*/
 
@@ -121,18 +155,18 @@ const AstronomiHF = () => {
 		//Sayfa1 arka yüz
 		portada.style.backgroundImage = "url('/İmg/background.jpg')";
 		Pagetitle1.textContent = "3 Cisim problemi";
-		p1p.textContent = "Bugün Netflix dizisyle birlikte tekrar gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz. 3 cisim problemi çok geniş kapsamda içinde gerçek bilimsel hala çözülememiş verileri de taşısa komplo teorilerine de konu olmuştur. 3 cisim problemi içinde";
-		p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde, her bir cismin hareketini hesaplamayı amaçlar.";
+		p1p.textContent = "Bugün Netflix dizisyle birlikte tekrar gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz. gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz.";
+		p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde,";
 		p1p2.textContent = " Üç cisim problemi, Newton'un hareket yasalarına dayanır ve genellikle çözümü matematiksel olarak karmaşık olabilir.Bu nedenle, üç cisim problemini çözmek, birçok farklı fizik alanında, özellikle astronomi ve mekanik mühendislikte, önemli bir yetenek olarak kabul edilir. Bu problemi anlamak ve çözmek, karmaşık sistemlerin davranışını anlamak ve tahmin";
 		p1p2.textContent += " etmek için temel bir araç sağlar.Üç cisim problemi, fiziksel etkileşimlerin karmaşıklığını inceleyen önemli bir fiziksel kavramdır ve genellikle farklı disiplinlerde karşımıza çıkar. 	Bu kavram, klasik mekanikte üç cismin birbirlerine olan çekim veya itme kuvvetlerine maruz kaldığı bir sistemdeki hareketlerin analizini hedefler. Özellikle Newton'un hareket yasaları temel alınarak formüle edilmiştir. Bu problem, astronomide, yıldızların, gezegenlerin ve galaksilerin hareketini anlamak için önemlidir. Ayrıca, mühendislikte de kullanılır;";
-		p1p2.textContent += " örneğin, roketlerin, uçakların ve diğer karmaşık sistemlerin hareketlerini modellenmesi ve tahmin edilmesinde önemli bir rol oynar. Üç cisim problemi, zamanla birçok farklı şekilde 	ele alınmıştır ve hatta popüler kültürde bile yer bulmuştur. Örneğin, Netflix dizisi 'Travelers' gibi bilim kurgu yapıtlarında üç cisim problemi, zaman yolculuğu gibi karmaşık kavramlarla birleilerek heyecan verici hikayelerin temelini oluşturabilir. Bu nedenle, üç cisim problemi, sadece fizik bilimlerinde değil, aynı zamanda popüler kültürde de ilgiçekici bir konudur.";
+		p1p2.textContent += " örneğin, roketlerin, uçakların ve diğer karmaşık sistemlerin hareketlerini modellenmesi ve tahmin edilmesinde önemli bir rol oynar. Üç cisim problemi, zamanla birçok farklı şekilde 	ele alınmıştır ve hatta popüler kültürde bile yer bulmuştur. Örneğin, Netflix dizisi 'Travelers' gibi bilim kurgu yapıtlarında üç cisim problemi, zaman yolculuğu gibi karmaşık kavramlarla birleilerek heyecan verici hikayelerin temelini oluşturabilir.";
 		p1i.src = "./İmg/3cisimproblemi.jpeg";
 
 
 		//Sayfa2 ön yüz
 		p2i.src = "İmg/a35c2eb6-fea5-4c70-ae10-825d2b594939.jpeg";
 		p2pt.textContent = "Dünya Dışı Gezegenlerin Sayısı Sürekli Artıyor";
-		p2t1.textContent = "Astronomi dünyası, Güneş Sistemi dışındaki gezegenlerin keşfine yönelik heyecan verici bir gelişmeyle çalkalanıyor. Son verilere göre, bir grup uluslararası bilim insanı, Hubble Uzay Teleskobu ve Keck Gözlemevi'nin yardımıyla, Samanyolu Galaksisi'nde 50 yeni potansiyel gezegenin varlığını belirledi. Bu yeni keşfedilen gezegenler, çeşitli boyutlarda ve uzaklıkta olup, bazıları Dünya'nın boyutlarına ve yaşama uygunluğuna sahip olabileceklerinin işaretlerini taşıyor. Bilim insanları, bu yeni gezegenlerin tespitinde transit yöntemi olarak bilinen bir teknik 	kullandılar. Bu yöntemde, bir yıldızın önünden geçen bir gezegenin belirgin ışık kaybı";
+		p2t1.textContent = "Astronomi dünyası, Güneş Sistemi dışındaki gezegenlerin keşfine yönelik heyecan verici bir gelişmeyle çalkalanıyor. Son verilere göre, bir grup uluslararası bilim insanı, Hubble Uzay Teleskobu ve Keck Gözlemevi'nin yardımıyla, Samanyolu Galaksisi'nde 50 yeni potansiyel gezegenin varlığını belirledi. Bu yeni keşfedilen gezegenler, çeşitli boyutlarda ve uzaklıkta olup, bazıları Dünya'nın boyutlarına ve yaşama uygunluğuna sahip olabileceklerinin işaretlerini taşıyor. Bilim insanları, bu yeni gezegenlerin tespitinde transit yöntemi olarak bilinen bir teknik 	kullandılar.";
 		p2t1.textContent += " ölçülerek gezegenin varlığı tespit edilir. Bu keşif, bilim insanlarının evrende yaşamın varlığını araştırmak için kullandığı güçlü araçların bir göstergesidir. Araştırmacılar, bu yeni keşiflerin gezegen oluşumu ve evrimi hakkında daha fazla bilgi sağlayabileceğini belirtiyorlar. Ayrıca, bu gezegenlerin atmosferik bileşimi ve yüzey";
 		p2t1.textContent += "özellikleri hakkında daha fazla bilgi edinmek için gelecekteki gözlemler ve uzay misyonları planlanmaktadır Bu son keşif, evrende yaşamın olası varlığını araştıran bilim insanlarını heyecanlandırıyor ve insanlık için yeni ufuklar açabilecek potansiyel gezegenlerin keşfine ışık tutuyor.";
 
@@ -142,7 +176,7 @@ const AstronomiHF = () => {
 		p2btitle.textContent = "Evrendeki En Parlak Galaksiyi Keşfettiler";
 		p2bpt.textContent = "İçerik: Gök bilimciler, evrende daha önce görülmemiş bir parlaklıkta bir galaksi keşfettiler. Yeni keşfedilen galaksi, adeta milyonlarca yıldızın bir araya gelerek şaşırtıcı bir ışık gösterisi sunduğu bir sahne gibi görünüyor. Bu görkemli galaksiyi özel kılan şey ise, merkezinde meydana gelen bir hypernova patlamasının yol açtığı devasa ışık salınımı. Hypernova patlamaları, güneşimizin binlerce kez daha parlak bir ışık yaydığı, evrendeki en güçlü patlamalardan biri olarak kabul edilir. Bu galaksi, 13 milyar ışık yılı uzaklıkta yer aldığı için, gökbilimcilerin bu olağanüstü olayı gözlemlemesi ve incelemesi zorlu bir süreçti. Ancak, son teknolojik gelişmeler ve gelişmiş gözlem teleskopları, bu devasa patlamanın ardındaki gizemi çözmeye yardımcı oldu.";
 		p2bpt.textContent += "Gökbilimciler, bu parlak galaksinin doğası hakkında daha fazla bilgi edinmek için yoğun bir şekilde çalışıyorlar. Hypernova patlamalarının evrendeki nasıl oluştuğu, galaksi oluşumunu nasıl etkilediği ve uzaydaki diğer galaksilerle olan etkileşimleri gibi sorular, astronomi topluluğunda büyük bir ilgi uyandırıyor. Bu keşif, evrenin derinliklerindeki sırları anlamak için yapılan sonsuz bir arayışın sadece bir örneği olarak görülüyor ve gelecekte daha fazla benzeri olayın keşfedilmesine olanak sağlıyor.";
-		p2bpt.textContent += "Araştırmacılar, bu parlak galaksinin doğası hakkında daha fazla bilgi edinmek için yoğun bir şekilde çalışıyorlar. Hypernova patlamalarının evrende nasıl oluştuğu ve galaksi oluşumunu nasıl etkilediği gibi sorular, astronomi topluluğunda büyük bir ilgi uyandırıyor. Bu keşif, evrenin derinliklerindeki sırları anlamak için yapılan sonsuz bir arayışın sadece bir örneği olarak görülüyor ve gelecekte daha fazla benzeri olayın keşfedilmesine olanak sağlıyor. Gök bilimciler, uzayın sonsuz sırlarını çözmek ve evrenin gizemlerini açığa çıkarmak için çalışmalarını sürdürüyorlar.";
+		
 
 
 		//Sayfa3 ön yüz 
@@ -159,7 +193,7 @@ const AstronomiHF = () => {
 		p3bi.src = "/İmg/Every\ Moon\ in\ Our\ Solar\ System\,\ Ranked.jpeg";
 		p3bp.textContent = "Jüpiter'in en büyük dört ayından biri olan Europa, uzun süredir bilim insanlarının dikkatini çeken bir hedef olmuştur.";
 		p3bp.textContent += "Europa'nın buz tabakalarının altında muhtemelen sıvı bir su okyanusu olabileceği düşünülmekteydi ve bu durum, gezegenin potansiyel olarak yaşam için uygun bir ortam sunabileceği fikrini doğurmuştu. Şimdi, son gözlemler ve analizler, Europa'nın yüzeyinde potansiyel bir okyanusun izlerini destekleyen güçlü kanıtlar bulunduğunu gösteriyor. Araştırmacılar, Galileo uzay aracı tarafından elde edilen verileri inceleyerek Europa'nın yüzeyini detaylı bir şekilde incelediler. Europa'nın yüzeyindeki buz kırıkları ve çatlakları, altında sıvı su bulunabileceğine dair güçlü kanıtlar sunmaktadır.";
-		p3bp.textContent += "Bu bulgular, Europa'nın potansiyel yaşam için uygun bir ortam sunabileceği fikrini daha da güçlendirmektedir. Sıvı suyun varlığı, organik bileşiklerin varlığı ve enerji kaynaklarının olası bulunması, Europa'nın derin okyanuslarında mikrobiyal yaşamın varlığına işaret edebilir. Bu keşif, gezegenimizin evrende yaşamın yaygınlığı konusundaki bakış açısını derinden etkileyebilir. Europa gibi uydular, uzay araştırmalarının odak noktaları haline gelmeye devam edecek ve gelecek keşifler, evrenimizde yaşamın potansiyel yayılımı hakkındaki anlayışımızı daha da genişletebilir. Ayrıca, yeni bulgular, Europa'nın yüzeyindeki buz tabakalarının altında sıvı su oluşumu için potansiyel olarak uygun koşulların bulunduğunu göstermektedir. Buz tabakalarının altındaki sıvı su, volkanik faaliyetler veya jeotermal ısı kaynakları gibi çeşitli mekanizmalarla oluşabilir. Bu durumda, Europa'nın derinliklerindeki okyanuslar, Dünya'nın okyanuslarında bulunan hidrotermal çatlak sistemlerine benzer ortamlara sahip olabilir. Araştırmacılar, Europa'nın potansiyel yaşam için uygun bir ortam sağlayıp sağlamadığını anlamak için gelecekte daha fazla gözlem ve keşif yapmayı planlıyorlar. Bu amaçla, Avrupa Uzay Ajansı (ESA) ve NASA gibi uzay ajansları, Europa'ya yönelik gelecek uzay misyonları için planlar yapmaktadır.";
+		p3bp.textContent += "Bu bulgular, Europa'nın potansiyel yaşam için uygun bir ortam sunabileceği fikrini daha da güçlendirmektedir.";
 
 
 
@@ -289,7 +323,6 @@ const TF = () => {
 
 
 		//İnfocontainer silindi
-		infocontainer.remove();
 		haberalani.remove();
 		/*------------------------------*/
 
@@ -305,55 +338,58 @@ const TF = () => {
 
 
 
-
-		//Sayfa1 arka yüz
-		Pagetitle1.textContent = "3 Cisim problemi";
-		p1p.textContent = "Bugün Netflix dizisyle birlikte tekrar gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz. 3 cisim problemi çok geniş kapsamda içinde gerçek bilimsel hala çözülememiş verileri de taşısa komplo teorilerine de konu olmuştur. 3 cisim problemi içinde";
-		p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde, her bir cismin hareketini hesaplamayı amaçlar.";
-		p1p2.textContent = " Üç cisim problemi, Newton'un hareket yasalarına dayanır ve genellikle çözümü matematiksel olarak karmaşık olabilir.Bu nedenle, üç cisim problemini çözmek, birçok farklı fizik alanında, özellikle astronomi ve mekanik mühendislikte, önemli bir yetenek olarak kabul edilir. Bu problemi anlamak ve çözmek, karmaşık sistemlerin davranışını anlamak ve tahmin";
-		p1p2.textContent += " etmek için temel bir araç sağlar.Üç cisim problemi, fiziksel etkileşimlerin karmaşıklığını inceleyen önemli bir fiziksel kavramdır ve genellikle farklı disiplinlerde karşımıza çıkar. 	Bu kavram, klasik mekanikte üç cismin birbirlerine olan çekim veya itme kuvvetlerine maruz kaldığı bir sistemdeki hareketlerin analizini hedefler. Özellikle Newton'un hareket yasaları temel alınarak formüle edilmiştir. Bu problem, astronomide, yıldızların, gezegenlerin ve galaksilerin hareketini anlamak için önemlidir. Ayrıca, mühendislikte de kullanılır;";
-		p1p2.textContent += " örneğin, roketlerin, uçakların ve diğer karmaşık sistemlerin hareketlerini modellenmesi ve tahmin edilmesinde önemli bir rol oynar. Üç cisim problemi, zamanla birçok farklı şekilde 	ele alınmıştır ve hatta popüler kültürde bile yer bulmuştur. Örneğin, Netflix dizisi 'Travelers' gibi bilim kurgu yapıtlarında üç cisim problemi, zaman yolculuğu gibi karmaşık kavramlarla birleilerek heyecan verici hikayelerin temelini oluşturabilir. Bu nedenle, üç cisim problemi, sadece fizik bilimlerinde değil, aynı zamanda popüler kültürde de ilgiçekici bir konudur.";
-		p1i.src = "./İmg/3cisimproblemi.jpeg";
-
-
-		//Sayfa2 ön yüz
-		p2i.src = "İmg/a35c2eb6-fea5-4c70-ae10-825d2b594939.jpeg";
-		p2pt.textContent = "Dünya Dışı Gezegenlerin Sayısı Sürekli Artıyor";
-		p2t1.textContent = "Astronomi dünyası, Güneş Sistemi dışındaki gezegenlerin keşfine yönelik heyecan verici bir gelişmeyle çalkalanıyor. Son verilere göre, bir grup uluslararası bilim insanı, Hubble Uzay Teleskobu ve Keck Gözlemevi'nin yardımıyla, Samanyolu Galaksisi'nde 50 yeni potansiyel gezegenin varlığını belirledi. Bu yeni keşfedilen gezegenler, çeşitli boyutlarda ve uzaklıkta olup, bazıları Dünya'nın boyutlarına ve yaşama uygunluğuna sahip olabileceklerinin işaretlerini taşıyor. Bilim insanları, bu yeni gezegenlerin tespitinde transit yöntemi olarak bilinen bir teknik 	kullandılar. Bu yöntemde, bir yıldızın önünden geçen bir gezegenin belirgin ışık kaybı";
-		p2t1.textContent += " ölçülerek gezegenin varlığı tespit edilir. Bu keşif, bilim insanlarının evrende yaşamın varlığını araştırmak için kullandığı güçlü araçların bir göstergesidir. Araştırmacılar, bu yeni keşiflerin gezegen oluşumu ve evrimi hakkında daha fazla bilgi sağlayabileceğini belirtiyorlar. Ayrıca, bu gezegenlerin atmosferik bileşimi ve yüzey";
-		p2t1.textContent += "özellikleri hakkında daha fazla bilgi edinmek için gelecekteki gözlemler ve uzay misyonları planlanmaktadır Bu son keşif, evrende yaşamın olası varlığını araştıran bilim insanlarını heyecanlandırıyor ve insanlık için yeni ufuklar açabilecek potansiyel gezegenlerin keşfine ışık tutuyor.";
+	//Sayfa1 arka yüz
+	portada.style.backgroundImage = "url('/İmg/background.jpg')";
+	Pagetitle1.textContent = "3 Cisim problemi";
+	p1p.textContent = "Bugün Netflix dizisyle birlikte tekrar gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz. gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz.";
+	p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde,";
+	p1p2.textContent = " Üç cisim problemi, Newton'un hareket yasalarına dayanır ve genellikle çözümü matematiksel olarak karmaşık olabilir.Bu nedenle, üç cisim problemini çözmek, birçok farklı fizik alanında, özellikle astronomi ve mekanik mühendislikte, önemli bir yetenek olarak kabul edilir. Bu problemi anlamak ve çözmek, karmaşık sistemlerin davranışını anlamak ve tahmin";
+	p1p2.textContent += " etmek için temel bir araç sağlar.Üç cisim problemi, fiziksel etkileşimlerin karmaşıklığını inceleyen önemli bir fiziksel kavramdır ve genellikle farklı disiplinlerde karşımıza çıkar. 	Bu kavram, klasik mekanikte üç cismin birbirlerine olan çekim veya itme kuvvetlerine maruz kaldığı bir sistemdeki hareketlerin analizini hedefler. Özellikle Newton'un hareket yasaları temel alınarak formüle edilmiştir. Bu problem, astronomide, yıldızların, gezegenlerin ve galaksilerin hareketini anlamak için önemlidir. Ayrıca, mühendislikte de kullanılır;";
+	p1p2.textContent += " örneğin, roketlerin, uçakların ve diğer karmaşık sistemlerin hareketlerini modellenmesi ve tahmin edilmesinde önemli bir rol oynar. Üç cisim problemi, zamanla birçok farklı şekilde 	ele alınmıştır ve hatta popüler kültürde bile yer bulmuştur. Örneğin, Netflix dizisi 'Travelers' gibi bilim kurgu yapıtlarında üç cisim problemi, zaman yolculuğu gibi karmaşık kavramlarla birleilerek heyecan verici hikayelerin temelini oluşturabilir.";
+	p1i.src = "./İmg/3cisimproblemi.jpeg";
 
 
-
-		//Sayfa2 arka yüz
-		p2btitle.textContent = "Evrendeki En Parlak Galaksiyi Keşfettiler";
-		p2bpt.textContent = "İçerik: Gök bilimciler, evrende daha önce görülmemiş bir parlaklıkta bir galaksi keşfettiler. Yeni keşfedilen galaksi, adeta milyonlarca yıldızın bir araya gelerek şaşırtıcı bir ışık gösterisi sunduğu bir sahne gibi görünüyor. Bu görkemli galaksiyi özel kılan şey ise, merkezinde meydana gelen bir hypernova patlamasının yol açtığı devasa ışık salınımı. Hypernova patlamaları, güneşimizin binlerce kez daha parlak bir ışık yaydığı, evrendeki en güçlü patlamalardan biri olarak kabul edilir. Bu galaksi, 13 milyar ışık yılı uzaklıkta yer aldığı için, gökbilimcilerin bu olağanüstü olayı gözlemlemesi ve incelemesi zorlu bir süreçti. Ancak, son teknolojik gelişmeler ve gelişmiş gözlem teleskopları, bu devasa patlamanın ardındaki gizemi çözmeye yardımcı oldu.";
-		p2bpt.textContent += "Gökbilimciler, bu parlak galaksinin doğası hakkında daha fazla bilgi edinmek için yoğun bir şekilde çalışıyorlar. Hypernova patlamalarının evrendeki nasıl oluştuğu, galaksi oluşumunu nasıl etkilediği ve uzaydaki diğer galaksilerle olan etkileşimleri gibi sorular, astronomi topluluğunda büyük bir ilgi uyandırıyor. Bu keşif, evrenin derinliklerindeki sırları anlamak için yapılan sonsuz bir arayışın sadece bir örneği olarak görülüyor ve gelecekte daha fazla benzeri olayın keşfedilmesine olanak sağlıyor.";
-		p2bpt.textContent += "Araştırmacılar, bu parlak galaksinin doğası hakkında daha fazla bilgi edinmek için yoğun bir şekilde çalışıyorlar. Hypernova patlamalarının evrende nasıl oluştuğu ve galaksi oluşumunu nasıl etkilediği gibi sorular, astronomi topluluğunda büyük bir ilgi uyandırıyor. Bu keşif, evrenin derinliklerindeki sırları anlamak için yapılan sonsuz bir arayışın sadece bir örneği olarak görülüyor ve gelecekte daha fazla benzeri olayın keşfedilmesine olanak sağlıyor. Gök bilimciler, uzayın sonsuz sırlarını çözmek ve evrenin gizemlerini açığa çıkarmak için çalışmalarını sürdürüyorlar.";
-
-
-		//Sayfa3 ön yüz 
-		p3pt.textContent = "Tabii, oyuk dünya teorisi, Dünya'nın iç kısmının boş olduğunu ve içinde büyük bir boşluk veya boş bir alanın bulunduğunu öne süren bir iddiadır. Bu teoriye göre, Dünya'nın içi, kabuğun altında geniş bir iç boşlukla doludur ve yaşamı destekleyen bir iç güneş veya iç ısı kaynağı bulunabilir. Oyuk dünya teorisini destekleyenler, bu iç boşluğun, Dünya'nın manyetik alanını açıklayabileceğini ve bazı doğal fenomenleri izah edebileceğini savunurlar. Ayrıca, bazı efsaneler ve mitolojik hikayelerde, iç dünya veya Agartha adı verilen gizemli bir yerden bahsedilir, bu da oyuk dünya teorisini destekleyenlerin argümanlarından biridir. Ancak, bilimsel kanıtlar ve gözlemler, Dünya'nın içinde geniş bir boşluğun bulunmadığını ve Dünya'nın yapısının standart bir şekilde kabul edilen modelde olduğunu göstermektedir. Jeolojik veriler ve Dünya'nın iç kısmını anlamak için yapılan derin sondajlar, Dünya'nın katı bir çekirdeğe ve mantoya sahip olduğunu doğrulamaktadır.";
-		p3pt.textContent += "Sonuç olarak, oyuk dünya teorisi genellikle bilimsel topluluk tarafından kabul görmeyen bir spekülasyon olarak görülür ve mevcut bilimsel kanıtlarla çelişmektedir.";
-		p3t.textContent = "Oyuk dünya teorisi";
-		p3pt.style.color = "#2d6f75";
-		p3t.style.color = "#2d6f75";
+	//Sayfa2 ön yüz
+	p2i.src = "İmg/a35c2eb6-fea5-4c70-ae10-825d2b594939.jpeg";
+	p2pt.textContent = "Dünya Dışı Gezegenlerin Sayısı Sürekli Artıyor";
+	p2t1.textContent = "Astronomi dünyası, Güneş Sistemi dışındaki gezegenlerin keşfine yönelik heyecan verici bir gelişmeyle çalkalanıyor. Son verilere göre, bir grup uluslararası bilim insanı, Hubble Uzay Teleskobu ve Keck Gözlemevi'nin yardımıyla, Samanyolu Galaksisi'nde 50 yeni potansiyel gezegenin varlığını belirledi. Bu yeni keşfedilen gezegenler, çeşitli boyutlarda ve uzaklıkta olup, bazıları Dünya'nın boyutlarına ve yaşama uygunluğuna sahip olabileceklerinin işaretlerini taşıyor. Bilim insanları, bu yeni gezegenlerin tespitinde transit yöntemi olarak bilinen bir teknik 	kullandılar.";
+	p2t1.textContent += " ölçülerek gezegenin varlığı tespit edilir. Bu keşif, bilim insanlarının evrende yaşamın varlığını araştırmak için kullandığı güçlü araçların bir göstergesidir. Araştırmacılar, bu yeni keşiflerin gezegen oluşumu ve evrimi hakkında daha fazla bilgi sağlayabileceğini belirtiyorlar. Ayrıca, bu gezegenlerin atmosferik bileşimi ve yüzey";
+	p2t1.textContent += "özellikleri hakkında daha fazla bilgi edinmek için gelecekteki gözlemler ve uzay misyonları planlanmaktadır Bu son keşif, evrende yaşamın olası varlığını araştıran bilim insanlarını heyecanlandırıyor ve insanlık için yeni ufuklar açabilecek potansiyel gezegenlerin keşfine ışık tutuyor.";
 
 
 
-		//Sayfa 3 Arka yüz 
-		p3bt.textContent = "Europa'da Potansiyel Bir Okyanusun İzleri Bulundu";
-		p3bi.src = "/İmg/Every\ Moon\ in\ Our\ Solar\ System\,\ Ranked.jpeg";
-		p3bp.textContent = "Jüpiter'in en büyük dört ayından biri olan Europa, uzun süredir bilim insanlarının dikkatini çeken bir hedef olmuştur.";
-		p3bp.textContent += "Europa'nın buz tabakalarının altında muhtemelen sıvı bir su okyanusu olabileceği düşünülmekteydi ve bu durum, gezegenin potansiyel olarak yaşam için uygun bir ortam sunabileceği fikrini doğurmuştu. Şimdi, son gözlemler ve analizler, Europa'nın yüzeyinde potansiyel bir okyanusun izlerini destekleyen güçlü kanıtlar bulunduğunu gösteriyor. Araştırmacılar, Galileo uzay aracı tarafından elde edilen verileri inceleyerek Europa'nın yüzeyini detaylı bir şekilde incelediler. Europa'nın yüzeyindeki buz kırıkları ve çatlakları, altında sıvı su bulunabileceğine dair güçlü kanıtlar sunmaktadır.";
-		p3bp.textContent += "Bu bulgular, Europa'nın potansiyel yaşam için uygun bir ortam sunabileceği fikrini daha da güçlendirmektedir. Sıvı suyun varlığı, organik bileşiklerin varlığı ve enerji kaynaklarının olası bulunması, Europa'nın derin okyanuslarında mikrobiyal yaşamın varlığına işaret edebilir. Bu keşif, gezegenimizin evrende yaşamın yaygınlığı konusundaki bakış açısını derinden etkileyebilir. Europa gibi uydular, uzay araştırmalarının odak noktaları haline gelmeye devam edecek ve gelecek keşifler, evrenimizde yaşamın potansiyel yayılımı hakkındaki anlayışımızı daha da genişletebilir. Ayrıca, yeni bulgular, Europa'nın yüzeyindeki buz tabakalarının altında sıvı su oluşumu için potansiyel olarak uygun koşulların bulunduğunu göstermektedir. Buz tabakalarının altındaki sıvı su, volkanik faaliyetler veya jeotermal ısı kaynakları gibi çeşitli mekanizmalarla oluşabilir. Bu durumda, Europa'nın derinliklerindeki okyanuslar, Dünya'nın okyanuslarında bulunan hidrotermal çatlak sistemlerine benzer ortamlara sahip olabilir. Araştırmacılar, Europa'nın potansiyel yaşam için uygun bir ortam sağlayıp sağlamadığını anlamak için gelecekte daha fazla gözlem ve keşif yapmayı planlıyorlar. Bu amaçla, Avrupa Uzay Ajansı (ESA) ve NASA gibi uzay ajansları, Europa'ya yönelik gelecek uzay misyonları için planlar yapmaktadır.";
+	//Sayfa2 arka yüz
+	p2btitle.textContent = "Evrendeki En Parlak Galaksiyi Keşfettiler";
+	p2bpt.textContent = "İçerik: Gök bilimciler, evrende daha önce görülmemiş bir parlaklıkta bir galaksi keşfettiler. Yeni keşfedilen galaksi, adeta milyonlarca yıldızın bir araya gelerek şaşırtıcı bir ışık gösterisi sunduğu bir sahne gibi görünüyor. Bu görkemli galaksiyi özel kılan şey ise, merkezinde meydana gelen bir hypernova patlamasının yol açtığı devasa ışık salınımı. Hypernova patlamaları, güneşimizin binlerce kez daha parlak bir ışık yaydığı, evrendeki en güçlü patlamalardan biri olarak kabul edilir. Bu galaksi, 13 milyar ışık yılı uzaklıkta yer aldığı için, gökbilimcilerin bu olağanüstü olayı gözlemlemesi ve incelemesi zorlu bir süreçti. Ancak, son teknolojik gelişmeler ve gelişmiş gözlem teleskopları, bu devasa patlamanın ardındaki gizemi çözmeye yardımcı oldu.";
+	p2bpt.textContent += "Gökbilimciler, bu parlak galaksinin doğası hakkında daha fazla bilgi edinmek için yoğun bir şekilde çalışıyorlar. Hypernova patlamalarının evrendeki nasıl oluştuğu, galaksi oluşumunu nasıl etkilediği ve uzaydaki diğer galaksilerle olan etkileşimleri gibi sorular, astronomi topluluğunda büyük bir ilgi uyandırıyor. Bu keşif, evrenin derinliklerindeki sırları anlamak için yapılan sonsuz bir arayışın sadece bir örneği olarak görülüyor ve gelecekte daha fazla benzeri olayın keşfedilmesine olanak sağlıyor.";
+	
+
+
+	//Sayfa3 ön yüz 
+	p3pt.textContent = "Tabii, oyuk dünya teorisi, Dünya'nın iç kısmının boş olduğunu ve içinde büyük bir boşluk veya boş bir alanın bulunduğunu öne süren bir iddiadır. Bu teoriye göre, Dünya'nın içi, kabuğun altında geniş bir iç boşlukla doludur ve yaşamı destekleyen bir iç güneş veya iç ısı kaynağı bulunabilir. Oyuk dünya teorisini destekleyenler, bu iç boşluğun, Dünya'nın manyetik alanını açıklayabileceğini ve bazı doğal fenomenleri izah edebileceğini savunurlar. Ayrıca, bazı efsaneler ve mitolojik hikayelerde, iç dünya veya Agartha adı verilen gizemli bir yerden bahsedilir, bu da oyuk dünya teorisini destekleyenlerin argümanlarından biridir. Ancak, bilimsel kanıtlar ve gözlemler, Dünya'nın içinde geniş bir boşluğun bulunmadığını ve Dünya'nın yapısının standart bir şekilde kabul edilen modelde olduğunu göstermektedir. Jeolojik veriler ve Dünya'nın iç kısmını anlamak için yapılan derin sondajlar, Dünya'nın katı bir çekirdeğe ve mantoya sahip olduğunu doğrulamaktadır.";
+	p3pt.textContent += "Sonuç olarak, oyuk dünya teorisi genellikle bilimsel topluluk tarafından kabul görmeyen bir spekülasyon olarak görülür ve mevcut bilimsel kanıtlarla çelişmektedir.";
+	p3t.textContent = "Oyuk dünya teorisi";
+	p3pt.style.color = "#2d6f75";
+	p3t.style.color = "#2d6f75";
 
 
 
-		//Sayfa 4 ön yüz 
-		p4fimage.src = "/İmg/How\ to\ Spot\ the\ North\ Star_\ 9\ Steps\ \(with\ Pictures\)\ -\ wikiHow.jpeg";
-		p4ft.textContent = "Gerçek Yıldızlar Gizleniyor mu?";
-		p4fpt.textContent = "Günümüzde, uzay keşiflerinin artmasıyla birlikte, uzaydaki gözlemlerden elde edilen fotoğraf ve veriler her zamankinden daha fazla ilgi çekiyor. Ancak, bazı komplo teorisyenleri, uzay ajanslarının bu görüntüleri manipüle ettiğini ve gerçek yıldızları gizlediğini iddia ediyorlar.Bu teoriye göre, uzay ajansları, gerçek uzay görüntülerini kamuoyundan saklayarak, uzaydaki gizli sırları ve varlıkları gizlemek için çalışıyorlar. Bazı komplo teorisyenlerine göre, bu manipülasyonların amacı, uzayda var olduğuna inanılan gizli teknolojileri veya hatta uzaylı varlıkları gizlemektir.Özellikle, Ay'ın çevresinde veya Mars'ın yüzeyinde çekilen fotoğrafların detaylı bir şekilde incelenmesi, bazıları tarafından düzenlemeler veya gerçekleri gizleme olarak yorumlanıyor. Bazı görüşlere göre, gerçek yıldızların resimlerden çıkarılması veya üzerinin kapatılmasıyla, uzayda bulunan gizli nesnelerin veya varlıkların daha kolay gizlenmesi sağlanıyor.Ancak, bilim insanları ve uzay ajansları, bu tür iddiaları kesin bir şekilde reddediyorlar ve uzaydaki görüntülerin doğruluğunu ve bütünlüğünü savunuyorlar. Uzay ajansları, uzaydaki gözlemlerin kamuoyuyla paylaşılmasının, bilimsel keşiflerin ve insanlığın evreni anlama çabalarının bir parçası olduğunu vurguluyorlar.Bu komplo teorisi, uzay hakkındaki bilgi ve algıları etkileyebilir ve kamuoyunda karışıklığa neden olabilir. Ancak, bilimsel kanıtlar ve güvenilir uzay ajansı kaynakları, uzaydaki gözlemlerin doğruluğunu ve şeffaflığını desteklemeye devam ediyor.";
+	//Sayfa 3 Arka yüz 
+	p3bt.textContent = "Europa'da Potansiyel Bir Okyanusun İzleri Bulundu";
+	p3bi.src = "/İmg/Every\ Moon\ in\ Our\ Solar\ System\,\ Ranked.jpeg";
+	p3bp.textContent = "Jüpiter'in en büyük dört ayından biri olan Europa, uzun süredir bilim insanlarının dikkatini çeken bir hedef olmuştur.";
+	p3bp.textContent += "Europa'nın buz tabakalarının altında muhtemelen sıvı bir su okyanusu olabileceği düşünülmekteydi ve bu durum, gezegenin potansiyel olarak yaşam için uygun bir ortam sunabileceği fikrini doğurmuştu. Şimdi, son gözlemler ve analizler, Europa'nın yüzeyinde potansiyel bir okyanusun izlerini destekleyen güçlü kanıtlar bulunduğunu gösteriyor. Araştırmacılar, Galileo uzay aracı tarafından elde edilen verileri inceleyerek Europa'nın yüzeyini detaylı bir şekilde incelediler. Europa'nın yüzeyindeki buz kırıkları ve çatlakları, altında sıvı su bulunabileceğine dair güçlü kanıtlar sunmaktadır.";
+	p3bp.textContent += "Bu bulgular, Europa'nın potansiyel yaşam için uygun bir ortam sunabileceği fikrini daha da güçlendirmektedir.";
+
+
+
+	//Sayfa 4 ön yüz 
+	p4fimage.src = "/İmg/How\ to\ Spot\ the\ North\ Star_\ 9\ Steps\ \(with\ Pictures\)\ -\ wikiHow.jpeg";
+	p4ft.textContent = "Gerçek Yıldızlar Gizleniyor mu?";
+	p4fpt.textContent = "Günümüzde, uzay keşiflerinin artmasıyla birlikte, uzaydaki gözlemlerden elde edilen fotoğraf ve veriler her zamankinden daha fazla ilgi çekiyor. Ancak, bazı komplo teorisyenleri, uzay ajanslarının bu görüntüleri manipüle ettiğini ve gerçek yıldızları gizlediğini iddia ediyorlar.Bu teoriye göre, uzay ajansları, gerçek uzay görüntülerini kamuoyundan saklayarak, uzaydaki gizli sırları ve varlıkları gizlemek için çalışıyorlar. Bazı komplo teorisyenlerine göre, bu manipülasyonların amacı, uzayda var olduğuna inanılan gizli teknolojileri veya hatta uzaylı varlıkları gizlemektir.Özellikle, Ay'ın çevresinde veya Mars'ın yüzeyinde çekilen fotoğrafların detaylı bir şekilde incelenmesi, bazıları tarafından düzenlemeler veya gerçekleri gizleme olarak yorumlanıyor. Bazı görüşlere göre, gerçek yıldızların resimlerden çıkarılması veya üzerinin kapatılmasıyla, uzayda bulunan gizli nesnelerin veya varlıkların daha kolay gizlenmesi sağlanıyor.Ancak, bilim insanları ve uzay ajansları, bu tür iddiaları kesin bir şekilde reddediyorlar ve uzaydaki görüntülerin doğruluğunu ve bütünlüğünü savunuyorlar. Uzay ajansları, uzaydaki gözlemlerin kamuoyuyla paylaşılmasının, bilimsel keşiflerin ve insanlığın evreni anlama çabalarının bir parçası olduğunu vurguluyorlar.Bu komplo teorisi, uzay hakkındaki bilgi ve algıları etkileyebilir ve kamuoyunda karışıklığa neden olabilir. Ancak, bilimsel kanıtlar ve güvenilir uzay ajansı kaynakları, uzaydaki gözlemlerin doğruluğunu ve şeffaflığını desteklemeye devam ediyor.";
+
+
+
 		/*-----------------------------------------------------------------------------*/
 
 
@@ -431,8 +467,6 @@ lightthemebutton.remove();
 const karanlıktema = () => {
 	container.style.backgroundColor = "#28282B";
 	Appfooter.style.backgroundColor = "#28282B";
-	Astronomediatvvideocontainer.style.backgroundColor = "#28282B";
-
 	darkthemebutton.remove();
 	theme.appendChild(lightthemebutton);
 
@@ -442,42 +476,89 @@ const Aydınlıktema = () => {
 	lightthemebutton.remove();
 	theme.appendChild(darkthemebutton);
 	container.style.backgroundColor = "#2d6f75";
-
 	Appfooter.style.backgroundColor = "White";
-	Astronomediatvvideocontainer.style.backgroundColor = "#2d6f75";
 	container.style.backgroundImage = "";
 
 }
 /*-------------------------------------------------------*/
 
 
+// Gundem panel içerik güncelleme alanı //
 
 
+// newslist içindeki tüm li öğelerini döngüye alın
+for (let i = 0; i < newslist.length; i++) {
+    // Her bir li öğesi içindeki a öğelerini seçme
+    var anchorElements = newslist[i].getElementsByTagName("a");
 
-
-
-
-/*Astronomedia TV içerik günceleme alanı */
-
-const AstronomediatvbuttonF = () => {
-	container.innerHTML = "";
-	infocontainer.remove();
-	container.appendChild(Astronomediatvvideocontent);
-
+    // Her bir a öğesi için tıklama olayı dinleyicisi ekleyin
+    for (let j = 0; j < anchorElements.length; j++) {
+        anchorElements[j].addEventListener("click", function() {
+            // Tıklanan öğenin id'sini kontrol edin
+            if (this.id === "haber1") {
+                gundempanelcimg.src="/İmg/3cisimproblemi.jpeg";
+            }
+			if (this.id === "haber2") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+              
+            }
+			if (this.id === "haber3") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+            
+            }
+			if (this.id === "haber4") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+                
+            }
+			if (this.id === "haber5") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+                
+            }
+			if (this.id === "haber6") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+            
+            }
+			if (this.id === "haber7") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+        
+            }
+			if (this.id === "haber8") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+                
+            }
+			if (this.id === "haber9") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+                
+            }
+			if (this.id === "haber10") {
+                gundempanelcimg.src="/İmg/backgp.jpeg";
+               
+            }
+        });
+    }
 }
-/*--------------------------------------------------------------------------------------------*/
+
+
+
+
+
+//------------------------------------------------------------------------------------//
 
 
 
 
 
 
-Astronomediatvbutton.addEventListener("click", AstronomediatvbuttonF);
+
+
+
 darkthemebutton.addEventListener("click", karanlıktema);
 lightthemebutton.addEventListener("click", Aydınlıktema);
 Homebutton.addEventListener("click", HomeBF);
 T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
+
+
 
 
 
