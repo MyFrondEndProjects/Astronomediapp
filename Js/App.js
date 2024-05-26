@@ -43,6 +43,7 @@ const Habera2p=document.querySelector(".Habera2p");
 const gundempanelclistli=document.querySelectorAll(".gundempanelclistli");
 const newslist = document.querySelectorAll('.gundempanelclistli');
 const gundempanelcimg=document.querySelector(".gundempanelcimg");
+const gundempanelbtn=document.querySelector(".gundempanelbtn");
 /*------------------------------------------------------------------------------*/
 
 
@@ -333,13 +334,13 @@ const TF = () => {
 		/*Raf 1 deki derginin içerikleri ekleniyor*/
 
 		//Sayfa 1 ön yüz (Kapak)
-		portada.style.backgroundImage = "url('/İmg/backimg.jpg')";
+		
 
 
 
 
 	//Sayfa1 arka yüz
-	portada.style.backgroundImage = "url('/İmg/background.jpg')";
+	portada.style.backgroundImage = "url('İmg/magazinbackground.jpg')";
 	Pagetitle1.textContent = "3 Cisim problemi";
 	p1p.textContent = "Bugün Netflix dizisyle birlikte tekrar gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz. gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz.";
 	p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde,";
@@ -485,22 +486,22 @@ const Aydınlıktema = () => {
 
 // Gundem panel içerik güncelleme alanı //
 
-
-// newslist içindeki tüm li öğelerini döngüye alın
+// newslist içindeki tüm li öğelerini döngüye aldım
 for (let i = 0; i < newslist.length; i++) {
-    // Her bir li öğesi içindeki a öğelerini seçme
+    // Her bir li öğesi içindeki a öğelerini seçtim
     var anchorElements = newslist[i].getElementsByTagName("a");
 
-    // Her bir a öğesi için tıklama olayı dinleyicisi ekleyin
+    // Her bir a öğesi için tıklama olayı dinleyicisi ekledim
     for (let j = 0; j < anchorElements.length; j++) {
         anchorElements[j].addEventListener("click", function() {
-            // Tıklanan öğenin id'sini kontrol edin
+            // Tıklanan öğenin id'sini seçtim
             if (this.id === "haber1") {
                 gundempanelcimg.src="/İmg/3cisimproblemi.jpeg";
+
             }
 			if (this.id === "haber2") {
                 gundempanelcimg.src="/İmg/backgp.jpeg";
-              
+			
             }
 			if (this.id === "haber3") {
                 gundempanelcimg.src="/İmg/backgp.jpeg";
@@ -531,7 +532,6 @@ for (let i = 0; i < newslist.length; i++) {
                 
             }
 			if (this.id === "haber10") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
                
             }
         });
@@ -545,20 +545,11 @@ for (let i = 0; i < newslist.length; i++) {
 //------------------------------------------------------------------------------------//
 
 
-
-
-
-
-
-
-
 darkthemebutton.addEventListener("click", karanlıktema);
 lightthemebutton.addEventListener("click", Aydınlıktema);
 Homebutton.addEventListener("click", HomeBF);
 T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
-
-
 
 
 
