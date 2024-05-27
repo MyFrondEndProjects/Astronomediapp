@@ -12,6 +12,7 @@
 body {
 	background-color: black;
 	opacity: 0.9;
+
 }
 
 
@@ -496,6 +497,7 @@ footer {
 	text-align: center;
 	padding-top: 1em;
 
+
 }
 
 footer span {
@@ -517,9 +519,9 @@ footer span a {
 .haberalani1 {
 	position: absolute;
 	width: 50%;
-	left: 2%;
+	left: 6%;
 	height: 15em;
-	top: 100%;
+	top: 110%;
 	background-color: white;
 	border-radius: 0.5em;
 	box-shadow: 30px 30px 10px 5px black;
@@ -532,9 +534,9 @@ footer span a {
 .haberalani2 {
 	position: absolute;
 	width: 50%;
-	right: 2%;
+	right: 6%;
 	height: 15em;
-	top: 140%;
+	top: 150%;
 	background-color: white;
 	border-radius: 0.5em;
 	box-shadow: 30px 30px 10px 5px black;
@@ -596,13 +598,14 @@ footer span a {
 .astrolojipanel
 {
 	position:absolute;
-	width:65%;
-	height:21em;
+	width:91%;
+	height:10em;
 	background-color:black;
+	border-radius:0.2em;
 	box-shadow: 30px 30px 10px 5px black;
 	opacity: 0.9;
-	top:190%;
-	left:18%;
+	top:200%;
+	left:5%;
 	border-radius:0.2em;
 
 }
@@ -612,71 +615,59 @@ footer span a {
 	width:98%;
 	height:90%;
 	opacity: 0.9;
-
-	background-color: black;
+	background-color: bisque;
+	
+	
 	border-radius:0.2em;
 	text-align: center;
 	text-decoration: none;
 	color:#2d6f75;
-	border:5px solid #2d6f75;
 	margin-top:0.5em;
 	margin-left:0.5em;
 }
 .astrolojipanellink h1 
 {
-	border:5px solid #2d6f75;
-
-	color:white;
+	background-color: bisque;
+	color:#2d6f75;
 	width:28em;
-	margin-left:5em;
-margin-top:1em;
-border-radius:0.2em;
-}
-.astrolojipanellink h2 
-{
-	border:5px solid #2d6f75;
-	
-	color:white;
-	width:28em;
-	margin-left:11.5em;
+	margin-left:12em;
 margin-top:1.5em;
 border-radius:0.2em;
 }
-.astrolojipanellink ul 
-{
-	display: inline-flex;
-	margin-top:3em;
-}
-.astrolojipanellink ul li 
-{
-	margin-left:2em;
-	list-style:none;
-	font-size:2em;
-	border:5px solid #2d6f75;
-	
-	color:white;
-	border-radius: 0.2em;
-}
+
 .gundempanel
 {
 	position:absolute;
-	top:250%;
+	top:219%;
 	width:89%;
 	height:40em;
 	border-radius:0.2em;
-	background-color:black;
-	left:6%;
+	background-color:white;
+	border-radius:0.5em;
+	left:5%;
+	border:10px solid black;
 	box-shadow: 30px 30px 10px 5px black;
 }
-.gundempanelc
+.gundempanelc {
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 69%;
+	background-color:white;
+	background-color: bisque;
+    
+    border-radius: 0.2em;
+ 
+}
+.astrolojigündemtextcontent
 {
-	position:absolute;
-	left:0%;
-	height:100%;
-	width:69%;
-	background-color: black;
-	border-radius:0.2em;
-
+    position: absolute;
+	width:95%;
+	height:90%;
+	border:3.9px solid black;
+	word-wrap: break-word;
+	overflow-y: scroll;
+	background-color: bisque;
 }
 .gundempanelclist
 {
@@ -684,43 +675,59 @@ border-radius:0.2em;
 	right:0%;
 	height:100%;
 	width:31%;
-	background-color:black;
+	background-color:white;
 	overflow-y: scroll;
 	border-radius:0.2em;
     opacity:0.8;
+	background-color: bisque;
+
 }
-.gundempanelcimg
+.astrolojigündemtextcontent
 {
-	position:absolute;
-	width: 95%;
-	height:95%;
+position: absolute;
+
 	border-radius:0.2em;
-	border:10px solid #2d6f75;
 	margin-top:1em;
 	margin-left:1em;
+	color:#2d6f75;
+	font-weight:bold;
+	white-space: normal;
+    padding-left:2em;
+	padding-top:2em;
 }
 .gundempanelclist ul 
 {
 	position:absolute;
 	left:3%;
-	border:10px solid #2d6f75;
 	width: 27em;
 	border-radius: 0.2em;
-	margin-top:1em;
+	margin-top:-0.9em;
 	margin-left:1em;
 
 }
 .gundempanelclist ul li 
 {
-	list-style: number;
+	list-style: none;
 	margin-top:3em;
-	width:30em;
-	margin-left:2em;
-	
+	width:15em;
+	margin-left:6.5em;
+    border: solid black;
+	text-align: center;
+
+} 
+.gundempanelclist ul li:hover
+{
+	list-style: none;
+	margin-top:3em;
+	width:15em;
+	margin-left:6.5em;
+	text-align: center;
 } 
 .gundempanelclist ul li a
 {
 	color:#2d6f75;
+	font-weight: bold;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	text-decoration:dotted;	
 } 
 .gundempanelbtn
@@ -737,5 +744,27 @@ border-radius:0.2em;
 	border-radius: 0.5em;
 	border:transparent;
 	cursor: pointer;
+}
+.Astronomediavideo
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#2d6f75;
+	word-wrap: break-word;
+    overflow-y: scroll;
+   overflow: hidden;
+   flex-wrap: nowrap;
+   overflow-y: scroll;
+}
+ .videoc
+{
+	width:19em;
+	height:15em;
+	background-color:gray;
+	margin-top:9em;
+	margin-left:7.5em;
+    display: inline-block;
+	border-radius:0.5em;
 }
 
