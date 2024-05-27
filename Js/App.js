@@ -42,8 +42,10 @@ const haberalani2=document.querySelector(".haberalani2");
 const Habera2p=document.querySelector(".Habera2p");
 const gundempanelclistli=document.querySelectorAll(".gundempanelclistli");
 const newslist = document.querySelectorAll('.gundempanelclistli');
-const gundempanelcimg=document.querySelector(".gundempanelcimg");
+const Astronomediatv=document.querySelector("#Astronomediatv");
 const gundempanelbtn=document.querySelector(".gundempanelbtn");
+const astrolojigündemtextcontent=document.querySelector(".astrolojigündemtextcontent");
+const Astronomediavideo=document.querySelector(".Astronomediavideo");
 /*------------------------------------------------------------------------------*/
 
 
@@ -62,7 +64,7 @@ Habera1p.textContent="Bilim insanlarının Güneş'te şaşırtıcı bir gelişm
 
 //Haberalanı2
 haberalani2.style.backgroundImage="url('/İmg/planet-earth-3686253_640.jpg')";
-Habera2p.textContent="Güneş Sistemi'nde Mars ile Jüpiter arasındaki asteroit kuşağında daha önce eşine rastlanmamış, birbirlerinin yörüngesinde dönen iki gök cismi keşfedildi. Almanya'daki Max Planck Enstitüsünden bilim adamlarının Hubble Uzay Teleskobu yardımıyla yaptığı keşifle ilgili ayrıntılar Nature dergisinde yayımlandı.";
+Habera2p.textContent="AstronomediaTV ile gündem ve genel olarak yayınlayacağımız yeni videoları takip edebilirsiniz AstronomediaTV sayfamız incelemek isterseniz şuan yayında";
 //------------------------------------------------------//
 
 
@@ -333,7 +335,7 @@ const TF = () => {
 
 		/*Raf 1 deki derginin içerikleri ekleniyor*/
 
-		//Sayfa 1 ön yüz (Kapak)
+
 		
 
 
@@ -463,6 +465,18 @@ const TF = () => {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*Tema değiştirme fonksiyonu*/
 lightthemebutton.remove();
 const karanlıktema = () => {
@@ -484,7 +498,21 @@ const Aydınlıktema = () => {
 /*-------------------------------------------------------*/
 
 
-// Gundem panel içerik güncelleme alanı //
+
+
+
+
+
+
+
+
+
+
+
+//                               Astroloji Gundem panel içerik güncelleme alanı                                          //
+
+
+let Burcbaslık=document.createElement("h1");
 
 // newslist içindeki tüm li öğelerini döngüye aldım
 for (let i = 0; i < newslist.length; i++) {
@@ -493,46 +521,56 @@ for (let i = 0; i < newslist.length; i++) {
 
     // Her bir a öğesi için tıklama olayı dinleyicisi ekledim
     for (let j = 0; j < anchorElements.length; j++) {
+
+
+
+
         anchorElements[j].addEventListener("click", function() {
             // Tıklanan öğenin id'sini seçtim
-            if (this.id === "haber1") {
-                gundempanelcimg.src="/İmg/3cisimproblemi.jpeg";
-
+            if (this.id === "yengec") {
+			Burcbaslık.textContent="Yengeç";
+			astrolojigündemtextcontent.appendChild(Burcbaslık);
+            astrolojigündemtextcontent.textContent=" Sevgili Yengeç, bugün sosyal ilişkilerinde ve aşk hayatında dönüşüm söz konusu olabilir. Yeni insanlarla tanışmak ve sosyal çevreni genişletmek için harika bir zaman. Ay'ın Oğlak burcunda konumlanmasıyla, ilişkilerinde daha ciddi ve sorumluluk sahibi olman gerekebilir. Bu da özellikle romantik ilişkine denge ve düzen getirecektir. Öte yandan, sosyal etkinliklere katılmak ve arkadaşlarınla vakit geçirmek de sana iyi gelecektir.  Mevcut ilişkinde yeni bir sayfa açmaya ne dersin? Bazı hataları geride bırakmak ilişkinin seyrini değiştirebilir. Partnerinle, birlikte mutlu olduğun aktivitelerle dolu bir hafta geçirebilirsin. Yaşayacağın bu heyecan, aşk hayatını adeta tazeleyecektir. Bu arada haftanın ilk günü bekar Yengeç burçlarına da şans getirecek. Açıkçası aşk hayatınıza bir anda girecek!   Bu süreçte, yeni iş fırsatları ve tekliflere de hazır olmalısın. Kariyerinde yeni heyecanlar ve bereketli kazançlar seni bekliyor. Yarın görüşmek üzere, sevgiyle kal... Sabah saatlerinde aniden değişen durumlara karşı dikkatli olmalısınız. Karşınızdaki kişilerle sıkıntılı süreçlere girmemeye özen gösterin. İlerleyen zamanlarda kendinizi daha rahat hissedebilirsiniz. Keyif aldığınız şeyler için harcama yapmak isteyebilirsiniz. Gün içinde sizi uğraştıran kişilere karşı dikkatli olmanızda fayda var.  Yengeç burcu günümüzde 22 Haziran ile 23 Temmuz arasında doğan kişilerdir. Yengeç burcu olan kişiler genel olarak hayatlarındaki her konuda aşırı derecede alıngan, hassas ve de kuruntulu olan kişilerdir. Sorumluluk duyguları da oldukça çok gelişmiş olmaktadır.";
+            astrolojigündemtextcontent.textContent+=" Yaşamlarındaki her konuda aşırı bir şekilde hassas, alıngan ve kuruntulu olan Yengeç'leri tanımlayan sözcük 'Hissederim' dir. Sorumluluk duyguları çok gelişmiştir. Her işte olağanüstü olan ayrıntıcılıkları, işlerinde mükemmeliyetçiliği getirir. Ayni sorumlulukları karşılarındakilerden de beklerler. Yengeç'ler duygusallıkları ve duyarlılıkları ile tanınırlar. Çevresindeki her insandan da ayni hassasiyeti bekledikleri için, kolay geçinilir tipler değildir. İyi günlerinde neşeli, iyi kalpli, yardımsever, düşünceli ve anlayışlıdırlar. Fakat herhangi belirgin bir neden olmadan somurtkan ve alıngan olabilirler. Yakınlarını ve arkadaşlarını çok sevmelerine karşın, bunu pek belli etmezler. Kendilerini herhangi bir şekilde inciten kişileri zor bağışlarlar ve yapılan hareketi asla unutmazlar. Yengeç'ler müziğe ve dinsel konulara karşı ilgilidirler. Sabırlı olan Yengeç'ler tartışmalardan kesinlikle hoşlanmazlar. Duygularını sessiz bir şekilde saklarlar. Gerçek Yengeç Burcu insanı fiziksel olarak; soluk, beyaz tenli, orta ve kısa boylu, yuvarlak yüzlüdür. Gözleri genelde gri veya mavi gözlüdür. Saçları mat ve kahverengi olur.Yengeç kadınları tartışmasız çok güzeldirler. Ay gezegenini simgeleyen güzel yüzleri vardır. Vücut yapıları gençliklerinde güzeldirler. Yaşları ilerledikçe, dikkat etmezlerse kilolu tombul bir vücutları olur .  Bu burcun sembolü tarih boyunca değişik şekillere girmiştir. Babilliler onu MÖ 4000-2000 yılları arasında kaplumbağa olarak tanımlamışlardı. Eski Kalde düşünürleri bu burcu insanın kapısı olarak tanımlarlar. Yunan ve Roma hikâyelerinde Yengeç gökyüzüne Hera tarafından çıkarılır. Herkül'ün 12 görevinin ikincisinde deniz canavarı Hydra'nın zincire vurulması istenir. Bu savaş sırasında Yengeç, Herkül'ü ayağından ısırır. Hera da onu kahraman olarak gökyüzüne bir takımyıldız olarak atar. Koruyucu ve hassas, besleyen, büyüten, derin duygular, güçlü annelik duygusu, fedakâr, sezgi sahibi, başkalarının ihtiyaçlarına duyarlı. İlişkilerinde eğilimleri: İlişkilerinde güven arayan, hassas bir tutumu vardır. Aşırı kırılgan olabilir. Duygusal açıdan yakın olduğu kişiyle kendini güven içinde, hiç ayrılmamacasına bağlı hissetmek ister. Bir eve, yuvaya bağlı olmak, kendine kökler ve aile yaratmak ilişkilerinde ağır basacaktır. ";
             }
-			if (this.id === "haber2") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
-			
+			if (this.id === "koc") {
+                astrolojigündemtextcontent.textContent="Koç, Burçlar kuşağının ilk burcudur. Hareketli ve enerjik oluşları ile tanınırlar. Ben egoları çok fazla gelişmiştir. BEN, onların aynası olmuştur adeta. Bu burçta doğanlar çok pratiktirler. Olaylar karşısında coşkularını gizleyemezler. Yaşam yolunda canlılıklarını ve atılganlıklarını yitirmeden heyecanla ilerlerler. Merak ettikleri konularda olabildiğince yaratıcılardır. Amaçları doğrultusunda ilerlerken, kendilerini eylemleri ile kanıtlamak isterler. Eğer Koç'lar girişimde bulunacakları zaman izleyecekleri rotayı ayrıntıları ile planlarsa, enerjik yapılarının da yardımı ile daha da üretken olabilirler. Bencilliklerinden kaynaklanan sabırsızlıkları ve söz dinlemez yaratılışları yüzünden zaman zaman güç durumlara düştükleri de olur. Böyle anlarda başladıkları işlerini sonuçlandırmadan bırakırlar. Konuşmaları abartılıdır, bazen gerçekleri değiştirerek anlatırlar. Kavrama yetenekleri fazla olan Koç'lar yaşam sahnesinin başrolünde olmayı tercih ederler. Aşırı kıskanç ve bağımsızlıklarına düşkün olurlar. Fiziksel yapıları uzun yüzlü ve uzun boyludurlar. Kolları ve bacakları güçlüdür. Esmer ve kıvırcık saçları vardır. Bakışları delici ve keskindir. Sağlıklı bir ciltleri vardır.Spor yapmaya meraklı oldukları için de, bir çok spor salonlarında Koçlara rastlayabilirsiniz. Güzel dişleri olan Koçların; gözlerini dikerek gülümsemesi, çevrelerini etkisi altına alır. Koç Burcu Özellikleri: Koç burcu kadını ve erkeğinin tüm Koç burçları çalışma ortamlarında da arkadaş ortamlarında da her zaman hareket, hız ve rekabet peşindedir; her şeyde birinci olmaya çalışırlar. Yönetici gezegenleri Mars'ın ateş elementine ait olması nedeniyle Koç burcu en aktif burçlardan biridir. Zaman zaman düşünmeden de olsa harekete geçmek onların doğasındadır. Bu burç doğasında doğan kişiler, özellikle inisiyatif alabilen kişilerdir. Daha büyük bir başlangıç yapmak için kendilerinde cesaret ve harekete geçme isteği her koşulda görülür. Koç burcu insanları sabırsızdır. İnatçı bir karaktere sahip olan Koç burcu, hareketli, heyecanlı ve enerjik olmasıyla bilinir. Tutkulu ve sadakatli olan Koç burcu kadını, dik başlı yapısı ile ön plana çıkıyor. Korumacı ve kıskanç tavırları ile bilinen Koç'lar ile genelde anlaşılması zor insanlar oluyor. Lider ve otoriter özellikleri ise Koç burcu kadınının her zaman söz sahibi olmak istemesine neden oluyor. ";
+				astrolojigündemtextcontent.textContent+="Koç burcu olumlu yönleri arasında mücadeleci yapısı en başta yer alır. Koç burcu zoru sever ve istediği şeyler konusunda oldukça büyük mücadeleler verir. Koç burcunun olumlu yönleri içinde bulunan mücadeleci yapısı onu hedeflerine her gün biraz daha yaklaştırarak başarıyı elde etmesini sağlar. Koç burçları ateş elementine mensup bir burç olduğundan ani duygu değişimleri ve öfke patlamalarında kontrolsüzdür. Öfkelendiğinde ya da üzüntüsünü dile getirdiğinde yaşadığı duygusallık nedeniyle kaçmak ve kurtulmak isteyebilir. Burçlara uygun lakaplar, KOÇ: Cesur yürek. BOĞA: Zat-ı şahane. İKİZLER: Sabah şekeri. YENGEÇ: Yufka yürek Dünyanın en zeki ve en güçlü burçları merak ediliyordu. Yapılan bir araştırmada ''Akrep, Koç ve İkizler'' burcunun en zeki burçlar olduğu kanıtlandı. Bu üç burçtaki insanlar diğer burç insanlarına göre daha zeki ve daha güçlü bir hafızaya sahip oluyorlar.";
             }
-			if (this.id === "haber3") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
+			if (this.id === "boga") {
+               astrolojigündemtextcontent.textContent=" Boğa Güvenilir ve barışçıllardır. Boğa burcunun olumlu özellikleri arasında; dayanıklı olması, mantıklı bir şekilde hareket etmesi, güvenilir olması, kendine yeten bir kişiliğe sahip olması, barışçıl olması, duyarlı, üretken ve sabırlı olması, dengeli bir kişiliğe sahip olması ve son derece nazik olması vardır. Boğa burcu insanı cana yakın, merhametli ve sempatik yapısıyla biliniyor. Toprak grubunda yer alan Boğa burçları, sakin ve güvenilir yapılarıyla da tanınıyor. Keskin düzeyde maddi zekaya sahip olan bu insanlar hem gündelik yaşamda hem de iş hayatında bu özellikleri ile kolaylık sağlıyorlar. Boğa burcu kadını sakin ve sabırlıdır. Telaştan, aceleden hiç hoşlanmaz, hazırlanması, giyinmesi, süslenmesi için zamana ihtiyacı vardır. Kadını eşsiz lezzetler denemekten, yemekten hoşlanır ve keyif alır; lüks, konfor ve maddiyat etkileyicidir. Ayrıca hedef odaklı, azimli ve inatçıdır.  Boğa burçları arkadaşlarına ve aşkına çok sadıktır. Bu nedenle güven konusu onlar için önemlidir. Eğer karşısındaki ona yalan söylerse ve ortaya çıkarsa asla affetmez. Onların yalan radarları hep açıktır.  Boğa burcu sevdiklerinin en başında yemek yemek geliyor. Boğa burcunun en sevdiği şeylerden biri yeme içme faaliyetleri. Sanata oldukça meraklı olan boğa burçları birden fazla sanat dalına ilgi duyabilir. Boğa burcu sevdikleri listesinde bir başka madde ise romantizm! Boğa burcunun en iyi anlaştığı burçlar Yengeç, Oğlak ve Balık'tır. Yengeç Boğa uyumu: Boğa ve Yengeç burçları güvende olma ihtiyacını paylaşırlar; her ikisi de rahatına düşkündür ve ciddi bir ilişki kurmaya isteklidirler. Boğa Burcu Erkeği Hangi Burçla Evlenmeli? Boğa burcu erkeğinin evlenmek için en uygun burçlar Oğlak, Başak, Yengeç ve Balık burçlarıdır. Oğlak burcu, Boğa burcu erkeği için en uygun eşler arasında yer alır.  Boğa burcu olumlu yönleri arasında duygusal olmak gelir. Bu özellik ilk etapta olumsuz görünebilir ancak ilişkilerinde oldukça güçlü bağlar kurmasını sağlayabilir. Boğa burcu sabit bir burç olsa da duyguları sonuna kadar hissetmekten ve duygularını göstermekten hiç korkmaz. Yeşil rengin enerjisi boğa burcuna şans ve uğur getirmektedir. Kıyafetlerinizde ve aksesuarlarınızda yeşil renk veya yakın tonlar tercih ederek kendinize şans ve uğur getirebilirsiniz. Dikkat çekmeyi ve zirvede olmayı seven ikizler burcu, ışıldayan ve parıldayan tonları; sarı ve turuncu renkleri yansıtmaktadır";
+			   astrolojigündemtextcontent.textContent+="Yapılan bir araştırmada ''Başak, Balık, Boğa ve Oğlak'' burcunun en temiz burçlar olduğu belirlendi. Yine mükemmeliyetçi, çalışkan ve azimli Akrep'leri sıralamamızda ikinciliğe koyabiliriz. Boğa burcunun en iyi anlaştığı burçların bir diğeri ise Oğlak'lardır. Zira Oğlak'lar bu sakin, dingin enerjiyi severler, toprak burcu olmanın getirdiği tensellikten, güzellikten de hoşlanırlar. Boğa kadını yatakta kontrolün partnerinde olmasını sever. Size olan ilgisini sözlerinden çok davranışlarıyla göstermeyi tercih eder. Her zaman çok şehvetli olmayabilirler ancak partnerlerinin cinsel arzularına sürekli olarak duyarlıdır. Onlar için en iyi burç oğlak burcudur. Oğlak burcunun sakin yapısıyla harika bir uyum yakalayacaklardır. Terazi ve Aslan burçlarıyla da iyi anlaşırlar. İkizler, Yay ve Kova'yla ise asla anlaşamazlar. Boğa burcu kadınları, kıyafet tercihlerinde doğallığı ve kaliteyi ön planda tutar. Boğa burcu giyim tarzı, genellikle zarif ve sade detaylarla zenginleştirilmiş olup, doğal tonlarla bezelidir. Yeşilin tüm tonları, deniz mavisi, toprak ve pastel renkler, bu burcun kadınları için ideal renk seçimleridir. Boğa: Bir hata yaptıklarında o insanın yüzüne bakmaya çekinirler. Hem zaten olan olmuştur. O yüzden Boğa'ların özür dilemedikleri için kaybettiği çok arkadaşları vardır...";
             
             }
-			if (this.id === "haber4") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
-                
+			if (this.id === "aslan") {
+                astrolojigündemtextcontent.textContent="Aslan burcu, 23 Temmuz ile 22 Ağustos arasında doğan kişileri temsil eder. Onları tanımlayan özellikler arasında özgüven, cömertlik, liderlik ve yaratıcılık vardır. Aslanlar, genellikle etraflarında göz önünde olmaktan hoşlanır ve doğuştan gelen bir sahne ışıkları varmış gibi davranırlar. Aslan burçları kendisi gibi ateş grubundan olan Yay ve Koç ile iyi anlaşırlar. Ancak gözlem ve haritalardaki durumlarına bakıldığında, Aslan burcu sevdikleri eğlence, enerjik olmak ve spor yapmak vardır. Bazı aslan burçları yaratıcılıkları dolayısı ile sanatsal faaliyetlere ilgi gösterebilir. Sanatsal bir hobi edinmek aslan burcu sevdikleri arasında yer alır. Aslan burcu sevdikleri arasında gücünü gösterebilmek en önemlisidir.  Aslan burcu kadınlarının genellikle orta boyludur. Aslan burcu kadını, birden fazla olumlu özelliğe sahiptir. Bunlar arasında; girişimci ruhlu olması, heyecanlı bir yapısının bulunması ve yaratıcı olması ön plandadır. Tutkulu, iyimser ve sadık olan aslan burcu kadınları, karşındakine çok değer verir.  Yaptığı bir işi, ortaya koyduğu bir çalışmayı takdir etmemek, yeterince övmemek, kısacası takdir görememek onun moralini çok bozacaktır.  Aslan kadını lükse düşkündür; parlak renkli, mücevherli, gösterişli giysileri sever. Ne kadar çok mücevher varsa o kadar iyidir; ister yapay elmas olsun ister Swarovski kristali.  Aslan burcunun karşıt burcu Kova'dır. Ayrıca Boğa ve Akrep burcu ile de anlaşmakta zorlanabilir. Aslan burcu erkeği; kıskanç olmasına karşın kendine hakim olan burçlar arasında yer almaktadır. Kıskanmayı, kıskanılmayı sever. Karşı cins tarafından kıskanılmak erkeğin egosunu yükseltir.  8 kendisi gibi rekabetçi olan koç burcuyla yaya göre daha az anlaşması olacaktır. Aslan burcunun anlaşmakta zorlanacağı burçlar su grubu burçlarıdır. En zeki burçlar listesinde Aslan burcu da yer alır. Aslan burçları hem zekaları hem de duruşlarıyla girdikleri her ortamda hemen fark edilir. Çevresindeki tüm fırsatları tespit etme yeteneğine sahiptir. Aslan burçları zekaları sayesinde başkalarının görmediği detayları görür.  İyi zamanlarında etkileyici, güler yüzlü, başkalarına yardım etmeyi seven ve bunu kendine görev sayan Aslan'lar sevimli ve iyimser kişilerdir. Ona karşı hatalı davransanız bile, size olgun bir şekilde tepki verir. Fakat; Sabrı taştıktan sonra, dürüst ve mert, gerektiğinde sert bir şekilde tavır gösterir. "; 
+                astrolojigündemtextcontent.textContent+="Aslan burcu olan bireyler zekilikleri ile güçlerine güç katan kişilerdir. Önderlik edebilme yeteneğine sahip oldukları için güçlü ve de başarılı olurlar. Aslan burçları iyi yöneticiler olup her zaman odak noktası olmayı da sevdikleri nedeni ile bu noktaya gelebilmeleri adına çok çalışırlar.  Aslan desteği (gurur yapıp istemese bile) Terazi ve İkizler'den alır. Başak desteği Akrep ve Yengeç'ten alır.  - Hem cinsellikte hem de aşk konusunda kontrolü ele alacak bir partner isterler. - Zekası ile bir yere gelmiş olan akıllı erkekler ilgilerini çeker. - Komik ve espri anlayışı yüksek olan erkeklerden hoşlanırlar. Bu gibi kriterleri ön plana çıkarmak suretiyle aslan burcu kadınını etkilemek mümkün.  Aslan burcu takıntıları: Konuşurken saçıyla oynamadan duramaz. Her çantasının içinde mutlaka ayna ve de cımbız vardır. Altın kolye, altın saat, altın yüzük takmayı çok sever. Marka takıntısı olan burçlardır.  Aslanlar şaşırtıcı derecede detaylı temizlik yapar. Temizlik yaptıkça rahatlarlar. Temizliğin yanı sıra evlerini dekore etmeyi çok severler. Evlerinde yaptıkları değişiklikler onlara huzur verir.  Aslan: Aslan burcu anlık duygulara çabuk kapılan Zodyak'ın her şeye en çabuk sinirlenen burcudur. En çok sinirlendiği şey de gururunun incinmesidir.  Yaratıcılığı ve etkileyiciliği ile bilinen aslan burcu oldukça sahiplenici ve kıskanç karaktere sahiptir. Bu burcun en büyük korkusu ise çevresinde hiç kimsenin kalmamasıdır. Bir duruma karşı gurur yapmaktan da oldukça korkar ama bunu belli etmez ve yapması gereken gurursa bunu yapar.  Aslan burcu insanları, lüks ve gösterişli yaşam tarzını severler. Bu nedenle, para kazanmak ve harcamak konusunda oldukça tutkuludurlar. Aslanlar, maddi varlıklarını korumak için de çaba gösterirler. Bonkör, lüksü seven, gösterişten hoşlanan Aslan için para biriktirmek neredeyse imkansız gibidir.  Olumsuz özelliklerin: Kendini beğenen, eleştiriye gelemeyen, savurgan, güce düşkün, inatçı, asabi… ";
             }
-			if (this.id === "haber5") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
+			if (this.id === "basak") {
                 
+                astrolojigündemtextcontent.textContent="Başak'lar çalışkan ve pratik insanlar olup, yaşamlarındaki en önemli konu İş' tir. Güvendikleri kişilere yardım etmeyi sevmelerine rağmen, inanmadıkları ve tembel olduklarını bildikleri kişilere karşı soğuk davranırlar. Yaşamları boyunca dinlenmeden çalışırlar. Onların dinlenme biçimi bile başkalarına yorucu gelebilir. Başak (Lat.: Virgo), bir burç. Başlangıç tarihi 23 Ağustos, bitiş tarihi 23 Eylül'dür.  Başak burcu oldukça yardımsever bir burçtur bu yüzden özellikle sevdiği insanların daha sonra da yardımına ihtiyacı olan insanların her zaman yardımına koşacaktır. Başak burcu olumlu yönleri arasında insanların hayatına düzen getirebilmesi de yer alır. Başak burcu bunun için büyük çaba sarf eder.  Başak burcu sevdikleri zekasını ispatlayabileceği işler olarak genellenebilir. Entelektüel düşünmeyi seven başak burcu sevdikleri arasında analitik konulara da yer verir. İş hayatı önceliğinde olan başak burcu sevdikleri şeyler olarak iş hayatında başarı en başlarda yer alır. Başak burcu sevmedikleri arasında en yaygın olarak bilinen belki de dağınıklıktır. Bu dağınıklık sadece ev düzenini değil, tüm hayatı genelleyebilecek bir düzen gereksinimi sonucunda başak burçlarının mesafeli yaklaştığı bir yaşam biçimidir. Başak burcu sevmedikleri arasında bu neden ile disiplinsizlikte yer alır.  Başak: Başak burcu anlaşılması en zor olan burçlardandır. Sinirlenince içine kapanır ve bir daha dışarı açılması çok uzun bir zaman alabilir. En çok sinirlendiği şeyler arasında eşyalarına, kendisine, hayatına dışarıdan müdahale edilmesi gelir.  Başak burcunun en iyi anlaştığı burçlardan bazıları genellikle boğa, oğlak ve yengeç burçları olarak kabul edilir. Bu burçlar genellikle Başak burcuyla uyumlu olabilirler, ancak ilişkilerde birçok faktör etkili olduğundan, burçlar arası ilişkiler kişisel deneyimlere ve ilişki dinamiklerine de bağlı olabilir. Başak burcunun en iyi romantik partnerleri Boğa, Yengeç ve Oğlak'tır. Boğa – Başak uyumu: Boğa da Başak da içe dönük olmaya meyilli burçlardır ve sık sık dışarı çıkıp sosyalleşmek yerine evlerine kapanmayı severler. Başak'ın detaycılığı Boğa'nın güvenlik ihtiyacını karşılar. Duygusal anlamda çok güçlü olduğunu söylemeyiz. Aklı başında havası, eleştirel eğilimleri ile kendi konusunda uzman gözükür. Başak ne Yengeç gibi aşırı koruyucu ve hassas, ne de Terazi gibi fazla havada ve hafiftir. İlişkilerinde netlik, mükemmellik ve dürüstlük arayacaktır. ";
+				astrolojigündemtextcontent.textContent+="Başak burcu kadını kıskançtır. Özellikle sevdiği insana karşı onu sahiplenme duygusu ile birlikte aşırı kıskanç tavırlar sergileyebilir. Sevdiğini paylaşmak istememesine bağlı kıskançlıkları da görülmektedir. BAŞAK: Çevresinde olup biten her şeyi eleştiren yargılayan ve her şeyden düzen bekleyen başak burcunun korkuları arasında hasta olmak ilk sırada yer alıyor. Kişiliği gibi sade bir yaşamı olan Başak, başkalarına hizmet etmeyi sevdiği gibi, finansal anlamda yardım etmekten de sakınmaz.Sağlığına ve temizliğe çok önem veren Başak ın en büyük harcamaları bu alandadır. Son derece titiz olan başak burcu insanları, özensiz hiçbir şeye tahammül edemiyorlar. Sık bulundukları her ortamın hijyenine ekstra özen göstermelerinin yanı sıra, anlık bulundukları bir yerin bile temiz olması konusunda hassas davranıyorlar.  Eleştirilmekten hiç hazzetmeyen Başak'ları, hele de herkesin içinde sakın eleştirmeyin. Haklı dahi olsanız bu durumu içine sindiremeyecektir. Ayrıca onun beklentilerini karşılarken, ya da onunla çalışıyorsanız, gelişi güzel iş yapmak, detayları önemsememek de onun sinirini bozacaktır.";
+				astrolojigündemtextcontent.textContent +=" Başak İlk tepkisi kendine duvar örmek, ardına saklanıp etrafından şikayetçi olmaktır. Böyle anlarda eğer rahatsız ederseniz zehirli eleştiri oklarını yüreğinizin tam ortasına nişan alabilir. Kimi Başaklar da gerilim anında çekmeceleri, dolapları boşaltır, işe yaramayan ıvır zıvırları kaldırıp atabilirler.  Başak burcu erkeğinin anlaştığı burçlar; oğlak, yengeç ve boğa burcudur. Başak burcu erkeklerinin ayrıntıya dikkat etmeleri, oğlak burcu bireyleri adına çok önemlidir. Başak burcu erkekleri, oğlak burcu bireylerini üzmez. Bu sebepten ötürü başak burcu erkekleri, oğlak burcu bireyleri ile çok iyi anlaşır. Başaklar, Yay, Koç ve Aslan burçları ile çok fazla anlaşamaz. Mantık ve analitik zekâlarıyla ön plana çıkan Başak burçların; Yay, Koç ve Aslan burçlarıyla pek iyi anlaştığı söylenemez. Çünkü bu burçlar düşünmeden ve ana yönelik bir yaşama sahip oldukları için başak burçlarıyla zıt düşmektedirler. Çevresinde olup biten her şeyi eleştiren, yargılayan ve her şeyden düzen bekleyen Başak burcunun korkuları arasında hasta olmak ilk sırada yer alıyor. Sonrasında başkalarının onun hayatlarını eleştirmesinden kaygı duyabilirler.";
             }
-			if (this.id === "haber6") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
+			if (this.id === "ikizler") {
+               astrolojigündemtextcontent.textContent=" İkizler Gezmeyi, seyahati sever, hareketli, değişken bir hayatı tercih eder. Aşktan çabuk sıkılabilir, sadakat konusunda çok beklenti içinde olmamak gerekir, zira sürekli değişim arar hayatında. Zorlu durumlar karşısında pratik çözümleriyle yol göstericidir. Tarzı: En son trendlere, yeniliklere meraklıdır. kizler (Latince: Gemini), 21 Mayıs ile 21 Haziran arasında doğanların İkizler takımyıldızının etkisinde olduğuna inanılan burç. Tatlı dilli oluşlarıyla kolayca dost edinebilen ikizler burcu insanları, ortamlarda oldukça popülerdir. Her yaşta, her dönemde öğrenmeye aç ve istekli oluşları, onları farklı kılar. Duygusallık onlar için çoğu zaman ikinci plandadır ve mantıklarıyla hareket ederler. En kötü yanları ise bir konu hakkında kararsız kalmalarıdır. Hava elementine sahip Zodyak'taki ilk burçtur. İkizler: İkizler burcu hayattan zevk almayı bilen olumsuz duyguların geçiciliğini özümseyen insanlardır. Lakin şaş kaza onları yapmadıkları bir şeyle suçlarsanız eğer o zaman İkizler öfkesiyle karşılaşırsınız. Yalnız dikkat, diğer burçların aksine İkizler burcu insanı öyle öfkeden kudurup ortalığı yıkıp dökmez. İkizler burcu insanlarının olumsuz yönlerini değişken, huzursuz, kurnaz, yersiz bir biçimde meraklı, kararsız ikiyüzlü, sinirlerini kontrol edemeyen, dedikoducu, yüzeysel, diken üzerinde yaşayan olarak sıralayabiliriz. İkizler burcu, enerjik ve çok yönlü yapısıyla öne çıkar. Bir ortama girdiğinde sürekli gülümsemesi, mutlu tavırları ve canayakınlığıyla göze çarpan bu kişiler, hareketli yaşamayı sever. Ancak ikizler burcu özellikleri arasında yer alan kararsızlık ve değişkenlik, zaman zaman maymun iştahlılığa dönüşebilir. Zekalarını her an yeni bilgiler öğrenmeye adamış olan ikizler burcu, her konu hakkında her şeyi derinlemesine öğrenmek istediğinden sürekli bir araştırma içerisindedir. Farkındalığı çok yüksek olan ikizler aynı zamanda iletişim kurma konusundaki yetenekleriyle de zekalarını ortaya koyarlar. Yönetici gezegeni Merkür olan İkizler burçlarının hazırcevap, ilgi uyandıran ve muzip bir yönleri vardır. Konuşmaya bayılırlar. İkizler için aşk kalpten çok beyinden geçen bir olaydır. Dikkat çekmeyi ve zirvede olmayı seven ikizler burcu, ışıldayan ve parıldayan tonları; sarı ve turuncu renkleri yansıtmaktadır. ";
+			   astrolojigündemtextcontent.textContent+=" İKİZLER: İkizler burcu deyince akla ilk gelen pratik zeka ve konuşkanlık. Girdiği her ortamda kolayca varlığını hissettiren ikizlerin en büyük korkuları arasında konuşma yeteneğini ve ellerini kaybetmek yer alıyor.  Bilgi verme ve bilgi alma işlevini sürdürememek, ellerini ve konuşma yeteneğini kaybetme korkusu. İkizler burcu deyince akla ilk gelen pratik zekâ ve konuşkanlıktır.  Gün içerisinde sürekli bir aktivite içerisinde olan ikizler burcunun uyku aklına bile gelmez. Rüyalarında genellikle bir şeyden kaçmaya eğilimleri vardır. İkizler burcu için 6-7 saatlik uyku idealdir. Yengeç burcunda doğan insanlar uykuya çok düşkünlerdir.  İkizler altında doğan insanlar tipik olarak şaşırtıcı olmayan rahat ilişkileri tercih ediyorlar. Yaklaşık yüzde 31'i aldatıyor veya aldatmaya yaklaşıyor. Süper sosyal bir hava burcu olarak bilinen İkizler, iki kişi için yeterli ilgi ve hobilere sahip.  İkizler burçları çapkın bir karaktere sahip dersek yanılmış olmayız. Bu yüzden ikizler burcu aşk hayatında maymun iştahlıdır. Bir ikizler burcu ile birlikteyken problem yaşayacaksanız sorun büyük ihtimalle bu özelliğinden kaynaklanacaktır. İkizler burcu aşk hayatında eğlencelidir. Özgürlüğüne düşkün ikizler burcunun sevdikleri arasında keşfetmek yer alıyor. Meraklı karakteri, keşfetme isteği zaman zaman başına dert olsa da ikizler burcu keşfetmeye asla ara vermez. Öğrenme süreci sonsuza dek devam eder. Hava grubundan olmaları nedeniyle onlar her duruma kolayca uyum sağlama özelliğine sahipler. Ancak biraz sabırsız olduklarını da söylememiz gerekir. Birine karşı sabırları tükendiğinde, ikinci bir şansları kalmıyor. İkizler burcu sevmedikleri söz konusu olduğunda baskı ve sahiplenilmek de ilk sıralarda sayılabilir. Özellikle bir ilişkide ikizler burcunu soğutan ve kaçıran şeylerin başında baskı ve sahiplenmek gelir. Çünkü ikizler burçları özgürlüğüne düşkün bir karaktere sahiptir. "; 
             
             }
-			if (this.id === "haber7") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
-        
+			if (this.id === "yay") {
+               astrolojigündemtextcontent.textContent="Yay erkil, maceraperest ve risk almaktan, hayata açık durmaktan keyif alan bir burçtur. Burcun sembolünde ileri doğru atılan ok, bu burcun geçmişi değil, geleceğe yönelik olduğunu gösterir. Pozitif ve hayatı olduğu gibi kabul eden tutumları ile Yay'lar keyif veren, geniş görüşlü ve eğlendirici partnerlerdir.Yay (Latince: Sagittarius), bir burç. Başlangıç tarihi 22 Kasım, bitiş tarihi 22 Aralık'tır. Simgesi yarı at, yarı insan olan bir okçu figürüdür. Elementi ateş, niteliği değişkendir.  Yay kadını her ne kadar fiziksel olarak aktif olsa da ruhunda güçlü sezgilere sahiptir. Dürüstlük, sadakat ve bağlılık onun için önemlidir. Yay kadını ilişkisinde fazla derinlik ve romantizmden hoşlanmayabilir. Romantik yaklaşımlar yerine akılcı ve pragmatik yolları etkileyici bulur.  Dost ve arkadaş canlısı, sosyal, sempatik, girişken Yay burcu erkeği bu özellikleriyle ele avuca sığmaz. Üstelik aile yaşamından ziyade gezip tozmayı, eğlenmeyi, arkadaşlarıyla zaman geçirmeyi sever. Aile konularında son derece fedakârdır. Zira ailesi söz konusu olduğunda Yay erkeğinin gözü hiçbir şey görmeyebilir.  Yay burcu oldukça meraklı bir burçtur. Bu nedenle keşfetmek ve araştırmak yay burcu sevdikleri arasında yer alır. Yay burcunun bu yapısı onu sürekli yeni maceralara sürükler. Yay burcu bunları yaparken özgür olmak isteyecektir.  Kendini yaşam boyu öğrenmeye adamış ve doğuştan idealist olan yay burçları, zekası ile diğer burçların arasından kolayca sıyrılabilmektedir. Her insanın kapasitesini anlamada ve tüm sorunları iyilikle çözmede yetkin kişilerdir.  Yay burcu sevmedikleri arasında monotonluk yer alır. Yay burcu sürekli bir yenilik ve heyecan peşindedir. Onu rutine binmiş ilişki ve işler oldukça sıkacaktır. Yay burcu sabit bir hayat sürmekten hiç hoşlanmaz.  Yay burcu bireyler, cinselliği keşfetmekten hoşlanır ve maceralı deneyimlere açıktırlar. Jüpiter tarafından yönetilen bir burç olan Yay, maceracı ve özgür ruhlu doğasıyla bilinir. Hem hayatta hem de yatak odasında yeni şeyler deneyimlemek için güçlü arzuları vardır. Yay burçları açık fikirli ve denemeye isteklidir.  Oldukça maceracı bir yapıya sahip olan yay burcu aşk hayatında da bu tutkusunu sürdürür. Yay burcu aşk hayatında partneri ile sürekli gezmek ve yeni yerler keşfetmek ister. Küçük seyahatler bile onu heyecanlandırmaya yetecektir. Yay burcu aşk hayatında, uzun süreli bir ilişki içinde bile olsa, heyecan peşindedir. ";
+               astrolojigündemtextcontent.textContent+="Yay kadınları genellikle seks sırasında üstte olmak isterler. Cinselliğe oldukça fazla düşkündürler ve biraz çapkındırlar. Sekste sıradanlıktan ve uzun süren sevişmelerden hoşlanmıyorlar. Yay burcu erkeği çapkın olarak nitelendirilir. Bunun sebebi özgür ruhu olarak gösterilebilir çünkü yay burcu erkeği bir ilişkide bağlanma problemi yaşayabilir. Yay burcu erkeği hareketli yapısı sayesinde spora oldukça meyillidir.  Aslında şans ve zenginlik gezegeni Jüpiter tarafından yönetilen Yay burcu insanları, hep maddi sınırlarını aşmanın peşindedir.Her şeyi büyük boyutlarda düşünen Yay burcu, büyük yatırımlar yapmayı, geniş ölçekli meblağlarla oynamayı sever.Dolayısıyla riskleri de büyür.Tehlike son aşamasına gelip, kapıya dayanıncaya ...  Yay burcunun en anlaşamadığı burç ateşin üzerine toprak ağırlığıyla çökebilen Oğlak olabilir. Üstelik Oğlak'lar Yay'ın aksine sınırlardan ve kurallardan hoşlanır, her şeyi planla, programla yürütmek arzusundadır, aşırılıklardan, hele de çılgınlıklardan hiç hazzetmez.  Fikir alışverişinde bulunabileceği ve kendisini anlayabilen kişileri sever. - Macera yaşamayı seven kadınları tercih eder. - Kendi hareketli dünyasına uyum sağlayabilecek olan kadınları sever. - Seyahat etmeyi seven kadınlar, yay burcu erkeklerin oldukça dikkatini çeker.  Özgür ruhlu Yay erkekleri yatak odasında değişiklikleri severler. Hatta bazen mekan yatak odası dahi olmayabilir. Cinsellikte açık görüşlü olan Yay erkekleri, partnerleriyle yeni şeyler denemeyi severler. Müfettişlik, dedektiflik, casusluk, terapistlik, operatör doktorluk, yarışçılık, askerlik, pilotluk, mühendislik, hukuk, psikoloji, politika, görsel sanatlar, plastik sanat, mağara kaşifliği… Yay burcu, Jüpiter yönetimindedir ve gezmeye, dolaşmaya ve temiz havaya, felsefe ve düşünceye dair işlerde ustadır. ";
             }
-			if (this.id === "haber8") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
-                
-            }
-			if (this.id === "haber9") {
-                gundempanelcimg.src="/İmg/backgp.jpeg";
-                
-            }
-			if (this.id === "haber10") {
+			if (this.id === "kova") {
+                astrolojigündemtextcontent.textContent=" Kova burcu erkeği büyüleyici ve çoğu zaman kafa karıştırıcı bir insan olabilir. Kova burcu erkeği pek çok insanın merak ettiği türden bir adamdır. Ancak çok az insan gerçekten onu anlar. Bu durumun çoğu, bu adamların genellikle ya kendi zamanlarının ilerisinde olarak algılanmasından ya da çoğu insanın onları duymaya hazır olmamasından kaynaklanmaktadır. Kova burcu erkekleri radikal ve yeni fikirlere sahiptirler. Bu burcun erkekleri çoğunlukla toplumun genelinden uzaklaştıklarını hisseder. Gelecek ile ilgili uzak görüşlerini paylaşabilecekleri benzer düşünen birkaç kişi ile gelişirler. Kova Burcu Yükseleni Nasıl Hesaplanır? Bir burcun yükselen burcunu hesaplamak mümkündür. Bir kişinin yükselen burcunun hesaplanabilmesi için kesinlikle doğduğu saat ve dakikanın bilinmesi gerekmektedir. Kişi doğum tarihiyle beraber doğum saatini de belirterek yükselen burcunu öğrenebilir. Yükselen burçlar her dakika değişiklik gösterebilmektedir. Bu nedenle doğru saatin bilinmesi önemlidir. Yükselen Burç Ne İşe Yarar? Yükselen burçlar kişilerin fiziksel görünüşlerini ve kendilerini nasıl gördüklerini temsil eden burçlardır. Yaklaşık iki saat aralıklarla değişen yükselen burçlar kişinin asıl burcu kadar önemlidir. Yükselen burç ile asıl burcun bazı özellikleri dengelenebilmektedir. Kişinin bazı özellikleri ön plana çıkarken bazıları da geri planda kalabilmektedir. Aynı burca sahip kişilerin farklı özellikleri taşıması yükselen burçların etkisinden dolayıdır. 	Kova Burcu Alçalanı Nedir?Alçalan burçlar kişinin evlilik hayatı ve daha çok ikili ilişkilerini temsil eden burçlardır. Çatışan özellikler ve bu özellikleri farklı kişilerde aramak alçalan burcun etkisidir. Alçalan burç hesaplanırken öncelikle yükselen burca bakılır. Yani alçalan burç hesaplanırken de doğum günü ve saati bilinmelidir. Doğum haritası aracılığıyla da alçalan burç hesaplanabilir.";
+				astrolojigündemtextcontent.textContent+="Kova burcu erkeklerinin nadiren geleneksel, sıkıcı masa başı işleri vardır. Çoğu zaman kendi programlarını oluşturmayı tercih ederler ve kurumsal yapıları veya hayal güçlerinin sınırlarını zorlamalarına izin vermeyen birçok kuralın önüne geçerler. Fikir ve yaratıcılık alanı, bir kova burcu erkeğinin gerçekten gelişeceği yerdir. Bunlar insanlığa yardım etmek için insanları bir araya getirmek, asırlık sorunları çözmeye çalışmak için zihnini ve müthiş zekasını kullanan bu burç için önemlidir. Kova burcu erkeği ütopya fikrinden motive olur ve tüm insanlar için daha iyi bir dünya yaratmak ister. Ancak bazen büyük resimde kendini kaybeder. İdeal olarak bir kova burcu erkeği deha özelliklerini hayır kurumlarına yardım etmeye veya yaratıcı hareketlerin bir parçası olmaya koyacaktır. Kova burçları yardımsever, güler yüzlü ve sevgi dolu insanlardır. İnsanlar arasında ayrım yapmazlar herkesin aynı yaşam standartlarına sahip olmalarını isterler. İyi niyetli kovalar bazen inatçı davranırlar. Özgür ruhlarından ötürü aile yaşamında zorlanırlar. Entelektüel deneyimler, farklı cinsel deneyimler, farklı kültürler ve seyahatler bir Kova burcunun aşk hayatında da olmazsa olmazdır. Özgürlüğüyle bilinen Kova burcu aşk hayatında özgürlük de olmazsa olmazdır. Bir Kova burcu kıskanmaz ve asla kıskançlığa gelemez. Geleneksel ilişki tiplerinde uzun süre dayanamaz.  Adalet, hak ve özgürlükler Kova için önemlidir. Ayrıca onun özgürlüğünü, bireyselliğini kısıtlamaya kalkar, ona kurallar dikte eder, zorla işler yüklerseniz, onu darmadağın etmeniz kaçınılmaz bir sondur ve tabiiki bu durumu asla kabul etmeyecektir. Şubat burçları içinde yer alan kova burcu insanları, hareketli ve hızlı yaşamlarıyla tanınır. Onların hızına yetişmek hiç kolay değildir. Tükenmeyen enerjileriyle hep koştururlar. Eğlenceli yapıya sahip olan kovalar daha çok masa tenisi, tenis, futbol, basketbol ve voleybol gibi hareketli sporları severler. Astrolojide, burçların birbirleriyle uyumu karmaşık bir konsepttir ve genellemeler kişisel tercihlere, yaşam deneyimlerine ve diğer astrolojik faktörlere göre değişebilir. Ancak, Kova burcu genellikle İkizler ve Terazi burçlarıyla daha iyi anlaşma eğilimindedir.";
+				
                
+                
+            }
+			if (this.id === "terazi") {
+               astrolojigündemtextcontent.textContent=" Teraziler Bu nedenle bir ilişki içerisinde olmayı da severler. Teraziler mutlu oldukları ve değer verdikleri bir insanla ilişki yaşadığında kıskanç olma eğilimindedir. Ancak her zaman daha iyisini hedefleyen Teraziler, daha iyi gözüken bir ilişki gördüklerinde kıskanma eğilimde olurlar. Mavi tonlarının haricinde pembe renk ve pastel tonlar da terazi burçlarının uğurlu renkleri arasında yer almaktadır. Kıyafetlerinizde, aksesuarlarınızda ve dekorasyon ürünlerinizde; mavi, pembe ve pastel tonlara yer verebilirsiniz. Terazi burcu erkeğinin anlaştığı burçlar; kova, ikizler ve aslan burcu olarak sıralanabilir. Terazi burcunun erkekleri sosyalleşmeyi, insan arasına girmeyi çok sever. Bu yüzden her zaman kendileri gibi enerjik, hareketli olan ikizler burcu ile çok iyi anlaşmaktadırlar. Terazi burcu sevmediklerinden bir tanesi riskli işler arasında yer almaktır. Riskli işler terazi burcunun huzurunu kaçıracağından bu tür işlerin içinde bulunmaktan hoşlanmaz. Bireysel olarak hareket eden insanlar terazi burcu sevmedikleri arasında yer alır. Terazi burcu doğaya oldukça meraklıdır. Doğa yürüyüşleri, doğa ile ilgili olan her şey terazi burcu sevdikleri arasına girer. Bunun yanı sıra terazi burcu sevdikleri arasında lüks bir yaşam da yer alır. Lüks bir hayat sürmeyi seven terazi burcu rahatına ve huzuruna düşkündür. Terazi burcu erkeği ilişkiler konusunda adeta bir uzman gibidir. Dengeyi, eşitliği gözetir, kendisi kadar karşısındakini de düşünür. Kibardır, naziktir, zariftir. Eşinde, birlikteliğinde en doğru ve en uygun kişinin arayışındadır ve o kişinin de kendinden emin bir lider olmasını bekler. Terazi burcunun en iyi anlaştığı burçları, Kova, İkizler ve Yay olarak sıralayabiliriz. Kova – Terazi uyumu: Kova da Terazi de sosyalleşmeyi, konuşmayı ve insan içinde olmayı severler. Bir çift olarak sosyal hayatları oldukça zengin ve doyurucu olacaktır. Ayrıca birbirleriyle fikirlerini paylaşmaktan da hoşlanırlar. Terazi Burcu Özellikleri 2024 - Terazi Burcunun Kısaca Genel Terazi burçları genel olarak akıllı, mantıklı ve aşk dolu özelliklere sahiplerdir. Terazi burçları hayallerine ulaşmak için çok çalışırlar. Terazi burçları genel olarak uzlaşı yanlısı ve kibar özellikleri ile bilinirler. İlişkilerinde adil olan terazi burçları mantıkları ile birlikte hareket ederler.";
+			   astrolojigündemtextcontent.textContent+="Renk olarak genellikle pastel tonları tercih eder. Bluz ve gömleklerinde fırfır, kurdele, fular kullanmayı çok sever. Derin dekoltelerden pek hoşlanmazlar. Moda konusunda uzman olan Terazi burçları, sezonun trendlerini yakından takip ederek en yeni parçaları dolabına eklemeyi sever. Terazi burcu mutfakta tam takım yemek yapmaktan sıkılabilir. Ama sevdiği tatlıları yapmaya bayılır. Partneri/eşi için özenle tatlı, meyve tabakları hazırlamak onun için zevktir. Terazi burcunu en iyi yansıtan hayvan kurttur. Tıpkı kurtlar gibi Teraziler de seçeneklerini değerlendirme konusunda son derece dikkatlidirler. Dengeli yaratıklardır ve ekip çalışmasına da son derece yatkınlık gösterirler. Yalnız hareket etmektense sürü halinde gezmeyi severler.  Rutinleşmiş bir ilişki Terazi burçları için çekilmez bir işkence gibidir. Bu durum nedeniyle ilişki çıkmaza girebilmektedir. İşte tam bu sebepten dolayı toprak burcu elementleriyle fazla iyi anlaşamazlar. Boğa, Oğlak ve Başak burçlarıyla iyi anlaşamayan Terazi burçları, kolay etkilendikleri için kolayca kanabilirler. Kararsız Terazi'lerin evlenme kararı alması kolay olmaz. İlişkinin zamanla oturduğunu hissettiklerinde rahatlayacak ve karar vermeleri kolaylaşacaktır. Kendilerini güvende hissetmezlerse ona aşkınızda dürüst olduğunuzu hissettirmeniz gerekebilir. İlişki durumları oldukça karmaşık olan Terazi burçları, partnerlerine sadık değillerdir.Kabalıktan hiç hoşlanmayan Terazi insanları, Estetik ve güzellik bakımından kendini geliştirmiş insanlardır. Zekilerdir. Teraziler, saf ve temiz kalpliliklerinin yanı sıra hem iyi bir konuşmacı hem de iyi bir dinleyicidirler. Terazi burcu olan kişiler genellikle uyumlu ve sevecen olurlar. Bunun yanı sıra dengeli ve doğru bir şekilde hareket ederler. Bunun yanı sıra terazi burçları en sinirli anlarda bile mutlu olmayı başarırlar. Bu burçtaki kişiler çalışmayı ve yeni şeyler öğrenmeyi de çok severler. Daha çok yüzeysel ilişkiler kurabilen Teraziler, karşılarından kötü bir hareket gördüklerinde onları buna pişman ederler. Akılları çoğunlukla havadadır.";
             }
         });
     }
@@ -542,9 +580,50 @@ for (let i = 0; i < newslist.length; i++) {
 
 
 
+
+
+
+
+
+//Astronomediavideo
+container.innerHTML="";
+
+container.appendChild(Astronomediavideo);
+container.appendChild(Appfooter);
+container.appendChild(theme);
+
+
+
+const Astronomediatvpo=()=>
+	{
+	
+
+	
+	}
+
+
 //------------------------------------------------------------------------------------//
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//                                               Evenetlisteners                                             //
+
+Astronomediatv.addEventListener("click", Astronomediatvpo);
 darkthemebutton.addEventListener("click", karanlıktema);
 lightthemebutton.addEventListener("click", Aydınlıktema);
 Homebutton.addEventListener("click", HomeBF);
@@ -552,6 +631,7 @@ T.addEventListener("click", TF);
 AstronomiH.addEventListener("click", AstronomiHF);
 
 
+//--------------------------------------------------------------------------------------------------------------------//
 
 
 
