@@ -568,7 +568,7 @@ footer span a {
 .theme {
 	position: absolute;
 	top: 5%;
-	right: 1%;
+	right: 2%;
 	width: 9em;
 	height: 4em;
 	border-radius: 0.5em;
@@ -748,23 +748,117 @@ position: absolute;
 .Astronomediavideo
 {
 	position:absolute;
-	width:100%;
-	height:100%;
+	width:97%;
+	height:85%;
 	background-color:#2d6f75;
 	word-wrap: break-word;
     overflow-y: scroll;
    overflow: hidden;
    flex-wrap: nowrap;
    overflow-y: scroll;
+   border:5px solid black;
+   top:1em;
+	box-shadow: 30px 30px 10px 5px black;
+margin-right:2em;
+border-radius:0.2em;
 }
  .videoc
 {
-	width:19em;
-	height:15em;
+	width:25em;
+	height:21em;
 	background-color:gray;
 	margin-top:9em;
-	margin-left:7.5em;
+	margin-left:9em;
     display: inline-block;
 	border-radius:0.5em;
+    background-image: url('/İmg/3cisimproblemi.jpeg');
+	background-size:cover;
+	border:2px solid white;
+
+}
+.Atvideo
+{
+	position:absolute;
+	width:25em;
+	height:14em;
+	border-radius:0.5em;
+}
+.videotitle
+{
+	position:absolute;
+	top:27em;
+	width:25em;
+	height:3.1em;
+	background-color:black;
+	opacity:0.8;
+	padding-top:0em;
+	margin-bottom:3em;
+	border:none;
+	text-decoration: none;
+	color:white;
+}
+.Astronomediavideobaslik
+{
+	background-color: black;
+	color:#2d6f75;
+	padding-top:0.5em;
+	text-align: center;
+	width:30em;
+	height:2em;
+	position:absolute;
+	top:0.5em;
+	left:13em;
+	border-radius:0.2em;
+	box-shadow: 30px 30px 10px 5px black;
+}
+.astronomediavvideocontentcontainer
+{
+position:absolute;
+width:90em;
+height:38em;
+right:10%;
+top:1%;
+background-color:black;
+margin-left:15em;
+border-radius: 1em;
+
 }
 
+.astronomediavideocontent
+{
+	position:relative;
+	width:100%;
+	height:100%;
+	border-radius: 1em;
+}
+.videoinfocontainer
+{
+	position:absolute;
+	width:90em;
+	height:6.5em;
+	background-color: black;
+     border-radius:0.6em;
+	 opacity: 0.8;
+	 color:#2d6f75;
+	 padding-left:1.1em;
+	 margin-top:1.5em;
+}
+.videoinfocontainer span 
+{
+	display: block;
+    
+	
+}
+.avinfo
+{
+	font-size:1.3em;
+	
+	
+}
+.videoyth
+{
+	
+	margin-bottom:1em;
+
+
+}
