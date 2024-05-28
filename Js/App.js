@@ -1,4 +1,3 @@
-
 //Elementleri tanımlıyorum
 const container = document.querySelector("#container");
 const body = document.getElementsByTagName("body");
@@ -42,14 +41,25 @@ const haberalani2=document.querySelector(".haberalani2");
 const Habera2p=document.querySelector(".Habera2p");
 const gundempanelclistli=document.querySelectorAll(".gundempanelclistli");
 const newslist = document.querySelectorAll('.gundempanelclistli');
-const Astronomediatv=document.querySelector("#Astronomediatv");
+const Astronomediavideobutton=document.querySelector("#Astronomediavideobutton");
 const gundempanelbtn=document.querySelector(".gundempanelbtn");
 const astrolojigündemtextcontent=document.querySelector(".astrolojigündemtextcontent");
 const Astronomediavideo=document.querySelector(".Astronomediavideo");
+const astronomediavideocontainer=document.querySelector(".astronomediavideocontainer");
+const astronomediavideocontent=document.querySelector(".astronomediavideocontent");
+const videoinfocontainer=document.querySelector(".videoinfocontainer");
+const astronomediavideoadd=document.querySelector(".astronomediavideoadd");
+const tarih=document.querySelector(".tarih");
+const Avtitle=document.querySelector(".Avtitle");
+const avinfo=document.querySelector(".avinfo");
+const videobaslik=document.querySelector(".videobaslik");
+const videoyth=document.querySelector(".videoyth");
 /*------------------------------------------------------------------------------*/
+astronomediavideoadd.remove();
+Astronomediavideo.remove();
 
-
-
+let gunceltarih= new Date();
+let gun = gunceltarih.toLocaleDateString('tr-TR'); // 'tr-TR' Türkçe için örnek bir locale
 
 
 
@@ -482,6 +492,7 @@ lightthemebutton.remove();
 const karanlıktema = () => {
 	container.style.backgroundColor = "#28282B";
 	Appfooter.style.backgroundColor = "#28282B";
+	Astronomediavideo.style.backgroundColor="#28282B";
 	darkthemebutton.remove();
 	theme.appendChild(lightthemebutton);
 
@@ -491,6 +502,7 @@ const Aydınlıktema = () => {
 	lightthemebutton.remove();
 	theme.appendChild(darkthemebutton);
 	container.style.backgroundColor = "#2d6f75";
+	Astronomediavideo.style.backgroundColor="#2d6f75";
 	Appfooter.style.backgroundColor = "White";
 	container.style.backgroundImage = "";
 
@@ -582,23 +594,82 @@ for (let i = 0; i < newslist.length; i++) {
 
 
 
-
-
-
 //Astronomediavideo
-container.innerHTML="";
 
-container.appendChild(Astronomediavideo);
-container.appendChild(Appfooter);
-container.appendChild(theme);
+
+let videosdizisi=Astronomediavideo.getElementsByTagName("a");
 
 
 
+// Astronomedia video sayfasını açan fonksiyon
 const Astronomediatvpo=()=>
 	{
-	
+		container.innerHTML="";
 
-	
+
+      /*                     container a sayfalar eklenen alan                  */
+
+		//Videolar sayfasının olduğu container eklendi
+		container.appendChild(Astronomediavideo);
+
+
+		//App footer eklendi
+		container.appendChild(Appfooter);
+
+
+		//Tema butonu eklendi
+		container.appendChild(theme);
+	/*-------------------------------------------------------------------------------*/ 
+        
+
+        
+
+
+
+
+
+           for(let i=0; i<videosdizisi.length; i++)
+			{
+				
+
+                  const videoo=()=>
+					{
+						
+						//Tüm videoları kontrol edip if ile ayrıştırarak açılan videolara ayrı ayrı içerikler ekleniyor
+						if(videosdizisi[i].id=="Dunyavideo1")
+							{
+
+								       //Container içeriği sıfırlandı
+						                container.textContent="";
+										//container a Appfooter eklendi
+										container.appendChild(Appfooter);
+										//container a tema butonu ekledi
+										container.appendChild(theme);
+                                        //Container a video sayfası eklendi
+										container.appendChild(astronomediavideoadd);
+								        //container a video içeriği eklendi		
+									    astronomediavideocontent.src="Video/Dunya1.mp4";
+										// video başlığı eklendi
+                                        Avtitle.textContent=videobaslik.textContent;                                      
+										// Video içeriğnin bilgisi eklendi
+										avinfo.textContent="Dunyanın videosu";
+
+										//videonun eklenme tarihi eklendi
+										videoyth.textContent="Paylaşım tarihi :"+gun;
+							}
+
+
+
+
+
+							
+					}
+
+				videosdizisi[i].addEventListener("click", videoo);
+
+
+				
+			}
 	}
 
 
@@ -623,7 +694,7 @@ const Astronomediatvpo=()=>
 
 //                                               Evenetlisteners                                             //
 
-Astronomediatv.addEventListener("click", Astronomediatvpo);
+Astronomediavideobutton.addEventListener("click", Astronomediatvpo);
 darkthemebutton.addEventListener("click", karanlıktema);
 lightthemebutton.addEventListener("click", Aydınlıktema);
 Homebutton.addEventListener("click", HomeBF);
@@ -632,7 +703,3 @@ AstronomiH.addEventListener("click", AstronomiHF);
 
 
 //--------------------------------------------------------------------------------------------------------------------//
-
-
-
-
