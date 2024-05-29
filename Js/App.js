@@ -1,3 +1,4 @@
+
 //Elementleri tanımlıyorum
 const container = document.querySelector("#container");
 const body = document.getElementsByTagName("body");
@@ -8,10 +9,10 @@ const bar = document.querySelector(".bar");
 const AstronomiH = document.querySelector("#AstronomiH");
 const T = document.querySelector("#T");
 const Home = document.querySelector(".Home");
-let front = document.querySelector('.face-front');
-let back = document.querySelector('.face-back');
-let flip = document.querySelector('.book-content');
-let uno = document.querySelectorAll('.Magazin');
+const front = document.querySelector('.face-front');
+const back = document.querySelector('.face-back');
+const flip = document.querySelector('.book-content');
+const uno = document.querySelectorAll('.Magazin');
 const Pagetitle1 = document.querySelector(".Pagetitle1");
 const p1p = document.querySelector(".p1p");
 const p1p2 = document.querySelector(".p1p2");
@@ -54,6 +55,8 @@ const Avtitle=document.querySelector(".Avtitle");
 const avinfo=document.querySelector(".avinfo");
 const videobaslik=document.querySelector(".videobaslik");
 const videoyth=document.querySelector(".videoyth");
+const videoc=document.querySelectorAll(".videoc");
+const Hakkımızdabutton=document.querySelector("#Hakkımızdabutton");
 /*------------------------------------------------------------------------------*/
 astronomediavideoadd.remove();
 Astronomediavideo.remove();
@@ -604,8 +607,18 @@ let videosdizisi=Astronomediavideo.getElementsByTagName("a");
 // Astronomedia video sayfasını açan fonksiyon
 const Astronomediatvpo=()=>
 	{
+	
 		container.innerHTML="";
+                  
+		 
+      
 
+
+
+
+
+
+		//
 
       /*                     container a sayfalar eklenen alan                  */
 
@@ -628,6 +641,38 @@ const Astronomediatvpo=()=>
 
 
 
+    //---------------------------------------------Video thumbnail ekleme alanı--------------------------------------------------//
+			 for(let x=0; x<videoc.length; x++)
+				{
+					if(videoc[x].id=="Dunyavideo1content")
+						{
+							videoc[x].style.backgroundImage="url('İmg/Dunya.png')";
+						
+							document.getElementById("tarihinfo1").textContent="Paylaşım tarihi "+gun;
+							
+						}
+						if(videoc[x].id=="Meteorvideocontent")
+							{
+							videoc[x].style.backgroundImage="url('İmg/Meteor.png')";
+				
+							document.getElementById("tarihinfo2").textContent="Paylaşım tarihi "+gun;
+							    
+
+							}
+							if(videoc[x].id=="Galaksivideocontent")
+								{
+								videoc[x].style.backgroundImage="url('İmg/Galaksi.png')";
+							
+								document.getElementById("tarihinfo3").textContent="Paylaşım tarihi "+gun;
+									
+	
+								}
+						
+				}
+
+ /*---------------------------------------------------------------------------------------------------------------------------------------------*/ 
+
+		  //---------------------------------Açılan videoların içeriklerinin eklenme alanı------------------------------------------------//
            for(let i=0; i<videosdizisi.length; i++)
 			{
 				
@@ -650,19 +695,66 @@ const Astronomediatvpo=()=>
 								        //container a video içeriği eklendi		
 									    astronomediavideocontent.src="Video/Dunya1.mp4";
 										// video başlığı eklendi
-                                        Avtitle.textContent=videobaslik.textContent;                                      
+                                        Avtitle.textContent="Dunya videosu";                                      
 										// Video içeriğnin bilgisi eklendi
-										avinfo.textContent="Dunyanın videosu";
+										avinfo.textContent="Dunyanın uzaydan temsili görüntüleri";
 
 										//videonun eklenme tarihi eklendi
 										videoyth.textContent="Paylaşım tarihi :"+gun;
+
+										
 							}
 
+							if(videosdizisi[i].id=="Meteorvideo")
+								{
+	
+										   //Container içeriği sıfırlandı
+											container.textContent="";
+											//container a Appfooter eklendi
+											container.appendChild(Appfooter);
+											//container a tema butonu ekledi
+											container.appendChild(theme);
+											//Container a video sayfası eklendi
+											container.appendChild(astronomediavideoadd);
+											//container a video içeriği eklendi		
+											astronomediavideocontent.src="Video/Meteor.mp4";
+											// video başlığı eklendi
+											Avtitle.textContent="Meteor videosu";                                      
+											// Video içeriğnin bilgisi eklendi
+											avinfo.textContent="Temsili meteor görüntüleri";
+											//videonun eklenme tarihi eklendi
+											videoyth.textContent="Paylaşım tarihi :"+gun;
+	
+											
+								}
+						
+									if(videosdizisi[i].id=="Galaksivideo")
+										{
+			
+												   //Container içeriği sıfırlandı
+													container.textContent="";
+													//container a Appfooter eklendi
+													container.appendChild(Appfooter);
+													//container a tema butonu ekledi
+													container.appendChild(theme);
+													//Container a video sayfası eklendi
+													container.appendChild(astronomediavideoadd);
+													//container a video içeriği eklendi		
+													astronomediavideocontent.src="Video/Galaksi.mp4";
+													// video başlığı eklendi
+													Avtitle.textContent="Galaksi videosu";                                      
+													// Video içeriğnin bilgisi eklendi
+													avinfo.textContent="Galaksi temsili görüntüleri";
+			
+													//videonun eklenme tarihi eklendi
+													videoyth.textContent="Paylaşım tarihi :"+gun;
+			
+													
+										}
+								
 
 
 
-
-							
 					}
 
 				videosdizisi[i].addEventListener("click", videoo);
@@ -692,7 +784,7 @@ const Astronomediatvpo=()=>
 
 
 
-//                                               Evenetlisteners                                             //
+//                                               GLobal Evenetlistenerlar                                             //
 
 Astronomediavideobutton.addEventListener("click", Astronomediatvpo);
 darkthemebutton.addEventListener("click", karanlıktema);
@@ -703,3 +795,7 @@ AstronomiH.addEventListener("click", AstronomiHF);
 
 
 //--------------------------------------------------------------------------------------------------------------------//
+
+
+
+
