@@ -771,7 +771,7 @@ border-radius:0.2em;
 	margin-left:9em;
     display: inline-block;
 	border-radius:0.5em;
-    background-image: url('/İmg/3cisimproblemi.jpeg');
+   
 	background-size:cover;
 	border:2px solid white;
 
@@ -805,7 +805,7 @@ border-radius:0.2em;
 	text-align: center;
 	width:30em;
 	height:2em;
-	position:absolute;
+	position: absolute;
 	top:0.5em;
 	left:13em;
 	border-radius:0.2em;
