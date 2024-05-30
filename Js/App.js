@@ -779,14 +779,7 @@ const Hakkımızdapage=()=>
 Haber.remove();
       const TGF=()=>
 		{
-			container.textContent="";
-			container.appendChild(theme);
-			container.appendChild(Appfooter);
-			container.appendChild(Haber);
-
-
-
-			document.querySelector("#pagetitlee").textContent="Haberler/Astronomedia"
+			
 		}
 
 
