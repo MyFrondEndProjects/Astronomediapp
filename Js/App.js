@@ -828,7 +828,6 @@ const isbirligiF=()=>
 
 
 
-isbirligicontainer.remove();
 
 
 //                                               GLobal Evenetlistenerlar                                             //
