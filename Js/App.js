@@ -102,16 +102,6 @@ Habera2p.textContent="AstronomediaTV ile gündem ve genel olarak yayınlayacağ�
 
 
 
-const HomeBF = () => {
-	container.innerHTML = "";
-	container.appendChild(Home);
-	container.appendChild(bar);
-	container.appendChild(haberalani);
-	container.appendChild(Appfooter);
-	container.appendChild(theme);
-}
-
-
 
 
 bookcontent.remove(); //Book content silindi
@@ -460,6 +450,19 @@ const Hb2btn=()=>
 
 
 let videosdizisi=Astronomediavideo.getElementsByTagName("a");
+
+document.querySelector("#pagetitlee").textContent="Home/Astronomedia"
+
+const HomeBF = () => {
+	container.innerHTML = "";
+	container.appendChild(Home);
+	container.appendChild(bar);
+	container.appendChild(haberalani);
+	container.appendChild(Appfooter);
+	container.appendChild(theme);
+document.querySelector("#pagetitlee").textContent="Home/Astronomedia"
+
+}
 
 
 
