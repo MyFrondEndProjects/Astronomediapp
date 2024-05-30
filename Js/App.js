@@ -6,8 +6,8 @@ const bookcontent = document.querySelector(".book-content");
 const portada = document.querySelector(".face-front");
 const Ul = document.querySelector(".Ul");
 const bar = document.querySelector(".bar");
-const AstronomiH = document.querySelector("#AstronomiH");
-const T = document.querySelector("#T");
+
+const Hb2=document.querySelector("#Hb2");
 const Home = document.querySelector(".Home");
 const front = document.querySelector('.face-front');
 const back = document.querySelector('.face-back');
@@ -52,14 +52,33 @@ const videoinfocontainer=document.querySelector(".videoinfocontainer");
 const astronomediavideoadd=document.querySelector(".astronomediavideoadd");
 const tarih=document.querySelector(".tarih");
 const Avtitle=document.querySelector(".Avtitle");
+const Hb1=document.querySelector("#Hb1");
 const avinfo=document.querySelector(".avinfo");
 const videobaslik=document.querySelector(".videobaslik");
 const videoyth=document.querySelector(".videoyth");
 const videoc=document.querySelectorAll(".videoc");
 const Hakkımızdabutton=document.querySelector("#Hakkımızdabutton");
+const Hakkimizdasayfasi=document.querySelector(".Hakkimizdasayfasi");
+const yetkinliklerbutton=document.querySelector("#yetkinliklerbutton");
+const hakkımızdacontent=document.querySelector(".hakkımızdacontent");
+const benkimimbutton=document.querySelector("#benkimimbutton");
+const iletisimbutton=document.querySelector("#iletisimbutton");
+const hakkimizdacontent=document.querySelector(".hakkimizdacontent");
+const hakkimizrightbar=document.querySelector(".hakkimizrightbar");
+const hakkimizdacontentscrean=document.querySelector(".hakkimizdacontentscrean");
+const isbirligi=document.querySelector("#isbirligi");
+const isbirligicontent=document.querySelector(".isbirligicontent");
+const isbirligicontainer=document.querySelector(".isbirligicontainer");
+const t=document.querySelector(".t");
+const TG=document.querySelector("#TG");
+const Haber=document.querySelector(".Haber");
 /*------------------------------------------------------------------------------*/
 astronomediavideoadd.remove();
 Astronomediavideo.remove();
+
+
+
+
 
 let gunceltarih= new Date();
 let gun = gunceltarih.toLocaleDateString('tr-TR'); // 'tr-TR' Türkçe için örnek bir locale
@@ -69,14 +88,14 @@ let gun = gunceltarih.toLocaleDateString('tr-TR'); // 'tr-TR' Türkçe için ör
 // Haber alanları icerik güncelleme alanı 
 
 //Haberalanı1 
-haberalani1.style.backgroundImage="url('/İmg/sun-11582_640.jpg')";
-Habera1p.textContent="Bilim insanlarının Güneş'te şaşırtıcı bir gelişme gözlemlediği belirtildi: Güneş'in büyük bir parçası yüzeyinden koparak Kuzey Kutbu çevresinde kasırga benzeri bir girdap oluşturdu. Geçen hafta gözlemlenen bu olayın Dünya üzerindeki olası etkisi araştırılıyor.";
+
+Habera1p.textContent="Hakkımızda sayfasından genel bilgileri edinebilirsiniz";
 
 
 
 
 //Haberalanı2
-haberalani2.style.backgroundImage="url('/İmg/planet-earth-3686253_640.jpg')";
+
 Habera2p.textContent="AstronomediaTV ile gündem ve genel olarak yayınlayacağımız yeni videoları takip edebilirsiniz AstronomediaTV sayfamız incelemek isterseniz şuan yayında";
 //------------------------------------------------------//
 
@@ -120,11 +139,6 @@ let rafs = [raf1, raf2, raf3, raf4];
 
 
 
-//Astronomihaberleri 
-const AstronomiHF = () => {
-
-
-
 
 
 
@@ -148,11 +162,12 @@ const AstronomiHF = () => {
 
 
 
+	document.querySelector("#pagetitlee").textContent="Astronomedia/Astronomedia"
 
 	//Raf1 deki dergi açıldı
 	const raf1o = () => {
 
-
+	
 		//İnfocontainer silindi
 		haberalani.remove();
 		/*------------------------------*/
@@ -175,7 +190,7 @@ const AstronomiHF = () => {
 		p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde,";
 		p1p2.textContent = " Üç cisim problemi, Newton'un hareket yasalarına dayanır ve genellikle çözümü matematiksel olarak karmaşık olabilir.Bu nedenle, üç cisim problemini çözmek, birçok farklı fizik alanında, özellikle astronomi ve mekanik mühendislikte, önemli bir yetenek olarak kabul edilir. Bu problemi anlamak ve çözmek, karmaşık sistemlerin davranışını anlamak ve tahmin";
 		p1p2.textContent += " etmek için temel bir araç sağlar.Üç cisim problemi, fiziksel etkileşimlerin karmaşıklığını inceleyen önemli bir fiziksel kavramdır ve genellikle farklı disiplinlerde karşımıza çıkar. 	Bu kavram, klasik mekanikte üç cismin birbirlerine olan çekim veya itme kuvvetlerine maruz kaldığı bir sistemdeki hareketlerin analizini hedefler. Özellikle Newton'un hareket yasaları temel alınarak formüle edilmiştir. Bu problem, astronomide, yıldızların, gezegenlerin ve galaksilerin hareketini anlamak için önemlidir. Ayrıca, mühendislikte de kullanılır;";
-		p1p2.textContent += " örneğin, roketlerin, uçakların ve diğer karmaşık sistemlerin hareketlerini modellenmesi ve tahmin edilmesinde önemli bir rol oynar. Üç cisim problemi, zamanla birçok farklı şekilde 	ele alınmıştır ve hatta popüler kültürde bile yer bulmuştur. Örneğin, Netflix dizisi 'Travelers' gibi bilim kurgu yapıtlarında üç cisim problemi, zaman yolculuğu gibi karmaşık kavramlarla birleilerek heyecan verici hikayelerin temelini oluşturabilir.";
+	
 		p1i.src = "./İmg/3cisimproblemi.jpeg";
 
 
@@ -183,8 +198,8 @@ const AstronomiHF = () => {
 		p2i.src = "İmg/a35c2eb6-fea5-4c70-ae10-825d2b594939.jpeg";
 		p2pt.textContent = "Dünya Dışı Gezegenlerin Sayısı Sürekli Artıyor";
 		p2t1.textContent = "Astronomi dünyası, Güneş Sistemi dışındaki gezegenlerin keşfine yönelik heyecan verici bir gelişmeyle çalkalanıyor. Son verilere göre, bir grup uluslararası bilim insanı, Hubble Uzay Teleskobu ve Keck Gözlemevi'nin yardımıyla, Samanyolu Galaksisi'nde 50 yeni potansiyel gezegenin varlığını belirledi. Bu yeni keşfedilen gezegenler, çeşitli boyutlarda ve uzaklıkta olup, bazıları Dünya'nın boyutlarına ve yaşama uygunluğuna sahip olabileceklerinin işaretlerini taşıyor. Bilim insanları, bu yeni gezegenlerin tespitinde transit yöntemi olarak bilinen bir teknik 	kullandılar.";
-		p2t1.textContent += " ölçülerek gezegenin varlığı tespit edilir. Bu keşif, bilim insanlarının evrende yaşamın varlığını araştırmak için kullandığı güçlü araçların bir göstergesidir. Araştırmacılar, bu yeni keşiflerin gezegen oluşumu ve evrimi hakkında daha fazla bilgi sağlayabileceğini belirtiyorlar. Ayrıca, bu gezegenlerin atmosferik bileşimi ve yüzey";
-		p2t1.textContent += "özellikleri hakkında daha fazla bilgi edinmek için gelecekteki gözlemler ve uzay misyonları planlanmaktadır Bu son keşif, evrende yaşamın olası varlığını araştıran bilim insanlarını heyecanlandırıyor ve insanlık için yeni ufuklar açabilecek potansiyel gezegenlerin keşfine ışık tutuyor.";
+		p2t1.textContent += " ölçülerek gezegenin varlığı tespit edilir. Bu keşif, bilim insanlarının evrende yaşamın varlığını araştırmak için kullandığı güçlü araçların bir göstergesidir. Araştırmacılar, bu yeni keşiflerin gezegen oluşumu ve evrimi hakkında daha fazla bilgi sağlayabileceğini belirtiyorlar.";
+	
 
 
 
@@ -292,191 +307,8 @@ const AstronomiHF = () => {
 
 
 
-}
+
 /*------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-//Komplo teorileri
-const TF = () => {
-
-
-
-
-
-
-
-	/*Raflar ekleniyor ekleniyor.*/
-	Home.appendChild(raf1);
-	/*---------------------------------*/
-
-
-
-	/*Raflara içerik ekleniyor*/
-	raf1.style.backgroundImage = "url('/İmg/backimg.jpg')";;
-	raf1.style.backgroundSize = "cover";
-	raf1.style.backgroundPositionX = "center";
-	raf1.style.backgroundRepeat = "no-repeat";
-	raf1.style.backgroundPositionX = "-5em";
-
-	/*---------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-	//Raf1 deki dergi açıldı
-	const raf1o = () => {
-
-
-		//İnfocontainer silindi
-		haberalani.remove();
-		/*------------------------------*/
-
-
-
-
-
-		/*Raf 1 deki derginin içerikleri ekleniyor*/
-
-
-		
-
-
-
-
-	//Sayfa1 arka yüz
-	portada.style.backgroundImage = "url('İmg/magazinbackground.jpg')";
-	Pagetitle1.textContent = "3 Cisim problemi";
-	p1p.textContent = "Bugün Netflix dizisyle birlikte tekrar gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz. gündeme gelen 3 cisim problemiyle ilgili bir yazımızı sunacaz.";
-	p1p.textContent += "fermi paradoksu da bulunan çok geniş kapsamlı içeriğe sahip bilimsel bir kavramdır.Klasik mekanikte, üç cisim problemi, üç cismin karşılıklı etkileşimlerini inceleyen temel bir fiziksel problemi temsil eder.Bu problem, üç cismin birbirlerine olan çekim veya itme 	kuvvetlerine maruz kaldığı bir sistemde,";
-	p1p2.textContent = " Üç cisim problemi, Newton'un hareket yasalarına dayanır ve genellikle çözümü matematiksel olarak karmaşık olabilir.Bu nedenle, üç cisim problemini çözmek, birçok farklı fizik alanında, özellikle astronomi ve mekanik mühendislikte, önemli bir yetenek olarak kabul edilir. Bu problemi anlamak ve çözmek, karmaşık sistemlerin davranışını anlamak ve tahmin";
-	p1p2.textContent += " etmek için temel bir araç sağlar.Üç cisim problemi, fiziksel etkileşimlerin karmaşıklığını inceleyen önemli bir fiziksel kavramdır ve genellikle farklı disiplinlerde karşımıza çıkar. 	Bu kavram, klasik mekanikte üç cismin birbirlerine olan çekim veya itme kuvvetlerine maruz kaldığı bir sistemdeki hareketlerin analizini hedefler. Özellikle Newton'un hareket yasaları temel alınarak formüle edilmiştir. Bu problem, astronomide, yıldızların, gezegenlerin ve galaksilerin hareketini anlamak için önemlidir. Ayrıca, mühendislikte de kullanılır;";
-	p1p2.textContent += " örneğin, roketlerin, uçakların ve diğer karmaşık sistemlerin hareketlerini modellenmesi ve tahmin edilmesinde önemli bir rol oynar. Üç cisim problemi, zamanla birçok farklı şekilde 	ele alınmıştır ve hatta popüler kültürde bile yer bulmuştur. Örneğin, Netflix dizisi 'Travelers' gibi bilim kurgu yapıtlarında üç cisim problemi, zaman yolculuğu gibi karmaşık kavramlarla birleilerek heyecan verici hikayelerin temelini oluşturabilir.";
-	p1i.src = "./İmg/3cisimproblemi.jpeg";
-
-
-	//Sayfa2 ön yüz
-	p2i.src = "İmg/a35c2eb6-fea5-4c70-ae10-825d2b594939.jpeg";
-	p2pt.textContent = "Dünya Dışı Gezegenlerin Sayısı Sürekli Artıyor";
-	p2t1.textContent = "Astronomi dünyası, Güneş Sistemi dışındaki gezegenlerin keşfine yönelik heyecan verici bir gelişmeyle çalkalanıyor. Son verilere göre, bir grup uluslararası bilim insanı, Hubble Uzay Teleskobu ve Keck Gözlemevi'nin yardımıyla, Samanyolu Galaksisi'nde 50 yeni potansiyel gezegenin varlığını belirledi. Bu yeni keşfedilen gezegenler, çeşitli boyutlarda ve uzaklıkta olup, bazıları Dünya'nın boyutlarına ve yaşama uygunluğuna sahip olabileceklerinin işaretlerini taşıyor. Bilim insanları, bu yeni gezegenlerin tespitinde transit yöntemi olarak bilinen bir teknik 	kullandılar.";
-	p2t1.textContent += " ölçülerek gezegenin varlığı tespit edilir. Bu keşif, bilim insanlarının evrende yaşamın varlığını araştırmak için kullandığı güçlü araçların bir göstergesidir. Araştırmacılar, bu yeni keşiflerin gezegen oluşumu ve evrimi hakkında daha fazla bilgi sağlayabileceğini belirtiyorlar. Ayrıca, bu gezegenlerin atmosferik bileşimi ve yüzey";
-	p2t1.textContent += "özellikleri hakkında daha fazla bilgi edinmek için gelecekteki gözlemler ve uzay misyonları planlanmaktadır Bu son keşif, evrende yaşamın olası varlığını araştıran bilim insanlarını heyecanlandırıyor ve insanlık için yeni ufuklar açabilecek potansiyel gezegenlerin keşfine ışık tutuyor.";
-
-
-
-	//Sayfa2 arka yüz
-	p2btitle.textContent = "Evrendeki En Parlak Galaksiyi Keşfettiler";
-	p2bpt.textContent = "İçerik: Gök bilimciler, evrende daha önce görülmemiş bir parlaklıkta bir galaksi keşfettiler. Yeni keşfedilen galaksi, adeta milyonlarca yıldızın bir araya gelerek şaşırtıcı bir ışık gösterisi sunduğu bir sahne gibi görünüyor. Bu görkemli galaksiyi özel kılan şey ise, merkezinde meydana gelen bir hypernova patlamasının yol açtığı devasa ışık salınımı. Hypernova patlamaları, güneşimizin binlerce kez daha parlak bir ışık yaydığı, evrendeki en güçlü patlamalardan biri olarak kabul edilir. Bu galaksi, 13 milyar ışık yılı uzaklıkta yer aldığı için, gökbilimcilerin bu olağanüstü olayı gözlemlemesi ve incelemesi zorlu bir süreçti. Ancak, son teknolojik gelişmeler ve gelişmiş gözlem teleskopları, bu devasa patlamanın ardındaki gizemi çözmeye yardımcı oldu.";
-	p2bpt.textContent += "Gökbilimciler, bu parlak galaksinin doğası hakkında daha fazla bilgi edinmek için yoğun bir şekilde çalışıyorlar. Hypernova patlamalarının evrendeki nasıl oluştuğu, galaksi oluşumunu nasıl etkilediği ve uzaydaki diğer galaksilerle olan etkileşimleri gibi sorular, astronomi topluluğunda büyük bir ilgi uyandırıyor. Bu keşif, evrenin derinliklerindeki sırları anlamak için yapılan sonsuz bir arayışın sadece bir örneği olarak görülüyor ve gelecekte daha fazla benzeri olayın keşfedilmesine olanak sağlıyor.";
-	
-
-
-	//Sayfa3 ön yüz 
-	p3pt.textContent = "Tabii, oyuk dünya teorisi, Dünya'nın iç kısmının boş olduğunu ve içinde büyük bir boşluk veya boş bir alanın bulunduğunu öne süren bir iddiadır. Bu teoriye göre, Dünya'nın içi, kabuğun altında geniş bir iç boşlukla doludur ve yaşamı destekleyen bir iç güneş veya iç ısı kaynağı bulunabilir. Oyuk dünya teorisini destekleyenler, bu iç boşluğun, Dünya'nın manyetik alanını açıklayabileceğini ve bazı doğal fenomenleri izah edebileceğini savunurlar. Ayrıca, bazı efsaneler ve mitolojik hikayelerde, iç dünya veya Agartha adı verilen gizemli bir yerden bahsedilir, bu da oyuk dünya teorisini destekleyenlerin argümanlarından biridir. Ancak, bilimsel kanıtlar ve gözlemler, Dünya'nın içinde geniş bir boşluğun bulunmadığını ve Dünya'nın yapısının standart bir şekilde kabul edilen modelde olduğunu göstermektedir. Jeolojik veriler ve Dünya'nın iç kısmını anlamak için yapılan derin sondajlar, Dünya'nın katı bir çekirdeğe ve mantoya sahip olduğunu doğrulamaktadır.";
-	p3pt.textContent += "Sonuç olarak, oyuk dünya teorisi genellikle bilimsel topluluk tarafından kabul görmeyen bir spekülasyon olarak görülür ve mevcut bilimsel kanıtlarla çelişmektedir.";
-	p3t.textContent = "Oyuk dünya teorisi";
-	p3pt.style.color = "#2d6f75";
-	p3t.style.color = "#2d6f75";
-
-
-
-	//Sayfa 3 Arka yüz 
-	p3bt.textContent = "Europa'da Potansiyel Bir Okyanusun İzleri Bulundu";
-	p3bi.src = "/İmg/Every\ Moon\ in\ Our\ Solar\ System\,\ Ranked.jpeg";
-	p3bp.textContent = "Jüpiter'in en büyük dört ayından biri olan Europa, uzun süredir bilim insanlarının dikkatini çeken bir hedef olmuştur.";
-	p3bp.textContent += "Europa'nın buz tabakalarının altında muhtemelen sıvı bir su okyanusu olabileceği düşünülmekteydi ve bu durum, gezegenin potansiyel olarak yaşam için uygun bir ortam sunabileceği fikrini doğurmuştu. Şimdi, son gözlemler ve analizler, Europa'nın yüzeyinde potansiyel bir okyanusun izlerini destekleyen güçlü kanıtlar bulunduğunu gösteriyor. Araştırmacılar, Galileo uzay aracı tarafından elde edilen verileri inceleyerek Europa'nın yüzeyini detaylı bir şekilde incelediler. Europa'nın yüzeyindeki buz kırıkları ve çatlakları, altında sıvı su bulunabileceğine dair güçlü kanıtlar sunmaktadır.";
-	p3bp.textContent += "Bu bulgular, Europa'nın potansiyel yaşam için uygun bir ortam sunabileceği fikrini daha da güçlendirmektedir.";
-
-
-
-	//Sayfa 4 ön yüz 
-	p4fimage.src = "/İmg/How\ to\ Spot\ the\ North\ Star_\ 9\ Steps\ \(with\ Pictures\)\ -\ wikiHow.jpeg";
-	p4ft.textContent = "Gerçek Yıldızlar Gizleniyor mu?";
-	p4fpt.textContent = "Günümüzde, uzay keşiflerinin artmasıyla birlikte, uzaydaki gözlemlerden elde edilen fotoğraf ve veriler her zamankinden daha fazla ilgi çekiyor. Ancak, bazı komplo teorisyenleri, uzay ajanslarının bu görüntüleri manipüle ettiğini ve gerçek yıldızları gizlediğini iddia ediyorlar.Bu teoriye göre, uzay ajansları, gerçek uzay görüntülerini kamuoyundan saklayarak, uzaydaki gizli sırları ve varlıkları gizlemek için çalışıyorlar. Bazı komplo teorisyenlerine göre, bu manipülasyonların amacı, uzayda var olduğuna inanılan gizli teknolojileri veya hatta uzaylı varlıkları gizlemektir.Özellikle, Ay'ın çevresinde veya Mars'ın yüzeyinde çekilen fotoğrafların detaylı bir şekilde incelenmesi, bazıları tarafından düzenlemeler veya gerçekleri gizleme olarak yorumlanıyor. Bazı görüşlere göre, gerçek yıldızların resimlerden çıkarılması veya üzerinin kapatılmasıyla, uzayda bulunan gizli nesnelerin veya varlıkların daha kolay gizlenmesi sağlanıyor.Ancak, bilim insanları ve uzay ajansları, bu tür iddiaları kesin bir şekilde reddediyorlar ve uzaydaki görüntülerin doğruluğunu ve bütünlüğünü savunuyorlar. Uzay ajansları, uzaydaki gözlemlerin kamuoyuyla paylaşılmasının, bilimsel keşiflerin ve insanlığın evreni anlama çabalarının bir parçası olduğunu vurguluyorlar.Bu komplo teorisi, uzay hakkındaki bilgi ve algıları etkileyebilir ve kamuoyunda karışıklığa neden olabilir. Ancak, bilimsel kanıtlar ve güvenilir uzay ajansı kaynakları, uzaydaki gözlemlerin doğruluğunu ve şeffaflığını desteklemeye devam ediyor.";
-
-
-
-		/*-----------------------------------------------------------------------------*/
-
-
-
-
-		/*Silinen elementler*/
-		bar.remove();
-		Home.remove();
-		/*-------------*/
-
-
-		/*Eklenen elementler*/
-		container.appendChild(bookcontent);
-		/*-----------------------------------*/
-
-
-
-		let contZindex = 2;
-		let customZindex = 1;
-
-
-
-		for (let i = 0; i < uno.length; i++) {
-			uno[i].style.zIndex = customZindex;
-			customZindex--;
-
-			uno[i].addEventListener('click', function (e) {
-
-				let tgt = e.target;
-				let unoThis = this;
-
-				unoThis.style.zIndex = contZindex;
-				contZindex++;
-
-				if (tgt.getAttribute('class') == 'face-front') {
-					unoThis.style.zIndex = contZindex;
-					contZindex += 20;
-					setTimeout(function () {
-						unoThis.style.transform = 'rotateY(-180deg)';
-					}, 500);
-				}
-				if (tgt.getAttribute("class") == 'face-back') {
-					unoThis.style.zIndex = contZindex;
-					contZindex += 20;
-
-					setTimeout(function () {
-						unoThis.style.transform = 'rotateY(0deg)';
-					}, 500);
-				}
-
-				if (tgt.getAttribute('id') == 'portada') {
-					flip.classList.remove("trnsf-reset");
-					flip.classList.add("trnsf");
-				}
-				if (tgt.getAttribute('id') == 'trsf') {
-					flip.classList.remove("trnsf");
-					flip.classList.add("trnsf-reset");
-				}
-
-			});
-
-		}
-
-	}
-
-	Homebutton.addEventListener("click", HomeBF);
-	raf1.addEventListener("click", raf1o);
-
-	/*------------------------------------------------------------------*/
-}
-
 
 
 
@@ -496,6 +328,15 @@ const karanlıktema = () => {
 	container.style.backgroundColor = "#28282B";
 	Appfooter.style.backgroundColor = "#28282B";
 	Astronomediavideo.style.backgroundColor="#28282B";
+	Hakkimizdasayfasi.style.backgroundColor="#28282B";
+	hakkimizdacontent.style.backgroundColor="#28282B";
+	hakkimizrightbar.style.backgroundColor="#28282B";
+	hakkimizdacontentscrean.style.backgroundColor="darkgray";
+	
+
+	
+
+	isbirligicontainer.style.backgroundColor="#28282B";
 	darkthemebutton.remove();
 	theme.appendChild(lightthemebutton);
 
@@ -506,8 +347,17 @@ const Aydınlıktema = () => {
 	theme.appendChild(darkthemebutton);
 	container.style.backgroundColor = "#2d6f75";
 	Astronomediavideo.style.backgroundColor="#2d6f75";
+	Hakkimizdasayfasi.style.backgroundColor="#2d6f75";
+	hakkimizdacontent.style.backgroundColor="#2d6f75";
+	hakkimizrightbar.style.backgroundColor="bisque";
+	hakkimizdacontentscrean.style.backgroundColor="bisque";
+	isbirligicontainer.style.backgroundColor="bisque";
+
 	Appfooter.style.backgroundColor = "White";
 	container.style.backgroundImage = "";
+
+
+	
 
 }
 /*-------------------------------------------------------*/
@@ -592,9 +442,18 @@ for (let i = 0; i < newslist.length; i++) {
 }
 
 
+const Hb2btn=()=>
+	{
+		Astronomediatvpo();
+	}
 
 
-
+	const Hb1btn=()=>
+		{
+			Hakkımızdapage();
+		}
+	
+	
 
 
 //Astronomediavideo
@@ -667,10 +526,17 @@ const Astronomediatvpo=()=>
 									
 	
 								}
+								if(videoc[x].id=="Marsvideocontent")
+									{
+                                    videoc[x].style.backgroundImage="url('İmg/Mars.png')";
+									t.textContent="Paylaşım tarihi :"+gun;
+
+									}
 						
 				}
 
  /*---------------------------------------------------------------------------------------------------------------------------------------------*/ 
+ document.querySelector("#pagetitlee").textContent="Astronomedia video/Astronomedia"
 
 		  //---------------------------------Açılan videoların içeriklerinin eklenme alanı------------------------------------------------//
            for(let i=0; i<videosdizisi.length; i++)
@@ -751,7 +617,27 @@ const Astronomediatvpo=()=>
 			
 													
 										}
-								
+										if(videosdizisi[i].id=="Marsvideo")
+											{
+				
+													   //Container içeriği sıfırlandı
+														container.textContent="";
+														//container a Appfooter eklendi
+														container.appendChild(Appfooter);
+														//container a tema butonu ekledi
+														container.appendChild(theme);
+														//Container a video sayfası eklendi
+														container.appendChild(astronomediavideoadd);
+														//container a video içeriği eklendi		
+														astronomediavideocontent.src="Video/856359-hd_1920_1080_30fps.mp4";
+														// video başlığı eklendi
+														Avtitle.textContent="Mars videosu";                                      
+														// Video içeriğnin bilgisi eklendi
+														avinfo.textContent="Mars temsili görüntüleri";
+														//videonun eklenme tarihi eklendi
+				                                        
+														
+											}
 
 
 
@@ -777,6 +663,167 @@ const Astronomediatvpo=()=>
 
 
 
+/*--------------------------------------------------Hakkımızda sayfası---------------------------------------------------*/
+Hakkimizdasayfasi.remove();
+
+
+const Hakkımızdapage=()=>
+	{
+
+		hakkımızdacontent.textContent="";
+		container.textContent="";
+		
+
+		   /*container a Hakkımızda sayfasının içerikleri ekleniyor*/ 
+		    container.appendChild(Hakkimizdasayfasi);
+			//Appfooter eklendi 
+			container.appendChild(Appfooter);
+			//Tema butonu eklendi 
+			container.appendChild(theme);
+		
+         /*---------------------------------------------------------*/
+
+
+
+
+
+		     
+          /*Yetkinliklerim içerik ekleme/güncelleme alanı*/ 
+            const yetkinliklerimF=()=>
+				{
+					
+					hakkımızdacontent.textContent="Frond-End developer olarak başladığım kariyer hedefimde aynı zamanda farklı teknolojileride öğrenmek için kendimi geliştiriyorum. C# ile Masaüstü uygulamalarıgeliştirdiğim ve daha sonra da Sql, Js, Html, Css ve Bootstrap öğrenerek ilerlediğim bu kariyer hedefimde Flutter dili öğrenerek aynı zamanda cross platform geliştirme imkanı olan yetenekleri de kazanmaya çalışıyorum de başlayarak mobil ve web developer olarak ilerliyorum ama akademik hayatımda hayatıma giren C#, Javascript, Sql, Html, Css, Bootstrap gibi dillere Kotlin de ekleyerek çok yönlü yazılım geliştirici olarak hayatıma devam etmek için hergün daha fazla çalışıyorum birçok teknoloji ve yazılım dillerini öğrenerek de kariyerimi geliştirmeye çalışıyorum. şimdilik yazılımcı adayı ve ağırlıklı web geliştiricilikte yetenekler kazanan bir öğrenciyim projelerim ve geliştirdiğim uygulamalari incelemek isterseniz eğer iletişim sayfasından github hesabıma ulaşabilirsiniz işbirliği teklifleri için iletişim sayfasına bakabilirsiniz";
+				}
+
+         /*----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+          /*Ben kimim sayfası içerik ekleme/güncelleme alanı*/ 
+
+               const benkimimF=()=>
+				{
+
+                     hakkımızdacontent.textContent="Frond-end developer olarak başladığım kariyer hedefimde Back-End teknolojiler öğrenerek ilerlediğim Web ağırlıklı olarak başladığım ve Mobil, Masaüstü uygulamlar konusunda da kendimi geliştirdiğim bir yazılımcı adayı öğrenciyim ";
+
+
+
+				}
+		  /*----------------------------------------------------------------------------------------*/ 
+			document.querySelector("#pagetitlee").textContent="Hakkımızda/Astronomedia"
+
+
+         /*İletisim sayfası içerik ekleme/güncelleme alanı*/ 
+                  const iletisimF=()=>
+					{
+						hakkımızdacontent.textContent="";
+                        
+
+
+
+						/*--------------------Github adresi içerikleri-------------------*/
+						 let Githubadresi=document.createElement("a");
+						 let Githubadresic=document.createElement("h1");
+						 Githubadresic.textContent="Github adresine gitmek için github iconuna tıklayınız";
+						 Githubadresic.style.position="absolute";
+						 Githubadresic.style.left="6%";
+						 Githubadresic.style.fontSize="1em";
+						 Githubadresic.style.top="4.9em";
+						 Githubadresi.href="https://github.com/Myrpojects";
+                         let githubimg=document.createElement("img");
+						 githubimg.style.width="10em";
+						 githubimg.style.height="10em";
+						 githubimg.src="İmg/Using GitHub To Improve Workflow.jpeg";
+						 githubimg.style.borderRadius="100%";
+						
+						 Githubadresi.appendChild(githubimg);
+                         Githubadresi.style.position="absolute";
+						 Githubadresi.style.right="5%";
+						Githubadresi.style.top="2%";
+                          
+
+
+
+
+
+
+                        hakkımızdacontent.appendChild(Githubadresic);
+						hakkımızdacontent.appendChild(Githubadresi);
+						
+					}
+         /*------------------------------------------------------------------------------------------*/ 
+		  /*Hakkımızda sayfasının eventlistenerları*/
+		  iletisimbutton.addEventListener("click", iletisimF);
+		  benkimimbutton.addEventListener("click",benkimimF);
+		  yetkinliklerbutton.addEventListener("click",yetkinliklerimF);
+
+	}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------Haber sayfası ------------------------------------------------*/
+Haber.remove();
+      const TGF=()=>
+		{
+			container.textContent="";
+			container.appendChild(theme);
+			container.appendChild(Appfooter);
+			container.appendChild(Haber);
+
+
+
+			document.querySelector("#pagetitlee").textContent="Haberler/Astronomedia"
+		}
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+/*--------------------------------------------İsbirligi içeriği--------------------------------------------------------*/
+isbirligicontent.remove();
+const isbirligiF=()=>
+	{
+		document.querySelector("#pagetitlee").textContent="İşbirliği/Astronomedia"
+
+		container.textContent="";
+		container.appendChild(theme);
+		container.appendChild(Appfooter);
+		container.appendChild(isbirligicontent);
+		
+
+
+
+
+
+
+		
+	}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
 
 
 
@@ -785,17 +832,13 @@ const Astronomediatvpo=()=>
 
 
 //                                               GLobal Evenetlistenerlar                                             //
-
+TG.addEventListener("click", TGF);
+isbirligi.addEventListener("click",isbirligiF);
+Hakkımızdabutton.addEventListener("click", Hakkımızdapage);
 Astronomediavideobutton.addEventListener("click", Astronomediatvpo);
 darkthemebutton.addEventListener("click", karanlıktema);
 lightthemebutton.addEventListener("click", Aydınlıktema);
 Homebutton.addEventListener("click", HomeBF);
-T.addEventListener("click", TF);
-AstronomiH.addEventListener("click", AstronomiHF);
-
-
+Hb2.addEventListener("click", Hb2btn);
+Hb1.addEventListener("click",Hb1btn);
 //--------------------------------------------------------------------------------------------------------------------//
-
-
-
-
