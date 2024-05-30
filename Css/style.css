@@ -306,7 +306,7 @@ portada p {
 .bar {
 	position: absolute;
 	left: 14%;
-	top: 11%;
+	top: 30%;
 	width: 85em;
 	height: 5em;
 	border-radius: 0.5em;
@@ -345,14 +345,15 @@ portada p {
 
 .Home {
 	position: absolute;
-	top: 20%;
+	top: 40%;
 	width: 80%;
 	height: 50%;
 	left: 10%;
 	border: 10px solid black;
 	box-shadow: 30px 30px 10px 5px black;
 	border-radius: 0.5em;
-	background-image: url(/İmg/newbjpeg2.jpg);
+	background-color: white;
+
 }
 
 .raf1 {
@@ -521,14 +522,15 @@ footer span a {
 	width: 50%;
 	left: 6%;
 	height: 15em;
-	top: 110%;
+	top: 130%;
 	background-color: white;
 	border-radius: 0.5em;
 	box-shadow: 30px 30px 10px 5px black;
 	background-size: cover;
 	text-align: center;
 	text-align: start;
-	color: white;
+	color: #2d6f75;
+	background-color: white;
 }
 
 .haberalani2 {
@@ -536,14 +538,15 @@ footer span a {
 	width: 50%;
 	right: 6%;
 	height: 15em;
-	top: 150%;
+	top: 170%;
 	background-color: white;
 	border-radius: 0.5em;
 	box-shadow: 30px 30px 10px 5px black;
 	background-size: cover;
 	text-align: center;
 	text-align: start;
-	color: white;
+	color: #2d6f75;
+	background-color: white;
 
 }
 
@@ -604,7 +607,7 @@ footer span a {
 	border-radius:0.2em;
 	box-shadow: 30px 30px 10px 5px black;
 	opacity: 0.9;
-	top:200%;
+	top:220%;
 	left:5%;
 	border-radius:0.2em;
 
@@ -638,7 +641,7 @@ border-radius:0.2em;
 .gundempanel
 {
 	position:absolute;
-	top:219%;
+	top:240%;
 	width:89%;
 	height:40em;
 	border-radius:0.2em;
@@ -765,7 +768,7 @@ border-radius:0.2em;
  .videoc
 {
 	width:25em;
-	height:21em;
+	height:20.7em;
 	background-color:gray;
 	margin-top:9em;
 	margin-left:9em;
@@ -773,7 +776,7 @@ border-radius:0.2em;
 	border-radius:0.5em;
    
 	background-size:cover;
-	border:2px solid white;
+	border:6px solid #2d6f75;
 
 }
 .Atvideo
@@ -796,6 +799,28 @@ border-radius:0.2em;
 	border:none;
 	text-decoration: none;
 	color:white;
+}
+.t
+{
+	text-decoration: none;
+	color:white;
+	position: absolute;
+	background-color: black;
+	top:131.3%;
+	left:8.5%;
+	width:25em;
+	opacity:0.8;
+}
+.s
+{
+	position: absolute;
+	top:128.1%;
+	left:8.5%;
+	width:25em;
+	opacity:0.8;
+	text-decoration: none;
+	color:white;
+	background-color: black;
 }
 .Astronomediavideobaslik
 {
@@ -860,5 +885,251 @@ border-radius: 1em;
 	
 	margin-bottom:1em;
 
+
+}
+.Hakkimizdasayfasi
+{
+	position:absolute;
+	top:1%;
+	width:95%;
+	height:90%;
+	background-color: #2d6f75;
+	border-radius:0.2em;
+	
+}
+.hakkimizdacontent
+{
+	position:absolute;
+	width:90%;
+	height:90%;
+	box-shadow: 30px 30px 10px 5px black;
+	border-radius:0.2em;
+	background-color: #2d6f75;
+	top:7%;
+	left:2%;
+  
+}
+.hakkimizrightbar
+{
+	position:absolute;
+	right:0%;
+	width:20em;
+	height:100%;
+	background-color: bisque;
+	text-align: center;
+	color:#2d6f75;
+border-radius: 0.2em;;
+}
+.hakkimizdarightbarlist
+{
+	display: block;
+	margin-top:21em;
+}
+.hakkimizdarightbarlist li 
+{
+
+	list-style:none;
+	margin-top:5em;
+
+}
+.hakkimizdarightbarlist li a 
+{
+	padding:1em;
+	text-decoration: none;
+	color:bisque;
+	width:3em;
+	height:3em;
+	background-color: #2d6f75;
+	border-radius: 0.2em;
+
+}
+.hakkimizdarightbarlist li a:hover
+{
+	padding:1em;
+	text-decoration: none;
+	color:lightgreen;
+	width:3em;
+	height:3em;
+
+}
+.hakkimizdarightbarimg
+{
+	position:absolute;
+	top:0%;
+	width:15em;
+	height:15em;
+	left:11%;
+	top:3%;
+	border-radius:100%;
+	border:9px solid #2d6f75;
+}
+.hakkimizdacontentscrean
+{
+	position:absolute;
+	left:10%;
+	top:6.9%;
+	width:60%;
+	height:85%;
+	background-color: bisque;
+	box-shadow: 30px 30px 10px 5px black;
+	border-radius:0.4em;
+
+}
+.hakkimizdacontentscrean p
+{
+	position:absolute;
+	width:96.5%;
+	height:96.5%;
+	border:8px solid #2d6f75;
+	top:0.5%;
+	left:1%;
+}
+.hakkımızdacontent
+{
+	font-size:1.5em;
+	color:#2d6f75;
+}
+.isbirligicontainer
+{
+	position:absolute;
+	width:85%;
+	height:86%;
+	top:2%;
+	left:4%;
+	background-color: black;
+	border-radius:0.2em;
+	box-shadow: 30px 30px 10px 5px black;
+	background-color: bisque;
+}
+#mailcontent
+{
+	position:absolute;
+	left:14%;
+	height:70%;
+	bottom:7%;
+	width:70%;
+	background-color:#2d6f75;
+	color:bisque;
+	border-radius:0.4em;
+}
+.Mail
+{
+	position:absolute;
+	width:68em;
+	height:2em;
+	font-size: 1em;
+	background-color: #2d6f75;
+	color:bisque;
+	left:14%;
+	top:9%;
+border-radius:0.2em;
+}
+.İsimsoyisim
+{
+	position:absolute;
+	width:68em;
+	height:2em;
+	font-size: 1em;
+	background-color: #2d6f75;
+	color:bisque;
+	left:14%;
+	top:15%;
+border-radius:0.2em;
+}
+.isbirligibutton
+{
+	position:absolute;
+	left:77.3%;
+	bottom:1.5%;
+	padding:0.5em;
+	background-color:#2d6f75;
+color:bisque;
+border-radius:0.5em;
+}
+.isbirligititle
+{
+	background-color:#2d6f75;
+	width:30em;
+	height:1.5em;
+	color:bisque;
+	text-align: center;
+	margin-top:0.2em;
+	margin-left:8.8em;
+	border-radius:0.2em;
+   
+}
+.spacegallery
+{
+	position:absolute;
+	top:6%;
+	left:2%;
+	height:1%;
+	width:87%;
+	height:82%;
+	background-color: bisque;
+	box-shadow: 30px 30px 10px 5px black;
+border-radius:0.2em;
+word-wrap: break-word;
+overflow-y: scroll;
+}
+.newslist
+{
+	position:absolute;
+	top:3%;
+	left:0.5%;
+	width:88%;
+	height:88%;
+	background-color: bisque;
+	box-shadow: 30px 30px 10px 5px black;
+	overflow-y: scroll;
+	
+}
+.news
+{
+	width:27em;
+	height:20em;
+	background-color:black;
+	display: inline-flex;
+	margin-left:4em;
+	margin-top:15em;
+	border:8px solid #2d6f75;
+	border-radius:0.5em;
+	background-position-x: center;
+}
+.ntitle
+{
+	position:absolute;
+	top:4%;
+	width:25em;
+	height:3em;
+	background-color: #2d6f75;
+	color:bisque;
+	box-shadow: 30px 30px 10px 5px black;
+	text-align: center;
+	left:19%;
+	padding-top:0.5em;
+	border-radius:0.2em;
+
+}
+.astronomediavideocontainer
+{
+	background-color: bisque;
+}
+.newstitle
+{
+	position: absolute;
+	background-color:#2d6f75;
+	margin-top:14em;
+	word-wrap: break-word;
+	text-decoration: none;
+	width:16em;
+	height:6em;
+	margin-left:11em;
+	color:bisque;
+}
+#Haber1
+{
+	background-image: url('/İmg/Haber1..png');
+	background-size: cover;
 
 }
