@@ -71,7 +71,10 @@ const isbirligicontent=document.querySelector(".isbirligicontent");
 const isbirligicontainer=document.querySelector(".isbirligicontainer");
 const t=document.querySelector(".t");
 const TG=document.querySelector("#TG");
-const Haber=document.querySelector(".Haber");
+const Spacegalery=document.querySelector(".Spacegalery");
+const searchconteiner=document.querySelector(".searchconteiner");
+
+const Gsearchbutton=document.querySelector(".Gsearchbutton");
 /*------------------------------------------------------------------------------*/
 astronomediavideoadd.remove();
 Astronomediavideo.remove();
@@ -100,6 +103,16 @@ Habera2p.textContent="AstronomediaTV ile gündem ve genel olarak yayınlayacağ�
 //------------------------------------------------------//
 
 
+
+
+const HomeBF = () => {
+	container.innerHTML = "";
+	container.appendChild(Home);
+	container.appendChild(bar);
+	container.appendChild(haberalani);
+	container.appendChild(Appfooter);
+	container.appendChild(theme);
+}
 
 
 
@@ -322,14 +335,17 @@ const karanlıktema = () => {
 	hakkimizdacontent.style.backgroundColor="#28282B";
 	hakkimizrightbar.style.backgroundColor="#28282B";
 	hakkimizdacontentscrean.style.backgroundColor="darkgray";
+	document.querySelector(".astronomediast").backgroundColor="#28282B";
+	document.querySelector(".ussc").style.backgroundColor="#28282B";
+	document.querySelector(".searchconteiner").style.backgroundColor="#28282B"
 	
+	Spacegalery.style.backgroundColor="#28282B";
 
 	
 
 	isbirligicontainer.style.backgroundColor="#28282B";
 	darkthemebutton.remove();
 	theme.appendChild(lightthemebutton);
-
 }
 
 const Aydınlıktema = () => {
@@ -341,8 +357,11 @@ const Aydınlıktema = () => {
 	hakkimizdacontent.style.backgroundColor="#2d6f75";
 	hakkimizrightbar.style.backgroundColor="bisque";
 	hakkimizdacontentscrean.style.backgroundColor="bisque";
-	isbirligicontainer.style.backgroundColor="bisque";
+	document.querySelector(".ussc").style.backgroundColor="#87CEEB";
+	document.querySelector(".searchconteiner").style.backgroundColor="#2d6f75"
+	Spacegalery.style.backgroundColor="#2d6f75";
 
+	
 	Appfooter.style.backgroundColor = "White";
 	container.style.backgroundImage = "";
 
@@ -450,19 +469,6 @@ const Hb2btn=()=>
 
 
 let videosdizisi=Astronomediavideo.getElementsByTagName("a");
-
-document.querySelector("#pagetitlee").textContent="Home/Astronomedia"
-
-const HomeBF = () => {
-	container.innerHTML = "";
-	container.appendChild(Home);
-	container.appendChild(bar);
-	container.appendChild(haberalani);
-	container.appendChild(Appfooter);
-	container.appendChild(theme);
-document.querySelector("#pagetitlee").textContent="Home/Astronomedia"
-
-}
 
 
 
@@ -778,11 +784,23 @@ const Hakkımızdapage=()=>
 
 
 
-/*------------------------------------------------Haber sayfası ------------------------------------------------*/
-Haber.remove();
+/*------------------------------------------------Astronomedia search sayfası ------------------------------------------------*/
+container.textContent="";
+
+container.appendChild(Spacegalery)
+container.appendChild(theme);
+container.appendChild(Appfooter);
+
       const TGF=()=>
 		{
-			
+			container.textContent="";
+			container.appendChild(theme);
+			container.appendChild(Appfooter);
+			container.appendChild(Spacegalery);
+  
+
+
+			document.querySelector("#pagetitlee").textContent="Haberler/Astronomedia"
 		}
 
 
@@ -799,6 +817,7 @@ Haber.remove();
 
 
 /*--------------------------------------------İsbirligi içeriği--------------------------------------------------------*/
+isbirligicontainer.remove();
 isbirligicontent.remove();
 const isbirligiF=()=>
 	{
@@ -826,6 +845,7 @@ const isbirligiF=()=>
 
 
 
+
 //                                               GLobal Evenetlistenerlar                                             //
 TG.addEventListener("click", TGF);
 isbirligi.addEventListener("click",isbirligiF);
@@ -836,7 +856,10 @@ lightthemebutton.addEventListener("click", Aydınlıktema);
 Homebutton.addEventListener("click", HomeBF);
 Hb2.addEventListener("click", Hb2btn);
 Hb1.addEventListener("click",Hb1btn);
+/*Gsearchbutton.addEventListener("click", Asscontainer);*/
 //--------------------------------------------------------------------------------------------------------------------//
+
+
 
 
 
