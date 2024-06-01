@@ -109,7 +109,7 @@ Habera2p.textContent="AstronomediaTV ile gündem ve genel olarak yayınlayacağ�
 const Aimgdata =[
 	{
 		photoname:"Mars",
-		url:"İmg/icon.png"
+		url:["İmg/icon.png","Mars.png",],
 	}
 ]
 
@@ -812,14 +812,27 @@ container.appendChild(Appfooter);
 		
 	                 const Gse=()=>
 						{
-							for(let i=0; i<Aimgdata.length; i++)
-                                   {
-									if(Gsearch.value==Aimgdata[i].photoname)
+							
+							for(let x=0; x<Aimgdata.length; x++)
+								{
+									if(Aimgdata[x].photoname==Gsearch.value)
 										{
+											let i=0;
+											let ısscliscb = document.createElement("a");
+											let ussclisc = document.createElement("div");
+											ısscliscb.classList.add("ısscliscb");
+											ussclisc.classList.add("ussclisc");
 											
+											if(x==i)
+												{
+													ussclisc.style.backgroundImage = 'url(' + Aimgdata[x].url[i] + ')'; // İlk URL'yi kullanın
+											        document.querySelector(".ussclist").appendChild(ussclisc);
+											       i++;
+												}
+
+
 										}
-								   }
-								
+								}
 							
 						}
 
