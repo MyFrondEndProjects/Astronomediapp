@@ -1080,7 +1080,7 @@ box-shadow: 20px 30px 10px 5px black;
 
 	position:absolute;
 	top:1.1%;
-	left:1%;
+	left:8.7%;
 	width:81.1%;
 	height:26.9%;
 	background-color:#2d6f75;
@@ -1130,7 +1130,7 @@ margin-left:0.5em;
 	width:5em;
 	height:5em;
 	top:11%;
-	left:33%;
+	left:39%;
 }
 .astronomediast
 {
@@ -1138,7 +1138,7 @@ margin-left:0.5em;
 	position:absolute;
 	font-size:1.4em;
 	top:31%;
-	left:40%;
+	left:45%;
 	font-weight: bolder;
 }
 .ussc
@@ -1151,5 +1151,26 @@ margin-left:0.5em;
 	left:3.9%;
 	background-color: #87CEEB;
 box-shadow: 20px 30px 10px 5px black;
-overflow-y: scroll;
+
+}
+.ussclist
+{
+	display: inline-flex;
+	width:99em;
+	height:40em;
+	background-color:black;
+	margin-left:0.2em;
+
+
+}
+.ussclisc
+{
+	
+	width:25em;
+	height:20em;
+	background-color:white;
+	margin-left:2em;
+	margin-top:2em;
+
+    
 }
