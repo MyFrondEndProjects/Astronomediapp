@@ -73,7 +73,7 @@ const t=document.querySelector(".t");
 const TG=document.querySelector("#TG");
 const Spacegalery=document.querySelector(".Spacegalery");
 const searchconteiner=document.querySelector(".searchconteiner");
-
+const Gsearch=document.querySelector(".Gsearch");
 const Gsearchbutton=document.querySelector(".Gsearchbutton");
 /*------------------------------------------------------------------------------*/
 astronomediavideoadd.remove();
@@ -103,6 +103,15 @@ Habera2p.textContent="AstronomediaTV ile gündem ve genel olarak yayınlayacağ�
 //------------------------------------------------------//
 
 
+
+
+/*------------------------------------------Burası projenin sonunda Firebase den veri alınarak değiştirelecek----------------------------------------*/
+const Aimgdata =[
+	{
+		photoname:"Mars",
+		url:"İmg/icon.png"
+	}
+]
 
 
 const HomeBF = () => {
@@ -786,7 +795,6 @@ const Hakkımızdapage=()=>
 
 /*------------------------------------------------Astronomedia search sayfası ------------------------------------------------*/
 container.textContent="";
-
 container.appendChild(Spacegalery)
 container.appendChild(theme);
 container.appendChild(Appfooter);
@@ -801,11 +809,22 @@ container.appendChild(Appfooter);
 
 
 			document.querySelector("#pagetitlee").textContent="Haberler/Astronomedia"
+		
+	                 const Gse=()=>
+						{
+							for(let i=0; i<Aimgdata.length; i++)
+                                   {
+									if(Gsearch.value==Aimgdata[i].photoname)
+										{
+											
+										}
+								   }
+								
+							
+						}
+
+                Gsearchbutton.addEventListener("click", Gse);
 		}
-
-
-
-
 
 //---------------------------------------------------------------------------------------------------------------------//
 
@@ -858,8 +877,6 @@ Hb2.addEventListener("click", Hb2btn);
 Hb1.addEventListener("click",Hb1btn);
 /*Gsearchbutton.addEventListener("click", Asscontainer);*/
 //--------------------------------------------------------------------------------------------------------------------//
-
-
 
 
 
