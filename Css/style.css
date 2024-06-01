@@ -1141,36 +1141,34 @@ margin-left:0.5em;
 	left:45%;
 	font-weight: bolder;
 }
-.ussc
-{
-	position:absolute;
-	top:28%;
-	border-radius:0.4em;
-	width:90.9%;
-	height:68.8%;
-	left:3.9%;
-	background-color: #87CEEB;
-box-shadow: 20px 30px 10px 5px black;
-
+.ussc {
+    position: absolute;
+    top: 28%;
+    border-radius: 0.4em;
+    width: 90.9%;
+    height: 68.8%;
+    left: 3.9%;
+    background-color: #87CEEB;
+    box-shadow: 20px 30px 10px 5px black;
+	overflow-y: scroll;
 }
-.ussclist
-{
-	display: inline-flex;
-	width:99em;
-	height:40em;
-	background-color:black;
-	margin-left:0.2em;
 
-
+.ussclist {
+    display: flex;
+    flex-wrap: wrap; /* İç içe div'lerin alt satıra geçmesini sağlar */
+    width: 99em; /* Genişlik ayarlaması gerekiyorsa değeri güncelleyebilirsiniz */
+    height: 40em;
+    background-color: #87CEEB;
+    margin-left: 0.2em;
+    word-wrap: break-word;
 }
-.ussclisc
-{
-	
-	width:25em;
-	height:20em;
-	background-color:white;
-	margin-left:2em;
-	margin-top:2em;
 
-    
+.ussclisc {
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    margin-left: 2em;
+    margin-top: 2em;
+	margin-left:10em;
+
 }
