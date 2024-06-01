@@ -341,9 +341,7 @@ const karanlıktema = () => {
 	hakkimizdacontent.style.backgroundColor="#28282B";
 	hakkimizrightbar.style.backgroundColor="#28282B";
 	hakkimizdacontentscrean.style.backgroundColor="darkgray";
-	document.querySelector(".astronomediast").backgroundColor="#28282B";
-	document.querySelector(".ussc").style.backgroundColor="#28282B";
-	document.querySelector(".searchconteiner").style.backgroundColor="#28282B"
+
 	
 	Spacegalery.style.backgroundColor="#28282B";
 
@@ -363,8 +361,7 @@ const Aydınlıktema = () => {
 	hakkimizdacontent.style.backgroundColor="#2d6f75";
 	hakkimizrightbar.style.backgroundColor="bisque";
 	hakkimizdacontentscrean.style.backgroundColor="bisque";
-	document.querySelector(".ussc").style.backgroundColor="#87CEEB";
-	document.querySelector(".searchconteiner").style.backgroundColor="#2d6f75"
+
 	Spacegalery.style.backgroundColor="#2d6f75";
 
 	
