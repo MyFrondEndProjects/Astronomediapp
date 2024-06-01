@@ -1,4 +1,3 @@
-
 //Elementleri tanımlıyorum
 const container = document.querySelector("#container");
 const body = document.getElementsByTagName("body");
@@ -6,7 +5,6 @@ const bookcontent = document.querySelector(".book-content");
 const portada = document.querySelector(".face-front");
 const Ul = document.querySelector(".Ul");
 const bar = document.querySelector(".bar");
-
 const Hb2=document.querySelector("#Hb2");
 const Home = document.querySelector(".Home");
 const front = document.querySelector('.face-front');
@@ -76,8 +74,7 @@ const searchconteiner=document.querySelector(".searchconteiner");
 const Gsearch=document.querySelector(".Gsearch");
 const Gsearchbutton=document.querySelector(".Gsearchbutton");
 /*------------------------------------------------------------------------------*/
-astronomediavideoadd.remove();
-Astronomediavideo.remove();
+
 
 
 
@@ -475,7 +472,8 @@ const Hb2btn=()=>
 
 
 //Astronomediavideo
-
+astronomediavideoadd.remove();
+Astronomediavideo.remove();
 
 let videosdizisi=Astronomediavideo.getElementsByTagName("a");
 
@@ -794,11 +792,7 @@ const Hakkımızdapage=()=>
 
 
 /*------------------------------------------------Astronomedia search sayfası ------------------------------------------------*/
-container.textContent="";
-container.appendChild(Spacegalery)
-container.appendChild(theme);
-container.appendChild(Appfooter);
-
+Spacegalery.remove();
       const TGF=()=>
 		{
 			container.textContent="";
@@ -850,7 +844,7 @@ container.appendChild(Appfooter);
 
 /*--------------------------------------------İsbirligi içeriği--------------------------------------------------------*/
 isbirligicontainer.remove();
-isbirligicontent.remove();
+
 const isbirligiF=()=>
 	{
 		document.querySelector("#pagetitlee").textContent="İşbirliği/Astronomedia"
@@ -858,6 +852,7 @@ const isbirligiF=()=>
 		container.textContent="";
 		container.appendChild(theme);
 		container.appendChild(Appfooter);
+		container.appendChild(isbirligicontainer);
 		container.appendChild(isbirligicontent);
 		
 
